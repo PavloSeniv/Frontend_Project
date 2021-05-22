@@ -1,0 +1,33 @@
+.container{
+    max-width: 1441px;
+margin-bottom: 1000px;
+}
+.div{
+     position:relative;
+ }
+p{
+    position: absolute;
+    left:71px;
+    top:575px;
+    color: cyan;
+}
+h1{
+    position: absolute;
+    top:610px;
+    left:71px;
+    color: crimson;
+}
+.button{
+    position: absolute;
+    left:71px;
+    top:732px;
+    background-color: black;
+    color: white;
+}
+ .carousel-item{
+     max-width: 856px;
+     max-height: 319px;
+ }
+.carousel-inner {
+
+}
