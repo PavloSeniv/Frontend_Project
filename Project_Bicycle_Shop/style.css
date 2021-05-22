@@ -1,33 +1,70 @@
-.container{
+.container {
     max-width: 1441px;
-margin-bottom: 1000px;
+    margin-bottom: 1000px;
 }
-.div{
-     position:relative;
- }
-p{
+
+.div {
+    position: relative;
+}
+
+.p {
     position: absolute;
-    left:71px;
-    top:575px;
+    left: 71px;
+    top: 575px;
     color: cyan;
 }
-h1{
+
+h1 {
     position: absolute;
-    top:610px;
-    left:71px;
+    top: 610px;
+    left: 71px;
     color: crimson;
 }
-.button{
+
+.button {
     position: absolute;
-    left:71px;
-    top:732px;
+    left: 71px;
+    top: 732px;
     background-color: black;
     color: white;
 }
- .carousel-item{
-     max-width: 856px;
-     max-height: 319px;
- }
-.carousel-inner {
 
+.carousel-item {
+    margin-left: 292px;
+    max-width: 856px;
+    max-height: 319px;
+
+}
+.carousel-inner{
+    position: absolute;
+    bottom:209px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-control-next{
+    top: -709px;
+}
+.carousel-control-prev{
+    top: -359px;
+}
+.rover{
+    position: absolute;
+    top: 75px;
+    right: 250px;
+}
+.Text__Info{
+    width: 1441px;
+    height: 225px;
+    background-color: #F2F2F2;
+    color: Black;
+}
+.Text__info__p{
+    margin-left: 139px;
+    margin-bottom: 20px;
+    padding-top: 68px;
+}
+span{
+    font-weight:bold;
+    text-transform:uppercase;
 }

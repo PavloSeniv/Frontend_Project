@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67e821f-0fd4-47af-ac64-f26a5d635079" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_Bicycle_Shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Bicycle_Shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Bicycle_Shop/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Bicycle_Shop/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621621121713</updated>
       <workItem from="1621621122950" duration="7321000" />
-      <workItem from="1621682382001" duration="1995000" />
+      <workItem from="1621682382001" duration="5872000" />
     </task>
     <servers />
   </component>
@@ -88,5 +90,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621627171550" />
+    <state x="810" y="222" key="RollbackChangesDialog" timestamp="1621696232348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="810" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621696232348" />
   </component>
 </project>
