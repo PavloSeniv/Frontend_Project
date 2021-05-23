@@ -5,17 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bicycle Shop</title>
     <link rel="icon" href="img/Logo__Bike.png" type="image/png">
+    <link rel="stylesheet" href="bootstrap-5.0.1/css/bootstrap.css"> <!--Підключення локально-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Bicycle Shop</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+
 <div class="container p-0">
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -23,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <img class="img-fluid" src="img/Logo__Bike.png" alt="">
-                <a class="navbar-brand" href="#">СтритСракер</a>
+                <a class="navbar-brand" href="#">Bicycle Stracer</a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -36,53 +38,59 @@
                     </li>
 
                 </ul>
-
             </div>
-
         </nav>
+
         <div class="div">
             <img class="img-fluid " src="img/bike.png" alt="">
             <p class="P">
-                СтритСракер Павло
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, veritatis.
             </p>
             <h1>
-                Зручний зробить лаби і нетілко <br>
-                тупо глек і преберіньйо
+                Lorem ipsum dolor sit amet, consectetur <br>
+                adipisicing elit. Eum, molestiae!
             </h1>
-            <button type="button" class="button">Узнать больше</button>
+            <button type="button" class="button">Дізнатися більше</button>
         </div>
     </header>
+
     <section>
         <div class="vector-img">
-            <div class="vector__two__img">
+            <div class="Vector__Two__Img">
                 <img class="img-fluid " src="img/Vector.png" alt="">
             </div>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/Rectangle2.png" class="Rectangle2 " alt="...">
-                        <img src="img/SlideTwo.png" class="rover" alt="...">
+                        <a href="">
+                            <img src="img/Rectangle2.png" class="" alt="Rectangle2">
+                            <img src="img/SlideTwo.png" class="Carousel__Item__Bike" alt="SlideTwo">
+                        </a>
                     </div>
                     <div class="carousel-item " data-bs-interval="2000">
-                        <img src="img/Rectangle3.png" class="" alt="...">
-                        <img src="img/SlideOne.png" class="rover" alt="...">
+                        <a href="#">
+                            <img src="img/Rectangle3.png" class="" alt="Rectangle3">
+                            <img src="img/SlideOne.png" class="Carousel__Item__Bike" alt="SlideOne">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Rectangle4.png" class="" alt="...">
-                        <img src="img/SlideThree.png" class="rover" alt="...">
+                        <a href="">
+                            <img src="img/Rectangle4.png" class="" alt="Rectangle4">
+                            <img src="img/SlideThree.png" class="Carousel__Item__Bike" alt="SlideThree">
+                        </a>
                     </div>
                 </div>
-                <div class="click__next__back">
-                <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                    <span class="visually-hidden ">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                    <span class="visually-hidden ">Следующий</span>
-                </button>
+                <div class="Click__Next__Back">
+                    <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden ">Попередній</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden ">Наступний</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -90,18 +98,37 @@
 
     <section>
         <div class="Text__Info">
-            <p class="Text__info__p">
-                <span>Глек</span> пальона інфа аааааааааааааааааааааааааааааааааааааааааааааааааааа<br>
-                ffffffffffffffffffffffffffffffffffffffffffffffffff<br><br>
-                Якась пальона інфа аааааааааааааааааааааааааааааааааааааааааааааааааааа<br>
-                ffffffffffffffffffffffffffffffffffffffffffffffffff
+            <p class="Text__info__P">
+                <span>Lorem</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquid
+                aspernatur consectetur, consequatur, culpa eius, incidunt ipsam natus quam quasi quo sint voluptatem.
+                Earum! <br>
+                <span>Lorem</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laudantium
+                mollitia natus
+                perspiciatis quae recusandae reiciendis. Ab commodi consectetur cumque excepturi explicabo modi nihil,
+                non obcaecati officiis quae quia vero?
             </p>
+
         </div>
     </section>
 
+    <footer>
+
+    </footer>
+
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+
+<script src="bootstrap-5.0.1/js/bootstrap.bundle.js"></script> <!--Підключення локально-->
+
+<!--
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+-->
+
 </body>
 </html>
