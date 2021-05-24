@@ -22,12 +22,12 @@ Home
     color: cyan;
 }
 
-h1 {
+/*h1 {
     position: absolute;
     top: 610px;
     left: 71px;
     color: crimson;
-}
+}*/
 
 .button {
     position: absolute;
@@ -167,4 +167,9 @@ span {
 
 .slick-next {
     right: -46px;
+}
+
+.Bg__Photo__Categories{
+    background: url("../img/Categories__Bike.png") ;
+    height: 1029px;
 }
