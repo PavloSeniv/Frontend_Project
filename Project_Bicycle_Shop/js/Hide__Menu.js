@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function (event) {
             var screenWidth = window.innerWidth;
             if (screenWidth < 768) {
-               // document.getElementById("navbarToggler").classList.remove("show"); // Грубий варіант згортання меню
+                // document.getElementById("navbarToggler").classList.remove("show"); // Грубий варіант згортання меню
                 let tempCollapse = new bootstrap.Collapse(document.getElementById("navbarToggler"), {toggle: true});
             }
         });
