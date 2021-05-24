@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img class="img-fluid header__logo" src="images/Logo__Bike.png" alt="">
+                <a class="navbar-brand" href="#">СтритСракер</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="product">
+        <div class="product__inner">
+
+            <div class="product__content">
+                <div class="backgroundForSlider">
+                    <div class="photo__slider">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                        <img class="slider__image img-fluid" src="images/bike_for_slider.png" alt="">
+                    </div>   
+                </div>
+
+                <div class="product__about">
+                    <h1 class="product__about-title title">STREETSTER
+                        NATHAN</h1>
+                    <div class="product__about-price price">12000 ₴</div>
+                    <div class="product__about-color">
+                        Цвет: 
+                        <span>черный</span> 
+                        <a href="#" class="color__link">
+                            <img src="images/color-black-elips.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product__about-frame">
+                        Рама: 
+                        <span>54” (Рост 175-185 см)</span>
+                        <a href="#" class="color__link-rectangle">
+                            <img src="images/color-black-rectangle.png" alt="">
+                            <p>54”</p>
+                        </a>
+                    </div>
+                    <div class="product__about-total">
+                        <p>Итого:</p>
+                        <span class="price">12000 ₴ </span></div>
+                    <button class="product__about-order btn" data-modal="#modal__order">Заказать</button>
+                </div>
+            </div> <!-- product__content -->
+
+            <div class="product__desc">
+                <div class="product__desc-title title">Описание</div>
+                <div class="product__desc-text text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="anotherModel">
+        <div class="anotherModel__container">
+            <h1 class="anotherModel__title title">
+                Другие модели Road Series
+            </h1>
+            <div class="anotherModel__items row">
+
+                
+                <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                    <img class="anotherModel__item-img" src="images/bike-1.png" alt="">
+                        <div class="anotherModel__item-content">
+                            <h3 class="anotherModel__item-title title">
+                                NATHAN
+                                <a href="#" class="anotherModel__color">
+                                    <img src="images/color-black-elips.png" alt="">
+                                </a>
+                            </h3>
+                            <div class="anotherModel__item-price price">
+                                12000 ₴
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                    <img class="anotherModel__item-img" src="images/bike-2.png" alt="">
+                        <div class="anotherModel__item-content">
+                            <h3 class="anotherModel__item-title title">
+                                BAKERSTREET
+                                <a href="#" class="anotherModel__color color__blue">
+                                    <img src="images/color-blue-elips.png" alt="">
+                                </a>
+                            </h3>
+                            <div class="anotherModel__item-price price">
+                                12000 ₴
+                            </div>
+                    </div>
+                </div>
+
+                <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                    <img class="anotherModel__item-img" src="images/bike-3.png" alt="">
+                        <div class="anotherModel__item-content">
+                            <h3 class="anotherModel__item-title title">
+                                BROADWAY
+                                <a href="#" class="anotherModel__color">
+                                    <img src="images/color-yellow-elips.png" alt="">
+                                </a>
+                            </h3>
+                            <div class="anotherModel__item-price price">
+                                12000 ₴
+                            </div>
+                    </div>
+                </div>
+
+            </div> <!-- anotherMode__items -->
+        </div> <!-- anotherModel__container -->
+    </section>
+
+    <section class="modal" id="modal__order">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="close">
+            </button>
+
+            <h1 class="modal__title">
+                Оформлення заказу
+            </h1>
+            <div class="modal__order">
+
+                <div class="modal__order-content">
+
+                    <h2 class="modal__order-subtitle">Інформація про товар</h2>
+                    <img src="images/bike-1.png" alt="bike" class="modal__content-img">
+                    <div class="modal__content-text">Доставка: безкоштовно</div>
+                    <div class="modal__content-price"><span>Всього:</span> 12000 ₴</div>
+                    <div class="modal__content-button btn">Оформити заказ</div>
+
+                </div>
+                <div class="modal__order-form">
+
+                    <h2 class="modal__order-subtitle">Контактна інформація</h2>
+                    <form action="/" method="post" class="order__form">
+                        <div class="form__group">
+                            <label class="form__label" for="input-nameFirst">Імя</label>
+                            <input class="form__input" id="input-nameFirst" name="input-nameFirst" type="text" placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-nameLast">Фамілія</label>
+                            <input class="form__input" id="input-nameLast" name="input-nameLast" type="text" placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-telephone">Номер телефону</label>
+                            <input class="form__input" id="input-telephone" name="input-telephone" type="telephone" placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">E-mail</label>
+                            <input class="form__input" id="input-email" name="input-email" type="email" placeholder="">
+                        </div>
+                    </form>
+
+                    <h2 class="modal__order-subtitle">Оплата і доставка</h2>
+                    <form action="/" method="post" class="order__form">
+                        <div class="form__group">
+                            <label class="form__label" for="input-payment">Спосіб оплати</label>
+                            <select class="form__select" name="payment" id="input-payment">
+                                <option value=""></option>
+                                <option value="Готівка">Готівка</option>
+                                <option value="">Карта</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-obtaining">Спосіб отримання</label>
+                            <select class="form__select" name="payment" id="input-obtaining">
+                                <option value=""></option>
+                                <option value="">Кур'єр</option>
+                                <option value="">Самовивіз</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-city">Місто</label>
+                            <input class="form__input" id="input-city" name="input-city" type="text" placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-addres">Адреса</label>
+                            <input class="form__input" id="input-addres" name="input-adress" type="text" placeholder="">
+                        </div>
+                    </form>
+
+                </div> <!-- modal__order-form -->
+            </div> <!-- modal__order -->
+
+        </div> <!-- modal__dialog -->
+    </section>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
