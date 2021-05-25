@@ -18,31 +18,6 @@ M.Dybrovskyi
     color: white;
 }
 
-/* News */
-.news {
-    margin-bottom: 10px;
-}
-
-.news__slider {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1098px;
-    margin: 0 auto;
-    color: #000000;
-}
-
-.news__item {
-    max-width: 338px;
-}
-
-.news__item + .news__item {
-    margin-left: 45px;
-}
-
-.news__item:focus {
-    outline: 0;
-}
-
 /* Oleksiy root */
 :root {
     --color-primary: #000000;
