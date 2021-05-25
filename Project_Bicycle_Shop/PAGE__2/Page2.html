@@ -8,44 +8,123 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../bootstrap-5.0.1/css/bootstrap.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid p-0"></div>
-<header>
-    <div class="row Bg__Photo__Categories">
+<div class="container-fluid p-0">
 
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <img class="img-fluid" src="../img/bike_for_slider.png" alt="">
+    <header>
+        <div class="container-fluid p-0">
+            <div>
+                <img class="img-fluid" src="../img/Categories__Bike.png" alt="Categories__Bike">
 
+                <nav class="navbar fixed-top navbar-expand-xl navbar-light p-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid" src="../img/Logo__Bike.png" alt="">
+                            streetster</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><b>MOUNTAIN SERIES</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><b>STREET SERIES</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"> <b>MOUNTAIN SERIES</b></a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="text" placeholder="Введіть ваше ім'я"
+                                       aria-label="text">
+                                <button class="btn btn-outline-success" type="submit">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="row ">
+                    <div class="col-lg-6 col-md-12 col-sm-12 card-img-overlay">
+                        <div class="p-5 mb-4  rounded-3">
+                            <div class="container-fluid py-5">
+                                <h1 class="display-5 fw-bold text-white">OFFROAD SERIES</h1>
+                                <p class="col-md-8 fs-4 text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
+                                    consectetur
+                                    deleniti nam neque quasi quia.
+                                </p>
+                                <p class="col-md-8 fs-4 text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in ipsam iusto
+                                    nulla,
+                                    quibusdam repudiandae?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="p-5 mb-4  rounded-3">
-                <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
-                        one
-                        in
-                        previous versions of Bootstrap. Check out the examples below for how you can remix and restyle
-                        it to
-                        your
-                        liking.</p>
-                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+    </header>
+
+    <section>
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+
+                        <div class="col-md-3 Bg_Card_Info">
+                            <div class="card-body">
+                                <h2 class="card-title"><b>STREETSTER <br>
+                                    NATHAN</b></h2>
+                                <h4 class="card-title"><b>12000 ₴</b></h4>
+                                <p class="card-text mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                                    assumenda beatae consequuntur cupiditate dicta facere libero officia rerum ullam
+                                    voluptatibus.
+                                </p>
+                                <p class="card-text mt-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                                    dolores doloribus ea earum eum exercitationem id ipsam, sunt vitae voluptas?
+                                </p>
+                                <h6 class="mt-5"><b>Доступно в кольорах:</b></h6>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="radioNoLabel"
+                                           id="radioNoLabel1"
+                                           value="" aria-label="...">
+                                </div>
+
+                                <a href="#" class="Button_Info Button_Color mt-5"
+                                   aria-current="page"><b>Докладніше</b></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="">
+                                <img class="img-fluid" src="../img/bike_for_slider.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
-</header>
+    </section>
 
-<section>
+    <footer>
 
-</section>
+    </footer>
 
-<footer>
-
-</footer>
-
+</div>
 
 </body>
 </html>

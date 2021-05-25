@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PAGE__2/Page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/PAGE__2/Page2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Categories__Bike.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Categories__Bike.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,13 +38,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\js" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\js\Page__3" />
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\style" />
     </key>
   </component>
@@ -58,7 +66,7 @@
       <workItem from="1621838322780" duration="197000" />
       <workItem from="1621884645242" duration="7668000" />
       <workItem from="1621921740200" duration="106000" />
-      <workItem from="1621927617867" duration="423000" />
+      <workItem from="1621927617867" duration="18505000" />
     </task>
     <servers />
   </component>
