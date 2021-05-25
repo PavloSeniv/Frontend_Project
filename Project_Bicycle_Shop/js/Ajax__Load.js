@@ -2,12 +2,12 @@
 
         var ns = {}; //new site
 
-        var homeHtml = "snippets/Main__Home.html"; //Посилання на сніпет
-        var allCategoriesUrl = "db/Catalog.json";
+        var homeHtml = "snippets/Page1.html"; //Посилання на сніпет
+        var allCategoriesUrl = "db/CatalogBike.json";
         var categoriesTitleHtml = "snippets/Category__Title.html";
         var categoryHtml = "snippets/Category__Item.html";
 
-        var catalogItemsUrl = "db/categories/";
+        var catalogItemsUrl = "db/categorieBike/";
         var catalogItemsTitleHtml = "snippets/Product__Title.html";
         var catalogItemHtml = "snippets/Product__Item.html";
 
@@ -38,7 +38,8 @@
 
             //On first load, show home view
             showLoading("#Main__Home");
-            $ajaxUtils.sendGetRequest(homeHtml, function (responseText) {
+            $ajaxUtils.sendGetRequest(homeHtml, 
+                function (responseText) {
                 document.querySelector("#Main__Home").innerHTML = responseText;
             }, false); //Інформація береться із сервера якщо false
 

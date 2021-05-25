@@ -4,8 +4,7 @@
     "short_name": "A",
     "photo_bg": "background_cat-A",
     "photo_bike": "bike_cat-A",
-    "name": "ROAD",
-    "series": "SERIES",
+    "name": "ROAD SERIES",
     "url": "db/CategoriesBike/Bike__1.json"
   },
   {
@@ -13,8 +12,7 @@
     "short_name": "B",
     "photo_bg": "background_cat-B",
     "photo_bike": "bike_cat-B",
-    "name": "OFFROAD",
-    "series": "SERIES",
+    "name": "OFFROAD SERIES",
     "url": "db/CategoriesBike/Bike__2.json"
   },
   {
@@ -22,8 +20,7 @@
     "short_name": "C",
     "photo_bg": "background_cat-C",
     "photo_bike": "bike_cat-C",
-    "name": "STREET",
-    "series": "SERIES",
+    "name": "STREET SERIES",
     "url": "db/CategoriesBike/Bike__3.json"
   },
   {
@@ -31,8 +28,7 @@
     "short_name": "D",
     "photo_bg": "background_cat-D",
     "photo_bike": "bike_cat-D",
-    "name": "CITY",
-    "series": "SERIES",
+    "name": "CITY SERIES",
     "url": "db/CategoriesBike/Bike__4.json"
   },
   {
@@ -40,8 +36,7 @@
     "short_name": "I",
     "photo_bg": "background_cat-I",
     "photo_bike": "bike_cat-I",
-    "name": "HOME",
-    "series": "SERIES",
+    "name": "HOME SERIES",
     "url": "db/CategoriesBike/Bike__3.json"
   }
 ]
