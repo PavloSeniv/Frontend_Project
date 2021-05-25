@@ -100,7 +100,7 @@ a {
     display: flex;
     list-style: none;
     justify-content: center;
-    margin-top: 174px;
+    margin-top: 95px;
 }
 .slick-dots button {
     background: #575757;
@@ -366,6 +366,8 @@ a {
     line-height: 31px;
     color: var(--color-primary);
     margin-bottom: 20px;
+    padding-right: 115px;
+    margin-top: 20px;
 }
 
 .modal__order {
@@ -404,11 +406,12 @@ a {
 .modal__content-button {
     padding: 10px 50px;
     margin-top: 20px;
-    margin-left: 28px;
+    width: 280px;
 }
 
 .modal__order-form {
     margin-right: 39px;
+    
 }
 
 .order__form {
