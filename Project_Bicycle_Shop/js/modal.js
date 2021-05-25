@@ -11,7 +11,7 @@ $(function() {
         $(modalId).addClass('show');
         $("body").addClass('no-scroll');
 
-        setTimeout(function() {
+        setTimeout(function () {
             $(modalId).find(".modal__dialog").css({
                 transform: "rotateX(0)"
             });
