@@ -3,24 +3,23 @@ Page__1 Main__Home
 M.Dybrovskyi
 ---------------------------------------------------------------------*/
 
-/*.div {
-    position: relative;
-}
+/*.div {*/
+/*    position: relative;*/
+/*}*/
 
-.p {
-    position: absolute;
-    left: 71px;
-    top: 575px;
-    color: cyan;
-}*/
+/*.p {*/
+/*    position: absolute;*/
+/*    left: 71px;*/
+/*    top: 575px;*/
+/*    color: cyan;*/
+/*}*/
 
-/*h1 {
-    position: absolute;
-    top: 610px;
-    left: 71px;
-    color: crimson;
-}*/
-
+/*h1 {*/
+/*    position: absolute;*/
+/*    top: 610px;*/
+/*    left: 71px;*/
+/*    color: crimson;*/
+/*}*/
 .button {
     position: absolute;
     left: 71px;
@@ -388,14 +387,14 @@ Media
 
 --------------------------------------------------------------------*/
 
-/*!*--------------------------------------------------------------------
+/*/*--------------------------------------------------------------------
 Page__3 Item__Product
 O.Kucher
----------------------------------------------------------------------*!
+---------------------------------------------------------------------*/
 
-!*---------------------------------------------
+/*---------------------------------------------
 HEAD
-----------------------------------------------*!
+----------------------------------------------*/
 
 .Bg__Photo__Categories {
     background: url("../img/Categories__Bike.png");
@@ -439,11 +438,9 @@ HEAD
     margin-right: 10px;
 }
 
-!*футер*!
+/*футер*/
 .footer-bottom {
     background: #000;
-    padding-bottom: 1.5rem;
-    padding: 50px 0;
 }
 
 .subscribe-butn {
@@ -458,7 +455,6 @@ HEAD
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
     transition: 0.5s all;
     cursor: pointer;
 }
@@ -473,25 +469,19 @@ HEAD
     display: inline-block;
     font-size: 14px;
     color: #fff;
-    padding: .6em 0em;
+    padding: .6em ;
     outline: none;
     border: none;
-    !* border-bottom: 2px solid #28a745; *!
-    border-radius: 0px;
-    outline: none;
+    border-bottom: 2px solid #28a745;
+    border-radius: 0;
     background: transparent;
-    border: none;
     border-bottom: 1px solid #fff;
 }
 
-!*--//Newsletter--*!
-.footer-w3layouts-head {
-    margin-bottom: 3rem;
-}
+/*Newsletter*/
 
-.footer-w3layouts-head h2 a {
-    font-size: 29px;
-    font-weight: 400;
+
+.footer-w3layouts-head p {
     color: #fff;
 }
 
@@ -513,7 +503,7 @@ a.move-top span {
 
 .single-title.text-left h4, .text-w3layouts-grids h4 {
     font-size: 17px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 600;
     color: #ff0779;
 }
@@ -523,11 +513,6 @@ a.move-top span {
     font-weight: 600;
     color: #676464;
     line-height: 36px;
-}
-
-.bottem-*/
-wthree-footer {
-    padding: 50px 0;
 }
 
 .address-grids-by p a:hover, .subscribe-butn:hover, .blog-buttn a:hover, .sent-butnn:hover, .hair-list li a:hover {
@@ -550,7 +535,7 @@ wthree-footer {
 }
 
 .bottem-wthree-footer {
-    background: #525252;
+    background: #000;
 }
 
 /*--footer--*/
@@ -561,10 +546,6 @@ wthree-footer {
 .footer-below-grids h4 {
     color: #fff;
     font-size: 22px;
-}
-
-.mtop {
-    margin-top: 3rem;
 }
 
 :root {
@@ -1226,8 +1207,4 @@ a {
     .modal__order-form {
         margin-left: 370px;
     }
-}
-
-.Down__Scroll_Navbar {
-    background-color: black;
 }
