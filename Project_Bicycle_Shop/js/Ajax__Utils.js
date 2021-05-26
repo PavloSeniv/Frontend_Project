@@ -27,10 +27,10 @@
     //function if response is ready
     //and not an error
     function handleResponse(request, responseHandler, isJsonResponse) {
-        if ((request.readyState == 4) && (request.status == 200)) {
+        if ((request.readyState === 4) && (request.status === 200)) {
 
             //Default to isJsonResponse = true
-            if (isJsonResponse == undefined) {
+            if (isJsonResponse === undefined) {
                 isJsonResponse = true;
             }
 
