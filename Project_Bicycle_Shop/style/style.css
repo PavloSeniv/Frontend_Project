@@ -164,8 +164,6 @@ M.Dybrovskyi
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-<<<<<<< HEAD
-=======
 .header__input {
     width: 250px;
     height: 30px;
@@ -182,7 +180,7 @@ M.Dybrovskyi
     top: 35%;
     left: 50px;
 }
->>>>>>> 90be2d5c53de0664d774025ca2eb88ab3dd9ce0c
+
 /* End Header */
 
 /* Button and a */
@@ -233,8 +231,6 @@ M.Dybrovskyi
     right: 250px;
 }
 
-<<<<<<< HEAD
-=======
 .category__slider {
     margin-top: 80px;
     margin-bottom: -100px;
@@ -243,7 +239,7 @@ M.Dybrovskyi
 .slick-active {
     display: none;
 }
->>>>>>> 90be2d5c53de0664d774025ca2eb88ab3dd9ce0c
+
 /* End Slider Category */
 
 /* Text info */
@@ -1021,6 +1017,7 @@ a.move-top span {
         margin-top: 20px; */
         display: none;
     }
+
     .header__btn {
         /* width: 250px; */
         display: none;
