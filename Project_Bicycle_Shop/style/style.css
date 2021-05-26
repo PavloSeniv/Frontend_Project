@@ -279,6 +279,7 @@ M.Dybrovskyi
 .news__slider {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1098px;
     margin: 0 auto;
     color: #000000;
@@ -406,10 +407,9 @@ M.Dybrovskyi
 /* End Product Item */
 
 /* category__slider */
-.category__slider {
-    padding: 50px 50px 0;
-    width: 650px;
-    margin: 0 auto;
+.category__slider-img {
+    width: 100%;
+    margin: 100px;
 }
 
 /* End category__slider */
@@ -1046,6 +1046,10 @@ a.move-top span {
     .form__input,
     .form__select {
         width: 290px;
+    }
+
+    .category__slider-img {
+        display: none;
     }
 }
 

@@ -1,42 +1,23 @@
 [
   {
-    "id": 1,
-    "short_name": "A",
-    "photo_bg": "background_cat-A",
-    "photo_bike": "bike_cat-A",
-    "name": "ROAD SERIES",
-    "url": "db/CategoriesBike/Road_Series.json"
-  },
-  {
-    "id": 2,
-    "short_name": "B",
-    "photo_bg": "background_cat-B",
-    "photo_bike": "bike_cat-B",
-    "name": "OFFROAD SERIES",
-    "url": "db/CategoriesBike/Offroad_Series.json"
-  },
-  {
-    "id": 3,
-    "short_name": "C",
-    "photo_bg": "background_cat-C",
-    "photo_bike": "bike_cat-C",
-    "name": "STREET SERIES",
-    "url": "db/CategoriesBike/Street_Series.json"
-  },
-  {
-    "id": 4,
-    "short_name": "D",
-    "photo_bg": "background_cat-D",
-    "photo_bike": "bike_cat-D",
-    "name": "CITY SERIES",
-    "url": "db/CategoriesBike/City_Series.json"
-  },
-  {
-    "id": 5,
-    "short_name": "I",
-    "photo_bg": "background_cat-I",
-    "photo_bike": "bike_cat-I",
-    "name": "HOME SERIES",
-    "url": "db/CategoriesBike/Home_Series.json"
-  }
+    "id": 11,
+    "short_name": "B-1",
+    "name": "STREETSTER NATHAN",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": 12000
+},
+{
+    "id": 12,
+    "short_name": "B-2",
+    "name": "STREETSTER BAKERSTREET",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "price": 12000
+},
+{
+  "id": 13,
+  "short_name": "B-3",
+  "name": "STREETSTER BROADWAY",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+  "price": 12000
+}
 ]
