@@ -78,6 +78,7 @@ M.Dybrovskyi
 .navbar-light .navbar-brand {
     color: rgba(255, 255, 255, 0.9);
     position: relative;
+    margin-right: 110px;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -96,7 +97,6 @@ M.Dybrovskyi
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
     color: rgba(255, 0, 0, 0.9);
-    margin-left: 90px;
 }
 
 
@@ -225,6 +225,15 @@ M.Dybrovskyi
     position: absolute;
     top: 75px;
     right: 250px;
+}
+
+.category__slider {
+    margin-top: 80px;
+    margin-bottom: -100px;
+}
+
+.slick-active {
+    display: none;
 }
 /* End Slider Category */
 
