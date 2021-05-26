@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bike.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/bike.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/Page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/CategoriesBike/City_Series.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/CategoriesBike/City_Series.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/CategoriesBike/Home_Series.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/CategoriesBike/Home_Series.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Ajax__Load.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Ajax__Load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/Page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +72,7 @@
       <workItem from="1621927617867" duration="21150000" />
       <workItem from="1621952650275" duration="11319000" />
       <workItem from="1621972886344" duration="788000" />
-      <workItem from="1622012530676" duration="4757000" />
+      <workItem from="1622012530676" duration="10314000" />
     </task>
     <servers />
   </component>

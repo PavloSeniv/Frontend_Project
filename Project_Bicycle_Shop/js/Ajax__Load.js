@@ -7,9 +7,13 @@
         var categoriesTitleHtml = "snippets/Category__Title.html";
         var categoryHtml = "snippets/Page2.html";
 
-        // var catalogItemsUrl = "db/categoriesBike/";
-        // var catalogItemsTitleHtml = "snippets/Product__Title.html";
-        // var catalogItemHtml = "snippets/Page3.html";
+<<<<<<< HEAD
+        var catalogItemsUrl = "db/CategoriesBike/";
+=======
+        var catalogItemsUrl = "db/categoriesBike/";
+>>>>>>> 01030a895506e769799f70ffb63285c81c0845d3
+        var catalogItemsTitleHtml = "snippets/Product__Title.html";
+        var catalogItemHtml = "snippets/Page3.html";
 
         // Convenience function for inserting innerHTML fot 'select'
         var insertHtml = function (selector, html) {
@@ -58,7 +62,8 @@
             $ajaxUtils.sendGetRequest(homeHtml, function (responseText) {
 
                 //Switch CSS class active to menu button
-                // switchHomeToActive();
+                switchHomeToActive0();
+
 
                 document.querySelector("#Main__Home").innerHTML = responseText;
             }, false); //Інформація береться із сервера якщо false
@@ -73,7 +78,7 @@
                 $ajaxUtils.sendGetRequest(categoryHtml, function (categoryHTML) {
 
                     //Switch CSS class active to menu button
-                    // switchCatalogToActive();
+                    switchHomeToActive0();
 
                     var categoriesViewHtml = buildCategoriesViewHtml(categories, categoriesTitleHtml, categoryHTML);
                     insertHtml("#Main__Home", categoriesViewHtml); // Буде вставлено сніпет категорій замість головної сторінки
@@ -109,136 +114,125 @@
 
         // Load the catalog items view
         // 'categoryShort' is a short_name for a category
-        // ns.loadCatalogItems = function (categoryShort) {
-        //     showLoading("#Main__Home");
-        //     $ajaxUtils.sendGetRequest(catalogItemsUrl + categoryShort + ".json", buildAndShowCatalogItemsHTML);
-        // };
+        ns.loadCatalogItems = function (categoryShort) {
+            showLoading("#Main__Home");
+            $ajaxUtils.sendGetRequest(catalogItemsUrl + "City_Series" + ".json", buildAndShowCatalogItemsHTML);
+        };
 
-        // // Builds HTML for the single category page based on the data
-        // // from the server
-        // function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
-        //     // Load title snippet of catalog items page
-        //     $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
-        //         // Retrieve simple catalog item snippet
-        //         $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
+        // Builds HTML for the single category page based on the data
+        // from the server
+        function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
+            // Load title snippet of catalog items page
+            $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
+                //         // Retrieve simple catalog item snippet
+                $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
 
-        //             //Switch CSS class active to menu button
-        //             switchCatalogToActive();
+                    //Switch CSS class active to menu button
+                    switchCatalogToActive0();
 
-        //             var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
-        //             insertHtml("#Main__Home", catalogItemsViewHtml);
-        //         }, false);
-        //     }, false);
-        // }
+                    var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
+                    insertHtml("#Main__Home", catalogItemsViewHtml);
+                }, false);
+            }, false);
+        }
 
-        // // Using category and catalog items data and snippets html
-        // // build catalog items view HTML to be inserted into page
-        // function buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
+        // Using category and catalog items data and snippets html
+        // build catalog items view HTML to be inserted into page
+        function buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
 
-        //     catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.category.name);
+            catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.category.name);
 
-        //     catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.category.special_instructions);
+            catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.category.special_instructions);
 
-        //     var finalHtml = catalogItemsTitleHtml;
+            var finalHtml = catalogItemsTitleHtml;
 
-        //     // finalHtml += "<div class='container p-0'>"; //Додаємо контейнер до сторінки
-        //     // finalHtml += "<section class='row'>";
+            finalHtml += "<div class='container p-0'>"; //Додаємо контейнер до сторінки
+            finalHtml += "<section class='row'>";
 
-        //     // Loop over catalog items
-        //     var catalogItems = categoryCatalogItems.catalog_items;
-        //     // var catShort_name = categoryCatalogItems.category.short_name;
-        //     for (var i = 0; i < catalogItems.length; i++) {
-        //         //Insert catalog item values
-        //         var html = categoryHtml;
-        //         var name = "" + categories[i].name;
-        //         var description = categories[i].description;
-        //         var price = categories[i].price;
-        //         html = insertProperty(html, "name", name);
-        //         html = insertProperty(html, "description", description);
-        //         html = insertProperty(html, "price", price);
-        //         finalHTML += html;
+            // Loop over catalog items
+            var catalogItems = categoryCatalogItems.catalog_items;
+            // var catShort_name = categoryCatalogItems.category.short_name;
+            for (var i = 0; i < catalogItems.length; i++) {
+                //Insert catalog item values
+                var html = categoryHtml;
+                var name = "" + categories[i].name;
+                var description = categories[i].description;
+                var price = categories[i].price;
+                html = insertProperty(html, "name", name);
+                html = insertProperty(html, "description", description);
+                html = insertProperty(html, "price", price);
+                finalHtml += html;
 
-        //         // html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
+                // html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
 
-        //         // html = insertItemAmount(html, "amount_retail", catalogItems[i].amount_retail);
+                // html = insertItemAmount(html, "amount_retail", catalogItems[i].amount_retail);
 
-        //         // html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
+                // html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
 
-        //         // html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
+                // html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
 
-        //         // html = insertProperty(html, "name", catalogItems[i].name);
+                // html = insertProperty(html, "name", catalogItems[i].name);
 
-        //         // html = insertProperty(html, "description", catalogItems[i].description);
+                // html = insertProperty(html, "description", catalogItems[i].description);
 
-        //         finalHtml += html;
-        //     }
+                finalHtml += html;
+            }
 
-        //     // finalHtml += "</section>";
-        //     // finalHtml += "</div>";
-        //     return finalHtml;
-        // }
+            finalHtml += "</section>";
+            finalHtml += "</div>";
+            return finalHtml;
+        }
 
-        // // Appends price with '$' if price exists
-        // function insertItemPrice(html, pricePropName, priceValue) {
-        //     // If not specified, replace with empty string
-        //     if (!priceValue) {
-        //         return insertProperty(html, pricePropName, "");
-        //     }
-        //     priceValue = "$" + priceValue.toFixed(2);
-        //     html = insertProperty(html, pricePropName, priceValue);
-        //     return html;
-        // }
+        // Appends price with '$' if price exists
+        function insertItemPrice(html, pricePropName, priceValue) {
+            // If not specified, replace with empty string
+            if (!priceValue) {
+                return insertProperty(html, pricePropName, "");
+            }
+            priceValue = "$" + priceValue.toFixed(2);
+            html = insertProperty(html, pricePropName, priceValue);
+            return html;
+        }
 
-        // // Appends portion name in parens if it exists
-        // function insertItemAmount(html, amountPropName, amountValue) {
-        //     // If not specified, replace original string
-        //     if (!amountValue) {
-        //         return insertProperty(html, amountPropName, "");
-        //     }
-        //     amountValue = "(" + amountValue + ")";
-        //     html = insertProperty(html, amountPropName, amountValue);
-        //     return html;
-        // }
+        // Appends portion name in parens if it exists
+        function insertItemAmount(html, amountPropName, amountValue) {
+            // If not specified, replace original string
+            if (!amountValue) {
+                return insertProperty(html, amountPropName, "");
+            }
+            amountValue = "(" + amountValue + ")";
+            html = insertProperty(html, amountPropName, amountValue);
+            return html;
+        }
 
-        // var switchCatalogToActive = function () {
-        //     // Remove 'active' from home button
-        //     var classes = document.querySelector("#Nav__LinkHome").className;
-        //     classes = classes.replace(new RegExp("active", "g"), "");
-        //     document.querySelector("#Nav__LinkHome").className = classes;
+        var switchCatalogToActive0 = function () {
+            // Remove 'active' from home button
+            var classes = document.querySelector("#nav-link-home").className;
+            classes = classes.replace(new RegExp("active", "g"), "");
+            document.querySelector("#nav-link-home").className = classes;
 
-        //     // Add 'active' to menu button if not already there
-        //     classes = document.querySelector("#Nav__LinkCategory").className;
-        //     if (classes.indexOf("active") === -1) {
-        //         classes += " active";
-        //         document.querySelector("#Nav__LinkCategory").className = classes;
-        //     }
-        // };
+            // Add 'active' to menu button if not already there
+            classes = document.querySelector("#nav-link-category1").className;
+            if (classes.indexOf("active") === -1) {
+                classes += " active";
+                document.querySelector("#nav-link-category1").className = classes;
+            }
+        };
 
-        // var switchHomeToActive = function () {
-        //     // Remove 'active' from catalog button
-        //     var classes = document.querySelector("#Nav__LinkCategory").className;
-        //     classes = classes.replace(new RegExp("active", "g"), "");
-        //     document.querySelector("#Nav__LinkCategory").className = classes;
 
-        //     // Add 'active' to menu button if not already there
-        //     classes = document.querySelector("#Nav__LinkHome").className;
-        //     if (classes.indexOf("active") === -1) {
-        //         classes += " active";
-        //         document.querySelector("#Nav__LinkHome").className = classes;
-        //     }
-        // };
+        var switchHomeToActive0 = function () {
+            // Remove 'active' from catalog button
+            var classes = document.querySelector("#nav-link-category1").className;
+            classes = classes.replace(new RegExp("active", "g"), "");
+            document.querySelector("#nav-link-category1").className = classes;
 
-        //Завантаження випадкової категорії з товарами
-        // ns.loadSpecials = function (categoryShort) {
-        //     showLoading("#Main__Home");
-        //     /*
-        //     var categoriesJSON = ["A", "B", "C", "D", "E", "F"];
-        //                 var randCategory = Math.floor(Math.random() * categoriesJSON.length);
-        //                 // Повертається число тобто 0,1,2...5
-        //     */
-        //     var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
-        //     $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
-        // };
+            // Add 'active' to menu button if not already there
+            classes = document.querySelector("#nav-link-home").className;
+            if (classes.indexOf("active") === -1) {
+                classes += " active";
+                document.querySelector("#nav-link-home").className = classes;
+            }
+        };
         global.$ns = ns;
 
     }

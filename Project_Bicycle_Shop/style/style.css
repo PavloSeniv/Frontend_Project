@@ -182,6 +182,11 @@ M.Dybrovskyi
     left: 50px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> de94568f13740251d315bb9849ef3ffb635301f6
 .header__text {
     color: white;
 }
@@ -202,6 +207,10 @@ M.Dybrovskyi
     line-height: 60px;
     white-space: nowrap;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 01030a895506e769799f70ffb63285c81c0845d3
+>>>>>>> de94568f13740251d315bb9849ef3ffb635301f6
 /* End Header */
 
 /* Button and a */
@@ -1056,6 +1065,10 @@ a.move-top span {
         margin-top: 20px; */
         display: none;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> de94568f13740251d315bb9849ef3ffb635301f6
     .header__btn {
         /* width: 250px; */
         display: none;
@@ -1289,7 +1302,11 @@ a.move-top span {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 370) {
+=======
+@media (max-width: 370px) {
+>>>>>>> de94568f13740251d315bb9849ef3ffb635301f6
     .header__text {
         display: none;
     }

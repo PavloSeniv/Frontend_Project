@@ -3,21 +3,21 @@
       {
           "id": 11,
           "short_name": "I-1",
-          "name": "STREETSTER NATHAN",
+          "name": "STREETSTER_NATHAN",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           "price": 12000
       },
       {
           "id": 12,
           "short_name": "I-2",
-          "name": "STREETSTER BAKERSTREET",
+          "name": "STREETSTER_BAKERSTREET",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           "price": 12000
       },
       {
         "id": 13,
         "short_name": "I-3",
-        "name": "STREETSTER BROADWAY",
+        "name": "STREETSTER_BROADWAY",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         "price": 12000
     }
