@@ -200,33 +200,33 @@
         //     return html;
         // }
 
-        // var switchCatalogToActive = function () {
-        //     // Remove 'active' from home button
-        //     var classes = document.querySelector("#Nav__LinkHome").className;
-        //     classes = classes.replace(new RegExp("active", "g"), "");
-        //     document.querySelector("#Nav__LinkHome").className = classes;
-
-        //     // Add 'active' to menu button if not already there
-        //     classes = document.querySelector("#Nav__LinkCategory").className;
-        //     if (classes.indexOf("active") === -1) {
-        //         classes += " active";
-        //         document.querySelector("#Nav__LinkCategory").className = classes;
-        //     }
-        // };
-
-        var switchHomeToActive = function () {
-            // Remove 'active' from catalog button
-            var classes = document.querySelector("#nav-link-category").className;
+        var switchCatalogToActive = function () {
+            // Remove 'active' from home button
+            var classes = document.querySelector("#nav-link-category1").className;
             classes = classes.replace(new RegExp("active", "g"), "");
-            document.querySelector("#nav-link-category").className = classes;
+            document.querySelector("#nav-link-category1").className = classes;
 
-            // Add 'active' to menu button if not already there
-            classes = document.querySelector("#nav-link-home").className;
+            //     // Add 'active' to menu button if not already there
+            classes = document.querySelector("#nav-link-category2").className;
             if (classes.indexOf("active") === -1) {
                 classes += " active";
-                document.querySelector("#nav-link-home").className = classes;
+                document.querySelector("#nav-link-category2").className = classes;
             }
         };
+
+    /*    var switchHomeToActive = function () {
+            // Remove 'active' from catalog button
+            var classes = document.querySelector("#nav-link-category2").className;
+            classes = classes.replace(new RegExp("active", "g"), "");
+            document.querySelector("#nav-link-category2").className = classes;
+
+            // Add 'active' to menu button if not already there
+            classes = document.querySelector("#nav-link-category1").className;
+            if (classes.indexOf("active") === -1) {
+                classes += " active";
+                document.querySelector("#nav-link-category1").className = classes;
+            }
+        };*/
 
         //Завантаження випадкової категорії з товарами
         // ns.loadSpecials = function (categoryShort) {
