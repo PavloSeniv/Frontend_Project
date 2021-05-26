@@ -2,7 +2,7 @@
 
         var ns = {}; //new site
 
-        var homeHtml = "snippets/Page3.html"; //Посилання на сніпет
+        var homeHtml = "snippets/Page1.html"; //Посилання на сніпет
         var allCategoriesUrl = "db/CatalogBike.json";
         var categoriesTitleHtml = "snippets/Category__Title.html";
         var categoryHtml = "snippets/Category__Item.html";
