@@ -22,40 +22,49 @@
 
     <header>
         <div class="container-fluid p-0">
-            <div>
-                <img class="img-fluid" src="img/bike.png" alt="Categories__Bike">
+            <nav class="navbar fixed-top navbar-expand-xl navbar-light p-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" id="nav-link-home">
+                        <img class="img-fluid" src="img/Logo__Bike.png" alt="">
+                        <span class="navbar-brand-text">Streetster</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-link-category1" aria-current="page" href="#"
+                                   onclick="$ns.loadCatalogCategories();"><b>CITY SERIES</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-link-category2" aria-current="page" href="#"
+                                   onclick="$ns.loadCatalogCategories();"><b>HOME SERIES</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-link-category3" aria-current="page" href="#"
+                                   onclick="$ns.loadCatalogCategories();"> <b>OFFROAD SERIES</b></a>
+                            </li>
 
-                <nav class="navbar fixed-top navbar-expand-xl navbar-light p-4">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html" id="nav-link-home" onclick="$ns.loadHome();">
-                            <img class="img-fluid" src="img/Logo__Bike.png" alt="">
-                            <span class="navbar-brand-text">Streetster</span></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarToggler" aria-controls="navbarToggler"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarToggler">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>MOUNTAIN SERIES</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>STREET SERIES</b></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"> <b>MOUNTAIN SERIES</b></a>
-                                </li>
-                            </ul>
-                            <div>
-                                <input class="header__input" type="text" id="get_num" name="get_num" value="" placeholder="Ваше ім'я"/>
-                              </div>
-                              <div id="add" class="btn header__btn">Нажміть</div>
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-link-category4" aria-current="page" href="#"
+                                   onclick="$ns.loadCatalogCategories();"> <b>ROAD SERIES</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-link-category5" aria-current="page" href="#"
+                                   onclick="$ns.loadCatalogCategories();"> <b>STREET SERIES</b></a>
+                            </li>
+                        </ul>
+                        <div>
+                            <input class="header__input" type="text" id="get_num" name="get_num" value=""
+                                   placeholder="Ваше ім'я"/>
                         </div>
+                        <div id="add" class="btn header__btn">Нажміть</div>
                     </div>
-                </nav>
-
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
 
