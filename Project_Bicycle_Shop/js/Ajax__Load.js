@@ -58,7 +58,7 @@
             $ajaxUtils.sendGetRequest(homeHtml, function (responseText) {
 
                 //Switch CSS class active to menu button
-                // switchHomeToActive();
+                switchHomeToActive();
 
                 document.querySelector("#Main__Home").innerHTML = responseText;
             }, false); //Інформація береться із сервера якщо false
@@ -214,19 +214,19 @@
         //     }
         // };
 
-        // var switchHomeToActive = function () {
-        //     // Remove 'active' from catalog button
-        //     var classes = document.querySelector("#Nav__LinkCategory").className;
-        //     classes = classes.replace(new RegExp("active", "g"), "");
-        //     document.querySelector("#Nav__LinkCategory").className = classes;
+        var switchHomeToActive = function () {
+            // Remove 'active' from catalog button
+            var classes = document.querySelector("#nav-link-category").className;
+            classes = classes.replace(new RegExp("active", "g"), "");
+            document.querySelector("#nav-link-category").className = classes;
 
-        //     // Add 'active' to menu button if not already there
-        //     classes = document.querySelector("#Nav__LinkHome").className;
-        //     if (classes.indexOf("active") === -1) {
-        //         classes += " active";
-        //         document.querySelector("#Nav__LinkHome").className = classes;
-        //     }
-        // };
+            // Add 'active' to menu button if not already there
+            classes = document.querySelector("#nav-link-home").className;
+            if (classes.indexOf("active") === -1) {
+                classes += " active";
+                document.querySelector("#nav-link-home").className = classes;
+            }
+        };
 
         //Завантаження випадкової категорії з товарами
         // ns.loadSpecials = function (categoryShort) {
