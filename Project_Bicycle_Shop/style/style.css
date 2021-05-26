@@ -79,6 +79,8 @@ M.Dybrovskyi
 
 .navbar-light .navbar-brand {
     color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    margin-right: 110px;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -162,11 +164,30 @@ M.Dybrovskyi
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+<<<<<<< HEAD
+=======
+.header__input {
+    width: 250px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header__btn {
+    width: 150px;
+    padding: 3px;
+}
+
+.navbar-brand-text {
+    position: absolute;
+    top: 35%;
+    left: 50px;
+}
+>>>>>>> 90be2d5c53de0664d774025ca2eb88ab3dd9ce0c
 /* End Header */
 
 /* Button and a */
 .btn {
-    background-color: #F2F2F2;
+    background-color: #fff;
     border: 3px solid #000000;
 
     transition: all .2s linear;
@@ -212,6 +233,17 @@ M.Dybrovskyi
     right: 250px;
 }
 
+<<<<<<< HEAD
+=======
+.category__slider {
+    margin-top: 80px;
+    margin-bottom: -100px;
+}
+
+.slick-active {
+    display: none;
+}
+>>>>>>> 90be2d5c53de0664d774025ca2eb88ab3dd9ce0c
 /* End Slider Category */
 
 /* Text info */
@@ -331,6 +363,7 @@ M.Dybrovskyi
 
 .news__item-btn {
     padding: 10px 110px;
+    background-color: #f2f2f2;
     width: 338px;
     font-style: normal;
     font-weight: bold;
@@ -362,8 +395,32 @@ M.Dybrovskyi
     border-radius: 0;
 }
 
+.card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--color-primary);
+}
+
+.card-price {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.card-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--color-primary);
+}
+
 .Bg_Card_Info {
     background-color: #F2F2F2;
+    width: 443px;
 }
 
 .card-body {
@@ -376,32 +433,13 @@ M.Dybrovskyi
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    background-color: transparent;
-    border: 3px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 18px;
-    border-radius: 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.Button_Color {
-    color: #000000;
-    border-color: #000000;
-}
-
-
-.Button_Color:hover {
-    color: #ffffff;
-    background-color: #000000;
-    border-color: #ff0000;
+    background-color: #f2f2f2;
 }
 
 .btn-check:focus + .Button_Color, .Button_Color:focus {
@@ -973,6 +1011,19 @@ a.move-top span {
 
     .modal__order-content {
         padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .header__input {
+        /* margin-right: 0;
+        margin-bottom: 10px;
+        margin-top: 20px; */
+        display: none;
+    }
+    .header__btn {
+        /* width: 250px; */
+        display: none;
     }
 }
 

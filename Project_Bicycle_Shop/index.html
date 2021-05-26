@@ -27,9 +27,9 @@
 
                 <nav class="navbar fixed-top navbar-expand-xl navbar-light p-4">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#" id="nav-link-home" onclick="$ns.loadHome();">
                             <img class="img-fluid" src="img/Logo__Bike.png" alt="">
-                            Streetster</a>
+                            <span class="navbar-brand-text">Streetster</span></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarToggler" aria-controls="navbarToggler"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -38,21 +38,19 @@
                         <div class="collapse navbar-collapse" id="navbarToggler">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"><b>MOUNTAIN SERIES</b></a>
+                                    <a class="nav-link active" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>MOUNTAIN SERIES</b></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><b>STREET SERIES</b></a>
+                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>STREET SERIES</b></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"> <b>MOUNTAIN SERIES</b></a>
+                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"> <b>MOUNTAIN SERIES</b></a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="text" placeholder="Введіть ваше ім'я"
-                                       aria-label="text" id="helloForm">
-                                <button class="btn btn-outline-success" id="hello" onclick="myFunction()">Відправити
-                                </button>
-                            </form>
+                            <div>
+                                <input class="header__input" type="text" id="get_num" name="get_num" value="" placeholder="Ваше ім'я"/>
+                              </div>
+                              <div id="add" class="btn header__btn">Нажміть</div>
                         </div>
                     </div>
                 </nav>
