@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e21fc35-b6b5-4b7d-98dc-51fc6eabb1f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project_Bicycle_Shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Bicycle_Shop/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Bicycle_Shop/snippets/Page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Bicycle_Shop/snippets/Page2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_Bicycle_Shop/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Bicycle_Shop/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -58,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621958534881</updated>
       <workItem from="1621958536303" duration="3969000" />
+      <workItem from="1622061773847" duration="6065000" />
     </task>
     <servers />
   </component>
@@ -74,5 +82,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622064215959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622064215959" />
   </component>
 </project>

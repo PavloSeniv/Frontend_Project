@@ -1307,3 +1307,37 @@ a.move-top span {
 }
 
 /* End Media Kucher Oleksiy */
+
+/*Page_news.html Mykhailo Dubrovskyi*/
+.Page__news_bg{
+    background: url("../img/img_page_news/Vector_news.png")no-repeat;
+    width: 100%;
+    height: 770px;
+}
+.Page__news_H1{
+    padding-top: 166px;
+    text-align: center;
+    color: black;
+}
+
+.Card__news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+
+}
+.Card__news-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background: black;
+    color: white;
+}
+.Card__news-text:last-child {
+    margin-bottom: 0;
+}
