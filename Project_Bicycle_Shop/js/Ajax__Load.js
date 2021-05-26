@@ -7,9 +7,9 @@
         var categoriesTitleHtml = "snippets/Category__Title.html";
         var categoryHtml = "snippets/Page2.html";
 
-        // var catalogItemsUrl = "db/categoriesBike/";
-        // var catalogItemsTitleHtml = "snippets/Product__Title.html";
-        // var catalogItemHtml = "snippets/Page3.html";
+        var catalogItemsUrl = "db/categoriesBike/";
+        var catalogItemsTitleHtml = "snippets/Product__Title.html";
+        var catalogItemHtml = "snippets/Page3.html";
 
         // Convenience function for inserting innerHTML fot 'select'
         var insertHtml = function (selector, html) {

@@ -23,11 +23,13 @@
     <header>
         <div class="container-fluid p-0">
             <div>
+                <img class="img-fluid" src="img/bike.png" alt="Categories__Bike">
+
                 <nav class="navbar fixed-top navbar-expand-xl navbar-light p-4">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html" id="nav-link-home" onclick="$ns.loadHome();">
                             <img class="img-fluid" src="img/Logo__Bike.png" alt="">
-                            Streetster</a>
+                            <span class="navbar-brand-text">Streetster</span></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarToggler" aria-controls="navbarToggler"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -36,43 +38,22 @@
                         <div class="collapse navbar-collapse" id="navbarToggler">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"><b>MOUNTAIN SERIES</b></a>
+                                    <a class="nav-link active" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>MOUNTAIN SERIES</b></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><b>STREET SERIES</b></a>
+                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"><b>STREET SERIES</b></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"> <b>MOUNTAIN SERIES</b></a>
+                                    <a class="nav-link" id="nav-link-category" aria-current="page" href="#" onclick="$ns.loadCatalogCategories();"> <b>MOUNTAIN SERIES</b></a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="text" placeholder="Введіть ваше ім'я"
-                                       aria-label="text" id="helloForm">
-                                <button class="btn btn-outline-success" id="hello">Відправити</button>
-                            </form>
+                            <div>
+                                <input class="header__input" type="text" id="get_num" name="get_num" value="" placeholder="Ваше ім'я"/>
+                              </div>
+                              <div id="add" class="btn header__btn">Нажміть</div>
                         </div>
                     </div>
                 </nav>
-
-                <!--   <div class="row ">
-                       <div class="col-lg-6 col-md-12 col-sm-12 card-img-overlay">
-                           <div class="p-5 mb-4  rounded-3">
-                               <div class="container-fluid py-5">
-                                   <h1 class="display-5 fw-bold text-white">OFFROAD SERIES</h1>
-                                   <p class="col-md-8 fs-4 text-white">
-                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                                       consectetur
-                                       deleniti nam neque quasi quia.
-                                   </p>
-                                   <p class="col-md-8 fs-4 text-white">
-                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in ipsam iusto
-                                       nulla,
-                                       quibusdam repudiandae?
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-               </div>-->
 
             </div>
         </div>
@@ -99,15 +80,15 @@
                             NATHAN</h1>
                         <div class="product__about-price price">12000 ₴</div>
                         <div class="product__about-color">
-                            Цвет:
-                            <span>черный</span>
+                            Колір:
+                            <span>чорний</span>
                             <a href="#" class="color__link">
                                 <img src="img/images/color-black-elips.png" alt="">
                             </a>
                         </div>
                         <div class="product__about-frame">
                             Рама:
-                            <span>54” (Рост 175-185 см)</span>
+                            <span>54” (Ріст 175-185 см)</span>
                             <a href="#" class="color__link-rectangle">
                                 <img src="img/images/color-black-rectangle.png" alt="">
                                 <p>54”</p>
@@ -116,7 +97,7 @@
                         <div class="product__about-total">
                             <p>Итого:</p>
                             <span class="price">12000 ₴ </span></div>
-                        <button class="product__about-order btn" data-modal="#modal__order">Заказать</button>
+                        <button class="product__about-order btn" data-modal="#modal__order">Замовити</button>
                     </div>
                 </div> <!-- product__content -->
 
