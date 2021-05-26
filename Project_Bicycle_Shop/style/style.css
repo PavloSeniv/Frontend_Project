@@ -59,6 +59,7 @@ M.Dybrovskyi
     padding: 4px;
     margin-top: 10px;
     border: 3px solid var(--color-primary);
+    text-decoration: none;
 }
 
 .slick-btn {
@@ -181,6 +182,29 @@ M.Dybrovskyi
     left: 50px;
 }
 
+<<<<<<< HEAD
+=======
+.header__text {
+    color: white;
+}
+
+.header__text-title {
+    margin-top: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.header__text-text {
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+>>>>>>> 01030a895506e769799f70ffb63285c81c0845d3
 /* End Header */
 
 /* Button and a */
@@ -196,6 +220,23 @@ M.Dybrovskyi
     color: #fff;
 }
 
+.btn-back {
+    background-color: var(--color-primary);
+    border: 3px solid transparent;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 7px 18px 8px 19px;
+    margin-top: -10px;
+    transition: all .2s linear;
+}
+
+.btn-back:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+}
 /* end Button and a */
 
 /*************************************************** Page 1 
@@ -233,7 +274,6 @@ M.Dybrovskyi
 
 .category__slider {
     margin-top: 80px;
-    margin-bottom: -100px;
 }
 
 .slick-active {
@@ -381,7 +421,6 @@ M.Dybrovskyi
 /* Product Item */
 .card {
     position: relative;
-    display: flex;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -707,6 +746,10 @@ a.move-top span {
 
 .product__about-order {
     padding: 10px 110px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .product__about-total {
@@ -1010,7 +1053,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1200px) {
     .header__input {
         /* margin-right: 0;
         margin-bottom: 10px;
@@ -1021,6 +1064,15 @@ a.move-top span {
     .header__btn {
         /* width: 250px; */
         display: none;
+    }
+
+    .header__text-title {
+        margin-top: 200px;
+        margin-bottom: 10px;
+    }
+    .header__text-text {
+        font-size: 40px;
+        line-height: 1;
     }
 }
 
@@ -1056,6 +1108,15 @@ a.move-top span {
 }
 
 @media (max-width: 768px) {
+
+    .header__text-title {
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .header__text-text {
+        font-size: 26px;
+        line-height: 1;
+    }
 
     .backgroundForSlider {
         padding-left: 120px;
@@ -1107,6 +1168,21 @@ a.move-top span {
 }
 
 @media (max-width: 620px) {
+
+    .header__text-title {
+        font-size: 12px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .header__text-text {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .btn-back {
+        font-size: 12px;
+        padding: 3px 10px 4px 10px;
+    }
+
     .anotherModel__item {
         right: 0;
     }
@@ -1155,6 +1231,23 @@ a.move-top span {
 }
 
 @media (max-width: 458px) {
+
+    .header__text .container-fluid {
+        padding-bottom: 20px!important;
+    }
+    .header__text-title {
+        font-size: 12px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .header__text-text {
+        display: none;
+    }
+    .btn-back {
+        font-size: 12px;
+        padding: 3px 10px 4px 10px;
+    }
+
     .photo__slider {
         max-width: 200px;
         margin-bottom: -300px;
@@ -1201,4 +1294,9 @@ a.move-top span {
     }
 }
 
+@media (max-width: 370px) {
+    .header__text {
+        display: none;
+    }
+}
 /* End Media Kucher Oleksiy */

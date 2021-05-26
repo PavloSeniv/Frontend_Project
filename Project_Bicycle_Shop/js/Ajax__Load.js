@@ -7,7 +7,11 @@
         var categoriesTitleHtml = "snippets/Category__Title.html";
         var categoryHtml = "snippets/Page2.html";
 
+<<<<<<< HEAD
         var catalogItemsUrl = "db/CategoriesBike/";
+=======
+        var catalogItemsUrl = "db/categoriesBike/";
+>>>>>>> 01030a895506e769799f70ffb63285c81c0845d3
         var catalogItemsTitleHtml = "snippets/Product__Title.html";
         var catalogItemHtml = "snippets/Page3.html";
 
