@@ -38,10 +38,10 @@
 
             //On first load, show home view
             showLoading("#Main__Home");
-            $ajaxUtils.sendGetRequest(homeHtml, 
+            $ajaxUtils.sendGetRequest(homeHtml,
                 function (responseText) {
-                document.querySelector("#Main__Home").innerHTML = responseText;
-            }, false); //Інформація береться із сервера якщо false
+                    document.querySelector("#Main__Home").innerHTML = responseText;
+                }, false); //Інформація береться із сервера якщо false
 
         });
 
@@ -239,7 +239,6 @@
         //     var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
         //     $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
         // };
-
         global.$ns = ns;
 
     }
