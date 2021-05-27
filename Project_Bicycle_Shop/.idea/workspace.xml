@@ -4,7 +4,6 @@
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Ajax__Load.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Ajax__Load.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/page3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/Page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
@@ -38,7 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,6 +71,9 @@
       <workItem from="1621952650275" duration="11319000" />
       <workItem from="1621972886344" duration="788000" />
       <workItem from="1622012530676" duration="11316000" />
+      <workItem from="1622037002172" duration="223000" />
+      <workItem from="1622052507120" duration="294000" />
+      <workItem from="1622052831539" duration="1398000" />
     </task>
     <servers />
   </component>

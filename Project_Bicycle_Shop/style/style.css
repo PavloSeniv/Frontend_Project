@@ -181,28 +181,6 @@ M.Dybrovskyi
     top: 35%;
     left: 50px;
 }
-
-.header__text {
-    color: white;
-}
-
-.header__text-title {
-    margin-top: 400px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 31px;
-}
-
-.header__text-text {
-    width: 100%;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 60px;
-    white-space: nowrap;
-}
-
 /* End Header */
 
 /* Button and a */
@@ -218,7 +196,7 @@ M.Dybrovskyi
     color: #fff;
 }
 
-.btn-back {
+.top-btn {
     background-color: var(--color-primary);
     border: 3px solid transparent;
     color: #fff;
@@ -231,7 +209,7 @@ M.Dybrovskyi
     transition: all .2s linear;
 }
 
-.btn-back:hover {
+.top-btn:hover {
     background-color: #fff;
     color: var(--color-primary);
 }
@@ -241,176 +219,32 @@ M.Dybrovskyi
 /*************************************************** Page 1 
 ****************************************************/
 
-/* Slider Category */
-.carousel-item {
-    margin-left: 292px;
-    max-width: 856px;
-    max-height: 319px;
+/* Top */
+.top {
+    color: white;
 }
 
-.carousel-inner {
-    position: absolute;
-    bottom: 209px;
-    display: block;
-    justify-content: center;
-    align-items: center;
+.top__inner {
+    background-image: url('../img/top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.carousel-control-next {
-    top: -709px;
-}
-
-.carousel-control-prev {
-    top: -359px;
-}
-
-.Carousel__Item__Bike {
-    position: absolute;
-    top: 75px;
-    right: 250px;
-}
-
-.category__slider {
-    margin-top: 80px;
-}
-
-.slick-active {
-    display: none;
-}
-
-/* End Slider Category */
-
-/* Text info */
-.Text__Info {
-    width: 100%;
-    background-color: #F2F2F2;
-    color: Black;
-}
-
-.Text__info__P {
-    padding: 50px;
-}
-
-.Text__info__P span {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* End Text info */
-
-/* Info Text */
-.info__Text {
-    padding-top: 79px;
-    padding-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.info__Text__h2 {
+.top-title {
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 46px;
-    align-items: center;
-    text-align: center;
-    color: var(--color-primary);
-    margin-bottom: 80px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
 }
 
-.info__Img {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.info__item {
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
-
-/* News */
-.news {
-    padding-bottom: 50px;
-}
-
-.news__title {
+.top-text {
+    width: 100%;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 60px;
-    text-align: center;
-    color: var(--color-primary);
-}
-
-.news__slider {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1098px;
-    margin: 0 auto;
-    color: #000000;
-}
-
-.news__item {
-    max-width: 338px;
-}
-
-.news__item + .news__item {
-    margin-left: 45px;
-}
-
-.news__item:focus {
-    outline: 0;
-}
-
-.news__background {
-    background-color: #F2F2F2;
-    width: 338px;
-    height: 270px;
-
-}
-
-.news__item-title {
-    padding: 20px 0 14px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
-    text-align: center;
-}
-
-.news__item-small-title {
-    padding: 35px 0 29px;
-}
-
-.news__item-text {
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-}
-
-.news__item-btn {
-    padding: 10px 110px;
-    background-color: #f2f2f2;
-    width: 338px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-}
-
-.news__slick-prev {
-    left: -65px;
-}
-
-.news__slick-next {
-    right: -46px;
+    white-space: nowrap;
 }
 
 /*************************************************** Page 2
@@ -1015,295 +849,3 @@ a.move-top span {
 
 /* End Modal */
 
-/* Media Kucher Oleksiy */
-
-@media (max-width: 1610px) {
-
-    .backgroundForSlider {
-        padding: 0px 150px 260px;
-    }
-
-}
-
-@media (max-width: 1410px) {
-    .backgroundForSlider {
-        padding: 0px 80px 260px;
-    }
-
-    .slick-dots {
-        margin-top: 104px;
-    }
-
-}
-
-@media (max-width: 1260px) {
-    .backgroundForSlider {
-        background-color: transparent;
-    }
-
-    .modal__order {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .modal__order-content {
-        padding-bottom: 20px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .header__input {
-        /* margin-right: 0;
-        margin-bottom: 10px;
-        margin-top: 20px; */
-        display: none;
-    }
-
-    .header__btn {
-        /* width: 250px; */
-        display: none;
-    }
-
-    .header__text-title {
-        margin-top: 200px;
-        margin-bottom: 10px;
-    }
-
-    .header__text-text {
-        font-size: 40px;
-        line-height: 1;
-    }
-}
-
-@media (max-width: 968px) {
-    .photo__slider {
-        max-width: 600px;
-    }
-
-    .backgroundForSlider {
-        padding: 0 80px 120px;
-    }
-
-    .product__content {
-        flex-wrap: wrap;
-    }
-
-    .photo__slider {
-        margin-top: 142px;
-    }
-
-    .product__about-title {
-        margin-top: 140px;
-    }
-
-    .product__desc-text {
-        width: 800px;
-        margin-left: 20px;
-    }
-
-    .anotherModel__item {
-        margin-bottom: 140px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .header__text-title {
-        margin-top: 100px;
-        margin-bottom: 10px;
-    }
-
-    .header__text-text {
-        font-size: 26px;
-        line-height: 1;
-    }
-
-    .backgroundForSlider {
-        padding-left: 120px;
-        padding-bottom: 40px;
-    }
-
-    .photo__slider {
-        max-width: 400px;
-    }
-
-    .product__about {
-        justify-content: center;
-    }
-
-    .product__about-title {
-        margin-top: 40px;
-    }
-
-    .product__desc-title {
-        width: 500px;
-        margin-left: 22px;
-        text-align: center;
-    }
-
-    .product__desc-text {
-        width: 500px;
-    }
-
-    .anotherModel__item {
-        right: -20%;
-    }
-
-    .anotherModel__item-img {
-        left: 30%;
-    }
-
-    .modal__title {
-        font-size: 55px;
-    }
-
-    .form__input,
-    .form__select {
-        width: 290px;
-    }
-
-    .category__slider-img {
-        display: none;
-    }
-}
-
-@media (max-width: 620px) {
-
-    .header__text-title {
-        font-size: 12px;
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
-    .header__text-text {
-        font-size: 18px;
-        line-height: 1;
-    }
-
-    .btn-back {
-        font-size: 12px;
-        padding: 3px 10px 4px 10px;
-    }
-
-    .anotherModel__item {
-        right: 0;
-    }
-
-    .anotherModel__item-img {
-        left: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .photo__slider {
-        max-width: 300px;
-        margin-bottom: -215px;
-    }
-
-    .slick-dots {
-        margin-top: 40px;
-    }
-
-    .slick-dots button {
-        width: 15px;
-    }
-
-    .slick-btn {
-        display: none;
-    }
-
-    .product__about-title {
-        margin-top: 40px;
-    }
-
-    .product__desc-title {
-        width: 300px;
-    }
-
-    .product__desc-text {
-        width: 300px;
-        margin-left: 22px;
-        text-align: center;
-    }
-
-    .modal__order-form {
-        margin-left: 320px;
-    }
-}
-
-@media (max-width: 458px) {
-
-    .header__text .container-fluid {
-        padding-bottom: 20px !important;
-    }
-
-    .header__text-title {
-        font-size: 12px;
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
-    .header__text-text {
-        display: none;
-    }
-
-    .btn-back {
-        font-size: 12px;
-        padding: 3px 10px 4px 10px;
-    }
-
-    .photo__slider {
-        max-width: 200px;
-        margin-bottom: -300px;
-    }
-
-    .product__desc {
-        margin-left: 45px;
-    }
-
-    .anotherModel__item {
-        left: 40px;
-    }
-
-    .anotherModel__item-content {
-        width: 300px;
-    }
-
-    .anotherModel__item-img {
-        width: 250px;
-        left: 39%;
-    }
-
-    .anotherModel__item-title.title {
-        margin-left: 21px;
-        font-size: 26px;
-        line-height: 46px;
-    }
-
-    .anotherModel__item-price.price {
-        font-size: 18px;
-        line-height: 0px;
-    }
-
-    .anotherModel__color {
-        margin-left: 45px;
-    }
-
-    .modal__order-content {
-        margin-left: 135px;
-    }
-
-    .modal__order-form {
-        margin-left: 370px;
-    }
-}
-
-
-@media (max-width: 370px) {
-    .header__text {
-        display: none;
-    }
-}
-
-/* End Media Kucher Oleksiy */
