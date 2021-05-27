@@ -255,15 +255,36 @@ M.Dybrovskyi
 
 /* Slider category */
 .slider__category {
-    padding: 210px 70px;
+    padding: 210px 0px;
     background: url('../img/Vector.png') left;
+}
+
+.carousel-inner {
+    width: 100%;
+    position: relative;
 }
 
 .carousel-item {
     height: 319px;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
 }
+
+/*.carousel-inner .carousel-item-right.active,*/
+/*.carousel-inner .carousel-item-next {*/
+/*    transform: translateX(57%);*/
+/*}*/
+
+/*.carousel-inner .carousel-item-left.active,*/
+/*.carousel-inner .carousel-item-prev {*/
+/*    transform: translateX(-57%);*/
+/*}*/
+
+/*.carousel-inner .carousel-item-right,*/
+/*.carousel-inner .carousel-item-left {*/
+/*    transform: translateX(0);*/
+/*}*/
 
 .slider__category-img {
     margin: auto;
@@ -287,6 +308,7 @@ M.Dybrovskyi
     margin-top: 210px;
     height: 320px;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 3;
 }
 .carousel-control-next {
     margin-top: 210px;
@@ -371,6 +393,59 @@ M.Dybrovskyi
     margin: 0 16px;
 }
 /* End offers */
+
+/* News */
+.news__title {
+    margin-bottom: 63px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+}
+
+.news__items {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.news__item {
+    width: 338px;
+    color: var(--color-primary);
+}
+
+.news__item-content {
+    background: #F2F2F2;
+}
+
+.news__item-title {
+    padding-top: 20px;
+    margin-bottom: 14px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.news__item-text {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.news__item-btn {
+    width: 338px;
+    height: 52px;
+    background-color: #f2f2f2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+/* End news */
 
 /*************************************************** Page 2
 ****************************************************/
