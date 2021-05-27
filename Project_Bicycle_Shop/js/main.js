@@ -12,16 +12,17 @@ $(function () {
 
     (function () {
         var addTime = document.getElementById('add');
-      
+
         addTime.addEventListener('click', getN);
-      
+
         function getN() {
-          var getNum = document.getElementById('get_num').value;
-          alert(
-            'Вітаємо ' +
-              getNum +
-              '.\nМожете ознайомитися з товарами в нашому магазині'
-          );
+            var getNum = document.getElementById('get_num').value;
+            alert(
+                'Вітаємо ' +
+                getNum +
+                '.\nМожете ознайомитися з товарами в нашому магазині'
+            );
         }
-      })();
+    })();
+
 });
