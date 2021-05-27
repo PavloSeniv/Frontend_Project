@@ -1,5 +1,8 @@
 (function (global) {
 
+        /*______________________________________________
+        * Variables
+        * --------------------------------------------*/
         var ns = {}; //new site
 
         var homeCategoriesBikeHTML = "snippets/Page1.html"; //Посилання на сніпет
@@ -14,6 +17,17 @@
 
         var ItemHtml = "snippets/Page3_Snippets.html";
 
+        var NewsSection__Title = "snippets/News__Title.html";
+        var NewsSection = "snippets/News__Snippets.html";
+        var NewsSection__db = "db/News.json";
+
+        var NewsItemsUrl__db = "db/News__Item/";
+        var NewsItemsTitleHtml = "snippets/Page__News__Title.html";
+        var NewsItemHtml = "snippets/Page__News.html";
+
+        /*______________________________________________
+        * Function help
+        * --------------------------------------------*/
 
         // Convenience function for inserting innerHTML fot 'select'
         var insertHtml = function (selector, html) {
@@ -36,6 +50,9 @@
             return string;
         };
 
+        /*______________________________________________
+       * Page1
+       * --------------------------------------------*/
 
         //On page load (before images or CSS)
         document.addEventListener("DOMContentLoaded", function (event) {
@@ -48,16 +65,30 @@
 
         });
 
+        /*     //Завантаження головної сторінки
+             ns.loadHome = function () {
+                 showLoading("#Main__Home"); //Підтягування гіфки завантажувача
+                 $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
+                     //Switch CSS class active to menu button
+                     switchHomeToActive();
+                     document.querySelector("#Main__Home").innerHTML = responseText;
+                     $ajaxUtils.sendGetRequest(NewsSection, loadHomeNews())
+                 }, false);
+             }*/
+
         //Завантаження головної сторінки
         ns.loadHome = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
                 //Switch CSS class active to menu button
                 switchHomeToActive();
-
                 document.querySelector("#Main__Home").innerHTML = responseText;
-            }, false); //Інформація береться із сервера якщо false
+            }, false)
         }
+
+        /*______________________________________________
+        * Slider Categories
+        * --------------------------------------------*/
 
         /*document.addEventListener("DOMContentLoaded", function (event) {
             //On first load, show home view
@@ -113,16 +144,20 @@
             return finalHTML;
         }*/
 
-        //  Завантаження для кожної з категорій свою базу даних
-        // Load the catalog items view
-        // 'categoryShort' is a short_name for a category
+        /*----------------------------------------
+        * CatalogBike
+        -----------------------------------------*/
+
+//  Завантаження для кожної з категорій свою базу даних
+// Load the catalog items view
+// 'categoryShort' is a short_name for a category
         ns.loadCatalogItems = function (categoryShort) {
             showLoading("#Main__Home");
             $ajaxUtils.sendGetRequest(catalogItemsUrl + categoryShort + ".json", buildAndShowCatalogItemsHTML);
         };
 
-        // Builds HTML for the single category page based on the data
-        // from the server
+// Builds HTML for the single category page based on the data
+// from the server
         function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
             // Load title snippet of catalog items page
             $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
@@ -138,8 +173,8 @@
             }, false);
         }
 
-        // Using category and catalog items data and snippets html
-        // build catalog items view HTML to be inserted into page
+// Using category and catalog items data and snippets html
+// build catalog items view HTML to be inserted into page
         function buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
 
             catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.CatalogBike.name);
@@ -180,8 +215,11 @@
             return finalHtml;
         }
 
+        /*______________________________________________
+        * Items CatalogBike
+        * --------------------------------------------*/
 
-        //Завантаження головної сторінки
+//Завантаження головної сторінки
         ns.loadItems = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(ItemHtml, function (responseText) {
@@ -259,7 +297,7 @@
               return finalHtml;
           }*/
 
-        // Appends price with '$' if price exists
+// Appends price with '$' if price exists
         function insertItemPrice(html, pricePropName, priceValue) {
             // If not specified, replace with empty string
             if (!priceValue) {
@@ -270,7 +308,7 @@
             return html;
         }
 
-        // Appends portion name in parens if it exists
+// Appends portion name in parens if it exists
         function insertItemAmount(html, amountPropName, amountValue) {
             // If not specified, replace original string
             if (!amountValue) {
@@ -281,6 +319,9 @@
             return html;
         }
 
+        /*______________________________________________
+        * Navbar
+        * --------------------------------------------*/
 
         var switchCatalogToActive = function () {
             // Remove 'active' from home button
@@ -310,6 +351,10 @@
             }
         };
 
+        /*______________________________________________
+        * Home Bg
+        * --------------------------------------------*/
+
         /*//Завантаження випадкової категорії з товарами Ідея зробити випадкове завантаження фото на головній сторінці
         ns.loadSpecials = function (categoryShort) {
             showLoading("#Main__Home");
@@ -321,8 +366,157 @@
             var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
             $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
         };
-*/
+        */
+
+        /*-----------------------------------------------
+        * News Section
+        * ----------------------------------------------*/
+
+        /*//Завантаження головної сторінки
+                function loadHomeNews() {
+                    showLoading("#Main__Home"); //Підтягування гіфки завантажувача
+                    $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML);
+                    return $ajaxUtils;
+                } //Підключаємо Базу даних*/
+
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
+        });
+
+        /* //Динамічне завантаження категорій у слайдері на 1 сторінці
+         // Load the menu categories view
+         ns.loadCatalogCategories = function () {
+             showLoading("#carouselExampleInterval");
+
+             $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowCategoriesHTML);
+         };*/
+
+// Builds HTML for the categories page based on the data
+// from  the server
+        function buildAndShowNewsHTML(NewsItemsSection) {
+            // Load title snippet of categories page
+            $ajaxUtils.sendGetRequest(NewsSection__Title, function (NewsTitleHtml) {
+                // Retrieve single category snippet
+                $ajaxUtils.sendGetRequest(NewsSection, function (NewsSectionHtml) {
+
+
+                    var NewsViewHtml = buildNewsViewHtml(NewsItemsSection, NewsTitleHtml, NewsSectionHtml);
+                    insertHtml("#News__Section", NewsViewHtml); // Буде вставлено сніпет категорій замість головної сторінки
+                }, false);
+            }, false);
+        }
+
+//Using categories data and snippets html
+// build categories view HTML to be inserted into page
+        function buildNewsViewHtml(NewsItemsSection, NewsTitleHtml, NewsSectionHtml) {
+
+            var finalHTML = NewsTitleHtml;
+            finalHTML += "<div class='row'>";
+
+            // Loop over categories
+            for (var i = 0; i < NewsItemsSection.length; i++) {
+                // Insert category values
+                var html = NewsSectionHtml;
+                var name = "" + NewsItemsSection[i].name;
+                var short_name = NewsItemsSection[i].short_name;
+                var short_name_2 = NewsItemsSection[i].short_name_2;
+                var special_instructions = NewsItemsSection[i].special_instructions;
+
+                html = insertProperty(html, "name", name);
+                html = insertProperty(html, "short_name", short_name);
+                html = insertProperty(html, "short_name_2", short_name_2);
+                html = insertProperty(html, "special_instructions", special_instructions);
+
+                finalHTML += html;
+            }
+            finalHTML += "</div>";
+
+            return finalHTML;
+        }
+
+        /*-----------------------------------------------
+        * Catalog News Section
+        * ----------------------------------------------*/
+
+//Завантаження сторінки з новинами
+        ns.loadPage__News = function () {
+            showLoading("#Main__Home"); //Підтягування гіфки завантажувача
+            $ajaxUtils.sendGetRequest(NewsItemHtml, function (responseText) {
+
+                document.querySelector("#Main__Home").innerHTML = responseText;
+            }, false); //Інформація береться із сервера якщо false
+        }
+
+        /*  //  Завантаження для кожної з категорій свою базу даних
+          // Load the catalog items view
+          // 'categoryShort' is a short_name for a category
+          ns.loadNewsItems = function (categoryShort) {
+              showLoading("#Main__Home");
+              $ajaxUtils.sendGetRequest(catalogItemsUrl + categoryShort + ".json", buildAndShowCatalogItemsHTML);
+          };
+
+          // Builds HTML for the single category page based on the data
+          // from the server
+          function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
+              // Load title snippet of catalog items page
+              $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
+                  // Retrieve simple catalog item snippet
+                  $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
+
+                      //Switch CSS class active to menu button
+                      switchCatalogToActive();
+
+                      var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
+                      insertHtml("#Main__Home", catalogItemsViewHtml);
+                  }, false);
+              }, false);
+          }
+
+          // Using category and catalog items data and snippets html
+          // build catalog items view HTML to be inserted into page
+          function buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
+
+              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.CatalogBike.name);
+
+              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.CatalogBike.special_instructions);
+
+              var finalHtml = catalogItemsTitleHtml;
+
+              finalHtml += "<section class='row'>";
+
+              // Loop over catalog items
+              var catalogItems = categoryCatalogItems.CatalogBikeItems;
+              var catShort_name = categoryCatalogItems.CatalogBike.short_name;
+              for (var i = 0; i < catalogItems.length; i++) {
+                  //Insert catalog item values
+                  var html = catalogItemHtml;
+
+                  html = insertProperty(html, "short_name", catalogItems[i].short_name);
+
+                  html = insertProperty(html, "catalogShort_name", catShort_name);
+
+                  html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
+
+                  html = insertItemAmount(html, "amount_retail", catalogItems[i].amount_retail);
+
+                  html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
+
+                  html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
+
+                  html = insertProperty(html, "name", catalogItems[i].name);
+
+                  html = insertProperty(html, "description", catalogItems[i].description);
+
+                  finalHtml += html;
+              }
+
+              finalHtml += "</section>";
+              return finalHtml;
+          }*/
+
         global.$ns = ns;
 
     }
-)(window);
+)
+(window);

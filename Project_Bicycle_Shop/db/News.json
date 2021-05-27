@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "short_name": "NewsItemOne",
+    "name": "NewsItemOne",
+    "short_name_2": "News1",
+    "special_instructions": "Some important info for NewsItemOne",
+    "url": "db/News__Item/NewsItemOne.json"
+  },
+  {
+    "id": 2,
+    "short_name": "NewsItemTwo",
+    "name": "NewsItemTwo",
+    "short_name_2": "News2",
+    "special_instructions": "Some important info for NewsItemTwo",
+    "url": "db/News__Item/NewsItemTwo.json"
+  },
+  {
+    "id": 3,
+    "short_name": "NewsItemThree",
+    "name": "NewsItemThree",
+    "short_name_2": "News3",
+    "special_instructions": "Some important info for NewsItemThree",
+    "url": "db/News__Item/NewsItemThree.json"
+  }
+]

@@ -195,11 +195,11 @@
 </section>
 
 <script>
-    $(function() {
+    $(function () {
         const modalCall = $("[data-modal]");
         const modalClose = $("[data-close]");
 
-        modalCall.on("click", function(event) {
+        modalCall.on("click", function (event) {
             event.preventDefault();
 
             let $this = $(this); // Сохраняє значення дата атрибута, на який ми клікаємо. Тобто ми в цю кнопку сохраняємо дата атрибут або кнопки hire me або кнопки see my resume
@@ -217,7 +217,7 @@
             $('#worksSlider').slick('setPosition');
         });
 
-        modalClose.on("click", function(event) {
+        modalClose.on("click", function (event) {
             event.preventDefault();
 
             let $this = $(this); // Сохраняє значення дата атрибута, на який ми клікаємо. Тобто ми в цю кнопку сохраняємо дата атрибут або кнопки hire me або кнопки see my resume
@@ -227,26 +227,26 @@
                 transform: "rotateX(90deg)"
             });
 
-            setTimeout(function() {
+            setTimeout(function () {
                 modalParent.removeClass('show');
                 $("body").removeClass('no-scroll');
             }, 400);
         });
 
-        $(".modal").on("click", function(event) {
+        $(".modal").on("click", function (event) {
             let $this = $(this);
 
             $(this).find(".modal__dialog").css({
                 transform: "rotateX(90deg)"
             });
 
-            setTimeout(function() {
+            setTimeout(function () {
                 $this.removeClass('show');
                 $("body").removeClass('no-scroll');
             }, 400);
         }); // Потрібно, щоб модальне вікно закривалось, якщо клікнути поза ним
 
-        $(".modal__dialog").on("click", function(event) {
+        $(".modal__dialog").on("click", function (event) {
             event.stopPropagation(); // Якщо ми клікаємо по елементу moda__dialog, то ми відміняємо клік по його батьківському класі
         });
     });
