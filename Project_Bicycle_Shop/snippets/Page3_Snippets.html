@@ -1,0 +1,253 @@
+<section class="product">
+    <div class="product__inner">
+
+        <div class="product__content">
+            <div class="backgroundForSlider">
+                <div class="photo__slider">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                    <img class="slider__image img-fluid" src="img/bike_for_slider.png" alt="">
+                </div>
+            </div>
+
+            <div class="product__about">
+                <h1 class="product__about-title title">STREETSTER
+                    NATHAN</h1>
+                <div class="product__about-price price">12000 ₴</div>
+                <div class="product__about-color">
+                    Колір:
+                    <span>чорний</span>
+                    <a href="#" class="color__link">
+                        <img src="img/color-black-elips.png" alt="">
+                    </a>
+                </div>
+                <div class="product__about-frame">
+                    Рама:
+                    <span>54” (Ріст 175-185 см)</span>
+                    <a href="#" class="color__link-rectangle">
+                        <img src="img/color-black-rectangle.png" alt="">
+                        <p>54”</p>
+                    </a>
+                </div>
+                <div class="product__about-total">
+                    <p>Итого:</p>
+                    <span class="price">12000 ₴ </span></div>
+                <button class="product__about-order btn" data-modal="#modal__order">Замовити</button>
+            </div>
+        </div> <!-- product__content -->
+
+        <div class="product__desc">
+            <div class="product__desc-title title">Описание</div>
+            <div class="product__desc-text text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="anotherModel">
+    <div class="anotherModel__container">
+        <h1 class="anotherModel__title title">
+            Другие модели Road Series
+        </h1>
+        <div class="anotherModel__items row">
+
+
+            <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                <img class="anotherModel__item-img" src="img/bike-1.png" alt="">
+                <div class="anotherModel__item-content">
+                    <h3 class="anotherModel__item-title title">
+                        NATHAN
+                        <a href="#" class="anotherModel__color">
+                            <img src="img/color-black-elips.png" alt="">
+                        </a>
+                    </h3>
+                    <div class="anotherModel__item-price price">
+                        12000 ₴
+                    </div>
+                </div>
+            </div>
+
+            <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                <img class="anotherModel__item-img" src="img/bike-2.png" alt="">
+                <div class="anotherModel__item-content">
+                    <h3 class="anotherModel__item-title title">
+                        BAKERSTREET
+                        <a href="#" class="anotherModel__color color__blue">
+                            <img src="img/color-blue-elips.png" alt="">
+                        </a>
+                    </h3>
+                    <div class="anotherModel__item-price price">
+                        12000 ₴
+                    </div>
+                </div>
+            </div>
+
+            <div class="anotherModel__item col-lg-4 col-md-6 col-sm-12 col-12">
+                <img class="anotherModel__item-img" src="img/bike-3.png" alt="">
+                <div class="anotherModel__item-content">
+                    <h3 class="anotherModel__item-title title">
+                        BROADWAY
+                        <a href="#" class="anotherModel__color">
+                            <img src="img/color-yellow-elips.png" alt="">
+                        </a>
+                    </h3>
+                    <div class="anotherModel__item-price price">
+                        12000 ₴
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- anotherMode__items -->
+    </div> <!-- anotherModel__container -->
+</section>
+
+<section class="modal" id="modal__order">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="img/modal-close.svg" alt="close">
+        </button>
+
+        <h1 class="modal__title">
+            Оформлення заказу
+        </h1>
+        <div class="modal__order">
+
+            <div class="modal__order-content">
+
+                <h2 class="modal__order-subtitle">Інформація про товар</h2>
+                <img src="img/bike-1.png" alt="bike" class="modal__content-img">
+                <div class="modal__content-text">Доставка: безкоштовно</div>
+                <div class="modal__content-price"><span>Всього:</span> 12000 ₴</div>
+
+
+            </div>
+            <div class="modal__order-form">
+
+                <h2 class="modal__order-subtitle">Контактна інформація</h2>
+                <form action="https://formspree.io/f/mbjqoron" method="post" class="order__form">
+                    <div class="form__group">
+                        <label class="form__label" for="input-nameFirst">Імя</label>
+                        <input class="form__input" id="input-nameFirst" name="input-nameFirst" type="text"
+                               placeholder="">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-nameLast">Фамілія</label>
+                        <input class="form__input" id="input-nameLast" name="input-nameLast" type="text"
+                               placeholder="">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-telephone">Номер телефону</label>
+                        <input class="form__input" id="input-telephone" name="input-telephone" type="text"
+                               placeholder="">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">E-mail</label>
+                        <input class="form__input" id="input-email" name="input-email" type="email"
+                               placeholder="">
+                    </div>
+                    <h2 class="modal__order-subtitle">Оплата і доставка</h2>
+                    <div class="form__group">
+                        <label class="form__label" for="input-payment">Спосіб оплати</label>
+                        <select class="form__select" name="payment" id="input-payment">
+                            <option value=""></option>
+                            <option value="Готівка">Готівка</option>
+                            <option value="Карта">Карта</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-obtaining">Спосіб отримання</label>
+                        <select class="form__select" name="payment" id="input-obtaining">
+                            <option value=""></option>
+                            <option value="Кур'єр">Кур'єр</option>
+                            <option value="Самовивіз">Самовивіз</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-city">Місто</label>
+                        <input class="form__input" id="input-city" name="input-city" type="text" placeholder="">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-addres">Адреса</label>
+                        <input class="form__input" id="input-addres" name="input-adress" type="text"
+                               placeholder="">
+                    </div>
+                    <button type="submit" class="modal__content-button btn">Оформити заказ</button>
+                </form>
+
+            </div> <!-- modal__order-form -->
+        </div> <!-- modal__order -->
+
+    </div> <!-- modal__dialog -->
+</section>
+
+<script>
+    $(function() {
+        const modalCall = $("[data-modal]");
+        const modalClose = $("[data-close]");
+
+        modalCall.on("click", function(event) {
+            event.preventDefault();
+
+            let $this = $(this); // Сохраняє значення дата атрибута, на який ми клікаємо. Тобто ми в цю кнопку сохраняємо дата атрибут або кнопки hire me або кнопки see my resume
+            let modalId = $this.data('modal'); // шукаємо ід класу modal
+
+            $(modalId).addClass('show');
+            $("body").addClass('no-scroll');
+
+            setTimeout(function () {
+                $(modalId).find(".modal__dialog").css({
+                    transform: "rotateX(0)"
+                });
+            }, 200);
+
+            $('#worksSlider').slick('setPosition');
+        });
+
+        modalClose.on("click", function(event) {
+            event.preventDefault();
+
+            let $this = $(this); // Сохраняє значення дата атрибута, на який ми клікаємо. Тобто ми в цю кнопку сохраняємо дата атрибут або кнопки hire me або кнопки see my resume
+            let modalParent = $this.parents('.modal'); // знаходить батьківський класс modal. Тобто коли ми клієкамо по кнопці, воно шукає, в якому саме батьківському класі знахолиться кнопка.
+
+            modalParent.find(".modal__dialog").css({
+                transform: "rotateX(90deg)"
+            });
+
+            setTimeout(function() {
+                modalParent.removeClass('show');
+                $("body").removeClass('no-scroll');
+            }, 400);
+        });
+
+        $(".modal").on("click", function(event) {
+            let $this = $(this);
+
+            $(this).find(".modal__dialog").css({
+                transform: "rotateX(90deg)"
+            });
+
+            setTimeout(function() {
+                $this.removeClass('show');
+                $("body").removeClass('no-scroll');
+            }, 400);
+        }); // Потрібно, щоб модальне вікно закривалось, якщо клікнути поза ним
+
+        $(".modal__dialog").on("click", function(event) {
+            event.stopPropagation(); // Якщо ми клікаємо по елементу moda__dialog, то ми відміняємо клік по його батьківському класі
+        });
+    });
+</script>
