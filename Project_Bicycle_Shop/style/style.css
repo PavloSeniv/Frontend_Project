@@ -777,7 +777,7 @@ a.move-top span {
 
 /* AnotherModel */
 .anotherModel {
-    background-image: url('../img/images/background-2.png');
+    background-image: url('../img/background-2.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -998,7 +998,7 @@ a.move-top span {
 .form__select {
     appearance: none; /* Забрати стрілку select */
     overflow: hidden;
-    background: url('../img/images/arrow_for_select.png') no-repeat right;
+    background: url('../img/arrow_for_select.png') no-repeat right;
     background-position: 250px;
     background-size: 13px;
 }

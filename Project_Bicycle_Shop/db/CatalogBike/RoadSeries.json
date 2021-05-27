@@ -2,8 +2,8 @@
   "CatalogBikeItems": [
     {
       "id": 11,
-      "short_name": "HomeSeries-1",
-      "name": "HomeSeries A-1",
+      "short_name": "RoadSeries-1",
+      "name": "RoadSeries A-1",
       "description": "Product One",
       "price_retail": null,
       "price_wholesale": 9.0,
@@ -12,8 +12,8 @@
     },
     {
       "id": 12,
-      "short_name": "HomeSeries-2",
-      "name": "HomeSeries A-2",
+      "short_name": "RoadSeries-2",
+      "name": "RoadSeries A-2",
       "description": "Product Two",
       "price_retail": null,
       "price_wholesale": 9.0,
@@ -22,8 +22,8 @@
     },
     {
       "id": 13,
-      "short_name": "HomeSeries-3",
-      "name": "HomeSeries A-3",
+      "short_name": "RoadSeries-3",
+      "name": "RoadSeries A-3",
       "description": "Product Three",
       "price_retail": null,
       "price_wholesale": 9.0,
@@ -32,8 +32,8 @@
     }
   ],
   "CatalogBike": {
-    "short_name": "HomeSeries",
-    "name": "HomeSeries - 1",
-    "special_instructions": "Some important info HomeSeries"
+    "short_name": "RoadSeries",
+    "name": "RoadSeries",
+    "special_instructions": "Some important info RoadSeries"
   }
 }

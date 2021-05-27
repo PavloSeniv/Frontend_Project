@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Для зміни кольору меню*/
 $(document).ready(function(){
-    $(window).on("scroll",function(){
+    $(window).on("scroll",function() {
         var wn = $(window).scrollTop();
-        if(wn > 150){
+        if(wn > 50){
             $(".navbar").css("background","rgb(0,0,0)");
         }
         else{

@@ -11,27 +11,27 @@
       "amount_wholesale": "5+ pos"
     },
     {
-      "id": 11,
+      "id": 12,
       "short_name": "CitySeries-2",
       "name": "CitySeries A-2",
       "description": "Product Two",
-      "price_retail": null,
+      "price_retail": 12000,
       "price_wholesale": 9.0,
       "amount_retail": null,
       "amount_wholesale": "5+ pos"
     },
     {
-      "id": 11,
+      "id": 13,
       "short_name": "CitySeries-3",
       "name": "CitySeries A-3",
       "description": "Product Three",
-      "price_retail": null,
+      "price_retail": 5000,
       "price_wholesale": 9.0,
       "amount_retail": null,
       "amount_wholesale": "5+ pos"
     }
   ],
-  "category": {
+  "CatalogBike": {
     "short_name": "CitySeries",
     "name": "CitySeries - 1",
     "special_instructions": "Some important info CitySeries"

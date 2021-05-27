@@ -1,23 +1,42 @@
 [
   {
-    "id": 11,
-    "short_name": "B-1",
-    "name": "STREETSTER NATHAN",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "price": 12000
-},
-{
-    "id": 12,
-    "short_name": "B-2",
-    "name": "STREETSTER BAKERSTREET",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "price": 12000
-},
-{
-  "id": 13,
-  "short_name": "B-3",
-  "name": "STREETSTER BROADWAY",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-  "price": 12000
-}
+    "id": 1,
+    "short_name": "CitySeries",
+    "name": "CitySeries",
+    "short_name_2": "Bike_Bg_CitySeries",
+    "special_instructions": "Some important info for CitySeries",
+    "url": "db/CatalogBike/CitySeries.json"
+  },
+  {
+    "id": 2,
+    "short_name": "HomeSeries",
+    "name": "HomeSeries",
+    "short_name_2": "Bike_Bg_HomeSeries",
+    "special_instructions": "Some important info for HomeSeries",
+    "url": "db/CatalogBike/HomeSeries.json"
+  },
+  {
+    "id": 3,
+    "short_name": "OffroadSeries",
+    "name": "OffroadSeries",
+    "short_name_2": "Bike_Bg_OffroadSeries",
+    "special_instructions": "Some important info for OffroadSeries",
+    "url": "db/CatalogBike/OffroadSeries.json"
+  },
+  {
+    "id": 4,
+    "short_name": "RoadSeries",
+    "name": "RoadSeries",
+    "short_name_2": "Bike_Bg_RoadSeries",
+    "special_instructions": "Some important info for RoadSeries",
+    "url": "db/CatalogBike/RoadSeries.json"
+  },
+  {
+    "id": 5,
+    "short_name": "StreetSeries",
+    "name": "StreetSeries",
+    "short_name_2": "Bike_Bg_StreetSeries",
+    "special_instructions": "Some important info for StreetSeries",
+    "url": "db/CatalogBike/StreetSeries.json"
+  }
 ]
