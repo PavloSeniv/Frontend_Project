@@ -4,6 +4,8 @@
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Ajax__Load.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Ajax__Load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/Page__News.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/Page__News__Title.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News__Title.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <workItem from="1622012530676" duration="11316000" />
       <workItem from="1622055136686" duration="21038000" />
       <workItem from="1622156457452" duration="83000" />
-      <workItem from="1622187224793" duration="2826000" />
+      <workItem from="1622187224793" duration="4067000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
       <created>1622131190465</created>

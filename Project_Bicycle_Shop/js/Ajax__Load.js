@@ -25,6 +25,8 @@
         var NewsItemsTitleHtml = "snippets/Page__News__Title.html";
         var NewsItemHtml = "snippets/Page__News.html";
 
+        var Page__News__Item = "snippets/Page__News__Item.html";
+
         /*______________________________________________
         * Function help
         * --------------------------------------------*/
@@ -434,72 +436,70 @@
             }, false); //Інформація береться із сервера якщо false
         }
 
-        /*  //  Завантаження для кожної з категорій свою базу даних
-          // Load the catalog items view
-          // 'categoryShort' is a short_name for a category
-          ns.loadNewsItems = function (categoryShort) {
-              showLoading("#Main__Home");
-              $ajaxUtils.sendGetRequest(catalogItemsUrl + categoryShort + ".json", buildAndShowCatalogItemsHTML);
-          };
+        /* //  Завантаження для кожної з категорій свою базу даних
+         // Load the catalog items view
+         // 'categoryShort' is a short_name for a category
+         ns.loadNewsItems = function (categoryNewsShort) {
+             showLoading("#Main__Home");
+             $ajaxUtils.sendGetRequest(NewsItemsUrl__db + categoryNewsShort + ".json", buildAndShowNewsItemHTML);
+         };
 
-          // Builds HTML for the single category page based on the data
-          // from the server
-          function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
-              // Load title snippet of catalog items page
-              $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
-                  // Retrieve simple catalog item snippet
-                  $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
+         // Builds HTML for the single category page based on the data
+         // from the server
+         function buildAndShowNewsItemHTML(NewsItemsSection) {
+             // Load title snippet of catalog items page
+             $ajaxUtils.sendGetRequest(NewsItemsTitleHtml, function (NewsItemsTitleHtml) {
+                 // Retrieve simple catalog item snippet
+                 $ajaxUtils.sendGetRequest(Page__News__Item, function (Page__News__Item) {
 
-                      //Switch CSS class active to menu button
-                      switchCatalogToActive();
+                     //Switch CSS class active to menu button
+                     switchCatalogToActive();
 
-                      var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
-                      insertHtml("#Main__Home", catalogItemsViewHtml);
-                  }, false);
-              }, false);
-          }
+                     var Page__News__Item__ViewHtml = buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, Page__News__Item);
+                     insertHtml("#Items__Page__News", Page__News__Item__ViewHtml);
+                 }, false);
+             }, false);
+         }
 
-          // Using category and catalog items data and snippets html
-          // build catalog items view HTML to be inserted into page
-          function buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
+         // Using category and catalog items data and snippets html
+         // build catalog items view HTML to be inserted into page
+         function buildPageNewsItemsViewHtml(NewsItemsSection, catalogItemsTitleHtml, Page__News__Item) {
 
-              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.CatalogBike.name);
+             NewsItemsTitleHtml = insertProperty(NewsItemsTitleHtml, "name", NewsItemsSection.CatalogBike.name);
 
-              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.CatalogBike.special_instructions);
+             var finalHtml = NewsItemsTitleHtml;
 
-              var finalHtml = catalogItemsTitleHtml;
+             finalHtml += "<section class='row'>";
 
-              finalHtml += "<section class='row'>";
+             // Loop over catalog items
+             var catalogNews__Items = NewsItemsSection.CatalogBikeItems;
+             var catShort_name = NewsItemsSection.CatalogBike.short_name;
+             for (var i = 0; i < catalogNews__Items.length; i++) {
+                 //Insert catalog item values
+                 var html = Page__News__Item;
 
-              // Loop over catalog items
-              var catalogItems = categoryCatalogItems.CatalogBikeItems;
-              var catShort_name = categoryCatalogItems.CatalogBike.short_name;
-              for (var i = 0; i < catalogItems.length; i++) {
-                  //Insert catalog item values
-                  var html = catalogItemHtml;
+                 html = insertProperty(html, "short_name", catalogNews__Items[i].short_name);
 
-                  html = insertProperty(html, "short_name", catalogItems[i].short_name);
+                 html = insertProperty(html, "catalogShort_name", catShort_name);
 
-                  html = insertProperty(html, "catalogShort_name", catShort_name);
+                 html = insertItemPrice(html, "price_retail", catalogNews__Items[i].price_retail);
 
-                  html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
+                 html = insertItemAmount(html, "amount_retail", catalogNews__Items[i].amount_retail);
 
-                  html = insertItemAmount(html, "amount_retail", catalogItems[i].amount_retail);
+                 html = insertItemPrice(html, "price_wholesale", catalogNews__Items[i].price_wholesale);
 
-                  html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
+                 html = insertItemAmount(html, "amount_wholesale", catalogNews__Items[i].amount_wholesale);
 
-                  html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
+                 html = insertProperty(html, "name", catalogNews__Items[i].name);
 
-                  html = insertProperty(html, "name", catalogItems[i].name);
+                 html = insertProperty(html, "description", catalogNews__Items[i].description);
 
-                  html = insertProperty(html, "description", catalogItems[i].description);
+                 finalHtml += html;
+             }
 
-                  finalHtml += html;
-              }
-
-              finalHtml += "</section>";
-              return finalHtml;
-          }*/
+             finalHtml += "</section>";
+             return finalHtml;
+         }*/
 
         global.$ns = ns;
 
