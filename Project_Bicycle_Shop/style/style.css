@@ -11,6 +11,10 @@
     background-color: black;
 }
 
+.Margin__Position__Load {
+    margin: 25%;
+}
+
 /*--------------------------------------------------------------------
 Page__1 Main__Home
 M.Dybrovskyi
@@ -215,7 +219,7 @@ M.Dybrovskyi
 /* Top */
 
 .top__inner {
-    background-image: url('../img/top.png');
+    background-image: url('../img/BackgroundPage1/top.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -267,7 +271,7 @@ M.Dybrovskyi
 /* Slider category */
 .slider__category {
     padding: 210px 0px;
-    background: url('../img/Vector.png') left;
+    background: url('../img/Page1/Vector.png') left;
 }
 
 .carousel-inner {
@@ -354,7 +358,7 @@ M.Dybrovskyi
 .offers {
     padding-top: 83px;
     padding-bottom: 170px;
-    background: url('../img/Vector-2.png') bottom;
+    background: url('../img/Page1/Vector-2.png') bottom;
 }
 
 .offers__title {
@@ -468,7 +472,7 @@ M.Dybrovskyi
 .helloBlock {
     padding-top: 284px;
     padding-bottom: 227px;
-    background: url('../img/bg-hello.png') left bottom no-repeat;
+    background: url('../img/Page1/bg-hello.png') left bottom no-repeat;
 }
 
 .helloBlock__inner {
@@ -877,7 +881,7 @@ a.move-top span {
 
 /* AnotherModel */
 .anotherModel {
-    background-image: url('../img/background-2.png');
+    background-image: url('../img/Page3/background-2.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -1098,7 +1102,7 @@ a.move-top span {
 .form__select {
     appearance: none; /* Забрати стрілку select */
     overflow: hidden;
-    background: url('../img/arrow_for_select.png') no-repeat right;
+    background: url('../img/Page3/arrow_for_select.png') no-repeat right;
     background-position: 250px;
     background-size: 13px;
 }

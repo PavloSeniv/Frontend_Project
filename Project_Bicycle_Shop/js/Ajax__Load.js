@@ -37,7 +37,7 @@
 
         // Show loading icon inside element identified by 'selector'
         var showLoading = function (selector) {
-            var html = "<div class='text-center'>";
+            var html = "<div class='text-center Margin__Position__Load'>";
             html += "<img src='img/Ajax__Loading.gif' alt='loading' ></div";
             insertHtml(selector, html);
         };
