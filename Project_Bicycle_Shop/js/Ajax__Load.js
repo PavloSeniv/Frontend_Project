@@ -7,9 +7,7 @@
 
         var homeCategoriesBikeHTML = "snippets/Page1.html"; //Посилання на сніпет
 
-        /* var allCategoriesUrl = "db/CatalogBike.json";
-         var categoriesTitleHtml = "snippets/Category__Title.html";
-         */
+        var allCategoriesUrl = "db/CatalogBike.json";
 
         var catalogItemsUrl = "db/CatalogBike/";
         var catalogItemsTitleHtml = "snippets/CatalogBike__ProductTitle.html";
@@ -24,6 +22,8 @@
         var NewsItemsUrl__db = "db/NewsItem/";
         var NewsItemsTitleHtml = "snippets/Page__News__Title.html";
         var NewsItemHtml = "snippets/Page__News.html";
+
+        var Slider__Page1 = "snippets/Slider__Page1__Snippets.html"
 
         /*______________________________________________
         * Function help
@@ -89,60 +89,70 @@
         /*______________________________________________
         * Slider Categories
         * --------------------------------------------*/
+        /*
+                document.addEventListener("DOMContentLoaded", function (event) {
+                    //On first load, show home view
+                    showLoading("#Main__Home");
 
-        /*document.addEventListener("DOMContentLoaded", function (event) {
-            //On first load, show home view
-            showLoading("#Main__Home");
+                    $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowSliderHTML);
+                });
 
-            $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowCategoriesHTML);
-        });
 
-        /!* //Динамічне завантаження категорій у слайдері на 1 сторінці
-         // Load the menu categories view
-         ns.loadCatalogCategories = function () {
-             showLoading("#carouselExampleInterval");
+                // Builds HTML for the categories page based on the data
+                // from  the server
+                function buildAndShowSliderHTML(categories) {
+                    // Retrieve single category snippet
+                    $ajaxUtils.sendGetRequest(Slider__Page1, function (categoryHTML) {
 
-             $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowCategoriesHTML);
-         };*!/
+                        var SliderViewHtml = buildSliderViewHtml(categories, categoryHTML);
+                        insertHtml("#Slider__Page1", SliderViewHtml); // Буде вставлено сніпет категорій замість головної сторінки
+                    }, false);
+                }
 
-        // Builds HTML for the categories page based on the data
-        // from  the server
-        function buildAndShowCategoriesHTML(categories) {
-            // Load title snippet of categories page
-            $ajaxUtils.sendGetRequest(categoriesTitleHtml, function (categoriesTitleHtml) {
-                // Retrieve single category snippet
-                $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (categoryHTML) {
+                //Using categories data and snippets html
+                // build categories view HTML to be inserted into page
+                function buildSliderViewHtml(categories, categoryHtml) {
+                    var finalHtml = html;
+                    finalHtml += "<div id='carouselExampleControls' class='slider__category carousel slide'>";
 
-                    //Switch CSS class active to menu button
-                    switchCatalogToActive();
+                    finalHtml += "<div class='carousel-inner'>";
 
-                    var categoriesViewHtml = buildCategoriesViewHtml(categories, categoriesTitleHtml, categoryHTML);
-                    insertHtml("#Main__Home", categoriesViewHtml); // Буде вставлено сніпет категорій замість головної сторінки
-                }, false);
-            }, false);
-        }
+                    // Loop over categories
+                    for (var i = 0; i < categories.length; i++) {
+                        // Insert category values
+                        var html = categoryHtml;
+                        var name = "" + categories[i].name;
+                        var short_name = categories[i].short_name;
+                        var short_name_2 = categories[i].short_name_2;
 
-        //Using categories data and snippets html
-        // build categories view HTML to be inserted into page
-        function buildCategoriesViewHtml(categories, categoriesTitleHtml, categoryHtml) {
+                        html = insertProperty(html, "name", name);
+                        html = insertProperty(html, "short_name", short_name);
+                        html = insertProperty(html, "short_name_2", short_name_2);
 
-            var finalHTML = categoriesTitleHtml;
-            // Loop over categories
-            for (var i = 0; i < categories.length; i++) {
-                // Insert category values
-                var html = categoryHtml;
-                var name = "" + categories[i].name;
-                var short_name = categories[i].short_name;
-                var short_name_2 = categories[i].short_name_2;
+                        finalHtml += html;
+                    }
+                    finalHtml += "</div>"
+                    finalHtml += "</div>"
 
-                html = insertProperty(html, "name", name);
-                html = insertProperty(html, "short_name", short_name);
-                html = insertProperty(html, "short_name_2", short_name_2);
+                    finalHtml += "<button class='carousel-control-prev'  type = 'button' data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"prev\"> ";
+                    finalHtml += "<span class='carousel-control-prev-icon'  aria-hidden=\"true\"> ";
+                    finalHtml += "<span>";
+                    finalHtml += "<span class='visually-hidden'  aria-hidden=\"true\"> ";
+                    finalHtml += "<span>";
+                    finalHtml += "<button>";
 
-                finalHTML += html;
-            }
-            return finalHTML;
-        }*/
+                    finalHtml += "<button class='carousel-control-next'  type = 'button' data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"next\"> ";
+                    finalHtml += "<span class='carousel-control-next-icon'  aria-hidden=\"true\"> ";
+                    finalHtml += "<span>";
+                    finalHtml += "<span class='visually-hidden'> ";
+                    finalHtml += "<span>";
+                    finalHtml += "<span class='visually-hidden'> ";
+                    finalHtml += "<span>";
+                    finalHtml += "<button>";
+
+
+                    return finalHtml;
+                }*/
 
         /*----------------------------------------
         * CatalogBike

@@ -83,6 +83,10 @@ M.Dybrovskyi
     font-size: 20px;
 }
 
+.navbar-brand {
+    font-size: 25px;
+}
+
 .navbar-light .navbar-brand {
     color: rgba(255, 255, 255, 0.9);
     position: relative;
@@ -183,7 +187,7 @@ M.Dybrovskyi
 
 .navbar-brand-text {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50px;
 }
 
@@ -312,14 +316,12 @@ M.Dybrovskyi
 }
 
 .carousel-control-prev {
-    margin-top: 210px;
     height: 320px;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 3;
 }
 
 .carousel-control-next {
-    margin-top: 210px;
     height: 320px;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -459,6 +461,7 @@ M.Dybrovskyi
     text-align: center;
     vertical-align: bottom;
 }
+
 /* End news */
 
 /* HelloBlock */
@@ -1179,7 +1182,6 @@ a.move-top span {
 /*}*/
 
 
-
 /*.Burger__line__second, .Burger__line__third {*/
 /*    top: 50%;*/
 /*    transform: translateY(-50%);*/
@@ -1254,16 +1256,18 @@ a.move-top span {
 /*        display: none;*/
 /*    }*/
 /*}*/
-.Nav__link__footer{
+.Nav__link__footer {
     color: #8c8c8c;
     text-decoration: none;
 }
-.Nav__link__footer:hover{
+
+.Nav__link__footer:hover {
     text-decoration: underline;
     text-decoration: white;
     color: white;
 }
-.Nav__link__footer__nav{
+
+.Nav__link__footer__nav {
     display: block;
     text-align: center;
 
