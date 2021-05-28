@@ -21,11 +21,9 @@
         var NewsSection = "snippets/News__Snippets.html";
         var NewsSection__db = "db/News.json";
 
-        var NewsItemsUrl__db = "db/News__Item/";
+        var NewsItemsUrl__db = "db/NewsItem/";
         var NewsItemsTitleHtml = "snippets/Page__News__Title.html";
         var NewsItemHtml = "snippets/Page__News.html";
-
-        var Page__News__Item = "snippets/Page__News__Item.html";
 
         /*______________________________________________
         * Function help
@@ -426,80 +424,70 @@
         /*-----------------------------------------------
         * Catalog News Section
         * ----------------------------------------------*/
-
-//Завантаження сторінки з новинами
-        ns.loadPage__News = function () {
+        //Завантаження сторінки з новинами
+        //  Завантаження для кожної з категорій свою базу даних
+        // Load the catalog items view
+        // 'categoryShort' is a short_name for a category
+        ns.loadPage__News = function (categoryShort) {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
-            $ajaxUtils.sendGetRequest(NewsItemHtml, function (responseText) {
-
-                document.querySelector("#Main__Home").innerHTML = responseText;
-            }, false); //Інформація береться із сервера якщо false
+            $ajaxUtils.sendGetRequest(NewsItemsUrl__db + categoryShort + ".json", buildAndShowNewsItemHTML);
         }
 
-        /* //  Завантаження для кожної з категорій свою базу даних
-         // Load the catalog items view
-         // 'categoryShort' is a short_name for a category
-         ns.loadNewsItems = function (categoryNewsShort) {
-             showLoading("#Main__Home");
-             $ajaxUtils.sendGetRequest(NewsItemsUrl__db + categoryNewsShort + ".json", buildAndShowNewsItemHTML);
-         };
+        // Builds HTML for the single category page based on the data
+        // from the server
+        function buildAndShowNewsItemHTML(NewsItemsSection) {
+            // Load title snippet of catalog items page
+            $ajaxUtils.sendGetRequest(NewsItemsTitleHtml, function (NewsItemsTitleHtml) {
+                // Retrieve simple catalog item snippet
+                $ajaxUtils.sendGetRequest(NewsItemHtml, function (NewsItemHtml) {
 
-         // Builds HTML for the single category page based on the data
-         // from the server
-         function buildAndShowNewsItemHTML(NewsItemsSection) {
-             // Load title snippet of catalog items page
-             $ajaxUtils.sendGetRequest(NewsItemsTitleHtml, function (NewsItemsTitleHtml) {
-                 // Retrieve simple catalog item snippet
-                 $ajaxUtils.sendGetRequest(Page__News__Item, function (Page__News__Item) {
+                    //Switch CSS class active to menu button
+                    switchCatalogToActive();
 
-                     //Switch CSS class active to menu button
-                     switchCatalogToActive();
+                    var Page__News__Item__ViewHtml = buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, NewsItemHtml);
+                    insertHtml("#Main__Home", Page__News__Item__ViewHtml);
+                }, false);
+            }, false);
+        }
 
-                     var Page__News__Item__ViewHtml = buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, Page__News__Item);
-                     insertHtml("#Items__Page__News", Page__News__Item__ViewHtml);
-                 }, false);
-             }, false);
-         }
+        // Using category and catalog items data and snippets html
+        // build catalog items view HTML to be inserted into page
+        function buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, NewsItemHtml) {
 
-         // Using category and catalog items data and snippets html
-         // build catalog items view HTML to be inserted into page
-         function buildPageNewsItemsViewHtml(NewsItemsSection, catalogItemsTitleHtml, Page__News__Item) {
+            NewsItemsTitleHtml = insertProperty(NewsItemsTitleHtml, "NameNews", NewsItemsSection.News.name);
 
-             NewsItemsTitleHtml = insertProperty(NewsItemsTitleHtml, "name", NewsItemsSection.CatalogBike.name);
+            var finalHtml = NewsItemsTitleHtml;
 
-             var finalHtml = NewsItemsTitleHtml;
+            finalHtml += "<div class='container-fluid p-0'>";
 
-             finalHtml += "<section class='row'>";
+            finalHtml += "<div class='row'>";
 
-             // Loop over catalog items
-             var catalogNews__Items = NewsItemsSection.CatalogBikeItems;
-             var catShort_name = NewsItemsSection.CatalogBike.short_name;
-             for (var i = 0; i < catalogNews__Items.length; i++) {
-                 //Insert catalog item values
-                 var html = Page__News__Item;
 
-                 html = insertProperty(html, "short_name", catalogNews__Items[i].short_name);
+            // Loop over catalog items
+            var catalogNews__Items = NewsItemsSection.NewsItems;
+            var catShort_name = NewsItemsSection.News.short_name;
 
-                 html = insertProperty(html, "catalogShort_name", catShort_name);
+            for (var i = 0; i < catalogNews__Items.length; i++) {
+                //Insert catalog item values
+                var html = NewsItemHtml;
 
-                 html = insertItemPrice(html, "price_retail", catalogNews__Items[i].price_retail);
+                html = insertProperty(html, "short_name", catalogNews__Items[i].short_name); //Також потрібне для підвантаження потрібного файлу json
 
-                 html = insertItemAmount(html, "amount_retail", catalogNews__Items[i].amount_retail);
+                html = insertProperty(html, "catalogShort_name", catShort_name);
 
-                 html = insertItemPrice(html, "price_wholesale", catalogNews__Items[i].price_wholesale);
 
-                 html = insertItemAmount(html, "amount_wholesale", catalogNews__Items[i].amount_wholesale);
+                html = insertProperty(html, "ArticleName", catalogNews__Items[i].ArticleName);
 
-                 html = insertProperty(html, "name", catalogNews__Items[i].name);
+                html = insertProperty(html, "ArticleDescription", catalogNews__Items[i].ArticleDescription);
 
-                 html = insertProperty(html, "description", catalogNews__Items[i].description);
+                finalHtml += html;
+            }
 
-                 finalHtml += html;
-             }
-
-             finalHtml += "</section>";
-             return finalHtml;
-         }*/
+            finalHtml += "</div>";
+            finalHtml += "</div>";
+            finalHtml += "</div>";
+            return finalHtml;
+        }
 
         global.$ns = ns;
 

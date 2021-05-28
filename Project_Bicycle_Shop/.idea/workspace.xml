@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/db/NewsItem/NewsItemOne.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/News__Item/NewsItemOne.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Ajax__Load.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Ajax__Load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/News__Snippets.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/News__Snippets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/Page__News.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/Page__News__Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News__Item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/Page__News__Title.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News__Title.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,25 +58,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/snippets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/News__Item/ArticleItem3" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\snippets" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item\ArticleItem3" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item\ArticleItem2" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item\ArticleItem1" />
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item" />
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\db\News_Item" />
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\db" />
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\CatalogBike\StreetSeries" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\db\NewsItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item\ArticeItem1" />
+      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\News__Item" />
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img" />
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\CatalogBike\StreetSeries" />
       <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\CatalogBike\RoadSeries" />
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\CatalogBike\OffroadSeries" />
-      <recent name="E:\StudyUniversaty\Course 3\Semestry2\Web\Frontend_Project\Project_Bicycle_Shop\img\CatalogBike\HomeSeries" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +99,8 @@
       <workItem from="1622012530676" duration="11316000" />
       <workItem from="1622055136686" duration="21038000" />
       <workItem from="1622156457452" duration="83000" />
-      <workItem from="1622187224793" duration="4067000" />
+      <workItem from="1622187224793" duration="4218000" />
+      <workItem from="1622198594702" duration="16755000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
       <created>1622131190465</created>
