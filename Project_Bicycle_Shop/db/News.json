@@ -2,25 +2,25 @@
   {
     "id": 1,
     "short_name": "NewsItemOne",
-    "name": "NewsItemOne",
+    "name": "Лучшие аксессуары для стрит байков",
     "short_name_2": "News1",
-    "special_instructions": "Some important info for NewsItemOne",
+    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     "url": "db/News__Item/NewsItemOne.json"
   },
   {
     "id": 2,
     "short_name": "NewsItemTwo",
-    "name": "NewsItemTwo",
+    "name": "Куда поехать в Киеве?",
     "short_name_2": "News2",
-    "special_instructions": "Some important info for NewsItemTwo",
+    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     "url": "db/News__Item/NewsItemTwo.json"
   },
   {
     "id": 3,
     "short_name": "NewsItemThree",
-    "name": "NewsItemThree",
+    "name": "Как обслуживать свой велосипед?",
     "short_name_2": "News3",
-    "special_instructions": "Some important info for NewsItemThree",
+    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
     "url": "db/News__Item/NewsItemThree.json"
   }
 ]

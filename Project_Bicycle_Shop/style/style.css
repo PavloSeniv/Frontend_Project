@@ -352,7 +352,7 @@ M.Dybrovskyi
 .offers {
     padding-top: 83px;
     padding-bottom: 170px;
-    background: url('../img/Vector-2.png') left top;
+    background: url('../img/Vector-2.png') bottom;
 }
 
 .offers__title {
@@ -413,11 +413,15 @@ M.Dybrovskyi
     font-weight: bold;
     font-size: 64px;
     line-height: 60px;
+    text-align: center;
+
 }
 
 .news__item {
     width: 338px;
     color: var(--color-primary);
+    margin-left: 30px;
+    margin: 0 auto;
 }
 
 .news__item-content {
@@ -445,15 +449,66 @@ M.Dybrovskyi
 
 .news__item-btn {
     width: 338px;
-    height: 52px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     background-color: #f2f2f2;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
+    text-align: center;
+    vertical-align: bottom;
+}
+/* End news */
+
+/* HelloBlock */
+.helloBlock {
+    padding-top: 284px;
+    padding-bottom: 227px;
+    background: url('../img/bg-hello.png') left bottom no-repeat;
 }
 
-/* End news */
+.helloBlock__inner {
+
+}
+
+.helloBlock__form {
+    display: block;
+    text-align: center;
+}
+
+.helloBlock__title {
+    margin-bottom: 20px;
+}
+
+
+.helloBlock__input {
+    width: 21.6vw;
+    margin-bottom: 30px;
+}
+
+.helloBlock__btn {
+    width: 252px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    padding: 11px 38px;
+    border: 3px solid var(--color-primary);
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.helloBlock__btn:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+}
+
+/* End helloBlock */
 
 /*************************************************** Page 2
 ****************************************************/
