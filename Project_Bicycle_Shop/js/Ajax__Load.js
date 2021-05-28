@@ -65,26 +65,26 @@
 
         });
 
-        /*     //Завантаження головної сторінки
-             ns.loadHome = function () {
-                 showLoading("#Main__Home"); //Підтягування гіфки завантажувача
-                 $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
-                     //Switch CSS class active to menu button
-                     switchHomeToActive();
-                     document.querySelector("#Main__Home").innerHTML = responseText;
-                     $ajaxUtils.sendGetRequest(NewsSection, loadHomeNews())
-                 }, false);
-             }*/
-
-        //Завантаження головної сторінки
+        //Завантаження головної сторінки зі всім
         ns.loadHome = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
                 //Switch CSS class active to menu button
                 switchHomeToActive();
                 document.querySelector("#Main__Home").innerHTML = responseText;
-            }, false)
+            }, false);
+            $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
         }
+
+        /*  //Завантаження головної сторінки стандартний варіант
+       ns.loadHome = function () {
+           showLoading("#Main__Home"); //Підтягування гіфки завантажувача
+           $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
+               //Switch CSS class active to menu button
+               switchHomeToActive();
+               document.querySelector("#Main__Home").innerHTML = responseText;
+           }, false);
+       }*/
 
         /*______________________________________________
         * Slider Categories
@@ -219,7 +219,7 @@
         * Items CatalogBike
         * --------------------------------------------*/
 
-//Завантаження головної сторінки
+//Завантаження головної сторінки з продуктом
         ns.loadItems = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(ItemHtml, function (responseText) {
@@ -372,30 +372,16 @@
         * News Section
         * ----------------------------------------------*/
 
-        /*//Завантаження головної сторінки
-                function loadHomeNews() {
-                    showLoading("#Main__Home"); //Підтягування гіфки завантажувача
-                    $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML);
-                    return $ajaxUtils;
-                } //Підключаємо Базу даних*/
-
 
         document.addEventListener("DOMContentLoaded", function (event) {
             $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
         });
 
-        /* //Динамічне завантаження категорій у слайдері на 1 сторінці
-         // Load the menu categories view
-         ns.loadCatalogCategories = function () {
-             showLoading("#carouselExampleInterval");
-
-             $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowCategoriesHTML);
-         };*/
 
 // Builds HTML for the categories page based on the data
 // from  the server
         function buildAndShowNewsHTML(NewsItemsSection) {
-            // Load title snippet of categories page
+            // Load title snippet of categories pag
             $ajaxUtils.sendGetRequest(NewsSection__Title, function (NewsTitleHtml) {
                 // Retrieve single category snippet
                 $ajaxUtils.sendGetRequest(NewsSection, function (NewsSectionHtml) {
