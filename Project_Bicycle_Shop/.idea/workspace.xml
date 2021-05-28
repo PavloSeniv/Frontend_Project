@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/db/NewsItem/NewsItemOne.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/News__Item/NewsItemOne.json" beforeDir="false" />
@@ -10,6 +11,14 @@
       <change beforePath="$PROJECT_DIR$/snippets/Page__News.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/Page__News__Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News__Item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/Page__News__Title.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/Page__News__Title.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/free-icon-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/Navbar__toggler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+>>>>>>> 9e65ace8daa4270ff835546ece263890d8558871
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +45,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/snippets/Page1.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/js/modal.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/js/slider.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/js/main.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/page3.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/snippets/Page1.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js/slider.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js/modal.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/js/Ajax__Load.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/page3.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/snippets/Page2.html" root0="FORCE_HIGHLIGHTING" />
   </component>
