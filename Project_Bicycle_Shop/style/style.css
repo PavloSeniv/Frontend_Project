@@ -520,6 +520,52 @@ M.Dybrovskyi
 /*************************************************** Page 2
 ****************************************************/
 
+/* CatalogTop */
+.catalogTop__inner {
+    background-image: url('../img/Page2/Categories__Bike.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.catalogTop__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.catalogTop__img {
+    width: 35vw;
+    margin-right: 30px;
+}
+
+.catalogTop__main {
+    color: #fff;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /*width: 632px;*/
+}
+
+.catalogTop__main-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 60px;
+    margin-bottom: 60px;
+}
+
+.catalogTop__main-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+/* End CatalogTop */
+
 /* Product Item */
 .card {
     position: relative;
@@ -530,6 +576,7 @@ M.Dybrovskyi
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 0;
+    height: 700px;
 }
 
 .card-title {
@@ -558,6 +605,7 @@ M.Dybrovskyi
 .Bg_Card_Info {
     background-color: #F2F2F2;
     width: 443px;
+    height: 698px;
 }
 
 .card-body {
@@ -583,15 +631,13 @@ M.Dybrovskyi
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
+.card__img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 /* End Product Item */
 
-/* category__slider */
-.category__slider-img {
-    width: 100%;
-    margin: 100px;
-}
-
-/* End category__slider */
 /*--------------------------------------------------------------------
 Media
 --------------------------------------------------------------------*/
@@ -1275,4 +1321,10 @@ a.move-top span {
     display: block;
     text-align: center;
 
+}
+
+@media (max-width: 768px) {
+    .catalogTop__img {
+        display: none;
+    }
 }
