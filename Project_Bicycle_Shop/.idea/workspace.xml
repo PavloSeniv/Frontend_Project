@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/img/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/free-icon-menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/Navbar__toggler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
