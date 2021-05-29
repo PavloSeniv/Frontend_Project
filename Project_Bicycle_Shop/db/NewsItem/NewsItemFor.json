@@ -1,0 +1,32 @@
+{
+  "NewsItems": [
+    {
+      "id": 11,
+      "short_name": "ArticleItem1",
+      "ArticleName": "Article-1",
+      "ArticleDescription": "ArticleDescription-1"
+    },
+    {
+      "id": 12,
+      "short_name": "ArticleItem2",
+      "ArticleName": "Article-2",
+      "ArticleDescription": "ArticleDescription-2"
+    },
+    {
+      "id": 13,
+      "short_name": "ArticleItem3",
+      "ArticleName": "Article-3",
+      "ArticleDescription": "ArticleDescription-3"
+    },
+    {
+      "id": 14,
+      "short_name": "ArticleItem4",
+      "ArticleName": "Article-4",
+      "ArticleDescription": "ArticleDescription-4"
+    }
+  ],
+  "News": {
+    "short_name": "ArticleItem1",
+    "name": "ArticleItem4"
+  }
+}

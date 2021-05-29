@@ -1,13 +1,4 @@
 new Vivus(
-    'ProjectSvg',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-
-new Vivus(
     'ProjectSvg1',
     {
         type: 'delayed',

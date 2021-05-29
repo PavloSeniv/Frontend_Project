@@ -11,6 +11,10 @@
     background-color: black;
 }
 
+.Margin__Position__Load {
+    margin: 25%;
+}
+
 /*--------------------------------------------------------------------
 Page__1 Main__Home
 M.Dybrovskyi
@@ -81,6 +85,10 @@ M.Dybrovskyi
 /* Header */
 .nav-link {
     font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 25px;
 }
 
 .navbar-light .navbar-brand {
@@ -183,7 +191,7 @@ M.Dybrovskyi
 
 .navbar-brand-text {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50px;
 }
 
@@ -211,7 +219,7 @@ M.Dybrovskyi
 /* Top */
 
 .top__inner {
-    background-image: url('../img/top.png');
+    background-image: url('../img/BackgroundPage1/top.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -263,7 +271,7 @@ M.Dybrovskyi
 /* Slider category */
 .slider__category {
     padding: 210px 0px;
-    background: url('../img/Vector.png') left;
+    background: url('../img/Page1/Vector.png') left;
 }
 
 .carousel-inner {
@@ -312,14 +320,12 @@ M.Dybrovskyi
 }
 
 .carousel-control-prev {
-    margin-top: 210px;
     height: 320px;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 3;
 }
 
 .carousel-control-next {
-    margin-top: 210px;
     height: 320px;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -352,7 +358,7 @@ M.Dybrovskyi
 .offers {
     padding-top: 83px;
     padding-bottom: 170px;
-    background: url('../img/Vector-2.png') bottom;
+    background: url('../img/Page1/Vector-2.png') bottom;
 }
 
 .offers__title {
@@ -459,13 +465,14 @@ M.Dybrovskyi
     text-align: center;
     vertical-align: bottom;
 }
+
 /* End news */
 
 /* HelloBlock */
 .helloBlock {
     padding-top: 284px;
     padding-bottom: 227px;
-    background: url('../img/bg-hello.png') left bottom no-repeat;
+    background: url('../img/Page1/bg-hello.png') left bottom no-repeat;
 }
 
 .helloBlock__inner {
@@ -874,7 +881,7 @@ a.move-top span {
 
 /* AnotherModel */
 .anotherModel {
-    background-image: url('../img/background-2.png');
+    background-image: url('../img/Page3/background-2.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -1095,7 +1102,7 @@ a.move-top span {
 .form__select {
     appearance: none; /* Забрати стрілку select */
     overflow: hidden;
-    background: url('../img/arrow_for_select.png') no-repeat right;
+    background: url('../img/Page3/arrow_for_select.png') no-repeat right;
     background-position: 250px;
     background-size: 13px;
 }
@@ -1179,7 +1186,6 @@ a.move-top span {
 /*}*/
 
 
-
 /*.Burger__line__second, .Burger__line__third {*/
 /*    top: 50%;*/
 /*    transform: translateY(-50%);*/
@@ -1254,16 +1260,18 @@ a.move-top span {
 /*        display: none;*/
 /*    }*/
 /*}*/
-.Nav__link__footer{
+.Nav__link__footer {
     color: #8c8c8c;
     text-decoration: none;
 }
-.Nav__link__footer:hover{
+
+.Nav__link__footer:hover {
     text-decoration: underline;
     text-decoration: white;
     color: white;
 }
-.Nav__link__footer__nav{
+
+.Nav__link__footer__nav {
     display: block;
     text-align: center;
 

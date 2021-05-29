@@ -23,34 +23,70 @@
 <section class="swiper">
     <div id="carouselExampleControls" class="slider__category carousel slide">
         <div class="carousel-inner">
-
-            <div class="carousel-item active" style="background-image: url('img/background_cat-A.png');">
-                <img class="slider__category-img d-block" src="img/bike_cat-A.png" alt="...">
-                <p class="slider__category-text text-center">Road Series</p>
+            l
+            <div class="carousel-item active"
+                 style="background-image: url('img/CatalogBike/CitySeries/CitySeries.png');">
+                <a class="text-decoration-none" href="#"
+                   onclick="$ns.loadCatalogItems('CitySeries');">
+                    <img class="slider__category-img d-block" src="img/CatalogBike/CitySeries/Bike_Bg_CitySeries.png"
+                         alt="City Series">
+                    <p class="slider__category-text text-center">City Series</p>
+                </a>
             </div>
 
-            <div class="carousel-item" style="background-image: url('img/background_cat-B.png');">
-                <img class="slider__category-img d-block" src="img/bike_cat-B.png" alt="...">
-                <p class="slider__category-text text-center">Road Series</p>
+            <div class="carousel-item"
+                 style="background-image: url('img/CatalogBike/HomeSeries/HomeSeries.png');">
+                <a class="text-decoration-none" href="#"
+                   onclick="$ns.loadCatalogItems('HomeSeries');">
+                    <img class="slider__category-img d-block" src="img/CatalogBike/HomeSeries/Bike_Bg_HomeSeries.png"
+                         alt="Home Series">
+                    <p class="slider__category-text text-center">Home Series</p>
+                </a>
             </div>
 
-            <div class="carousel-item" style="background-image: url('img/background_cat-C.png');">
-                <img class="slider__category-img d-block" src="img/bike_cat-C.png" alt="...">
-                <p class="slider__category-text text-center">Road Series</p>
+            <div class="carousel-item"
+                 style="background-image: url('img/CatalogBike/OffroadSeries/OffroadSeries.png');">
+                <a class="text-decoration-none" href="#"
+                   onclick="$ns.loadCatalogItems('OffroadSeries');">
+                    <img class="slider__category-img d-block"
+                         src="img/CatalogBike/OffroadSeries/Bike_Bg_OffroadSeries.png"
+                         alt="Offroad Series">
+                    <p class="slider__category-text text-center">Offroad Series</p>
+                </a>
             </div>
+
+            <div class="carousel-item"
+                 style="background-image: url('img/CatalogBike/RoadSeries/RoadSeries.png');">
+                <a class="text-decoration-none" href="#"
+                   onclick="$ns.loadCatalogItems('RoadSeries');">
+                    <img class="slider__category-img d-block" src="img/CatalogBike/RoadSeries/Bike_Bg_RoadSeries.png"
+                         alt="Road Series">
+                    <p class="slider__category-text text-center">Road Series</p>
+                </a>
+            </div>
+
+            <div class="carousel-item"
+                 style="background-image: url('img/CatalogBike/StreetSeries/StreetSeries.png');">
+                <a class="text-decoration-none" href="#"
+                   onclick="$ns.loadCatalogItems('StreetSeries');">
+                    <img class="slider__category-img d-block"
+                         src="img/CatalogBike/StreetSeries/Bike_Bg_StreetSeries.png"
+                         alt="Street Series">
+                    <p class="slider__category-text text-center">Street Series</p></a>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 </section>
 <!-- End Slider category -->
@@ -85,7 +121,12 @@
             <div class="row">
                 <div class="offers__items d-flex justify-content-between flex-wrap">
                     <div class="offers__item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <img src="img/offers-1.svg" alt="" class="offers__item-img">
+                        <!--                         data-aos-easing="ease-in-out"
+                                                 data-aos="zoom-in"
+                                                 data-aos-delay="150"-->
+                        <img src="img/Page1/offers-1.svg" alt="" class="offers__item-img" id="Div123">
+                        <!-- <object class="offers__item-img" id="ProjectSvg1" type="image/svg+xml"
+                                 data="img/Page1/offers-1.svg"></object>-->
                         <div class="offers__item-content">
                             <div class="offers__item-title">
                                 Простота обсуживания
@@ -98,7 +139,7 @@
                     </div>
 
                     <div class="offers__item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <img src="img/offers-2.svg" alt="" class="offers__item-img">
+                        <img src="img/Page1/offers-2.svg" alt="" class="offers__item-img">
                         <div class="offers__item-content">
                             <div class="offers__item-title">
                                 Простота обсуживания
@@ -111,7 +152,7 @@
                     </div>
 
                     <div class="offers__item col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="img/offers-3.svg" alt="" class="offers__item-img">
+                        <img src="img/Page1/offers-3.svg" alt="" class="offers__item-img">
                         <div class="offers__item-content">
                             <div class="offers__item-title">
                                 Простота обсуживания
@@ -133,8 +174,8 @@
     <div class="news__inner">
         <div class="container-fluid p-0">
 
-                <div id="News__Section">
-                </div>
+            <div id="News__Section">
+            </div>
 
         </div>
     </div>
@@ -149,14 +190,13 @@
                 Напишіть своє ім'я
             </div>
             <form class="helloBlock__form">
-                <input class="helloBlock__input" type="text" id="get_num" name="get_num" value=""
+                <input class="helloBlock__input" type="text" value="" id="myinput"
                        placeholder="Ваше ім'я"/>
             </form>
-            <div id="add" class="helloBlock__btn">Відправити</div>
+            <div id="add" onClick="myFunction()" class="helloBlock__btn">Відправити</div>
         </div>
     </div>
 </section>
-
 <script src="js/main.js"></script>
 
 
