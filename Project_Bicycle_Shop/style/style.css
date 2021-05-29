@@ -617,80 +617,10 @@ HEAD
     background: #000;
 }
 
-.subscribe-butn {
-    color: #ffffff;
-    border: none;
-    padding: 7px 12px;
-    display: inline-block;
-    font-size: 16px;
-    letter-spacing: 2px;
-    border-radius: 0px;
-    background: #ff0779;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
-    cursor: pointer;
-}
-
-.newsletter-footers {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.newsletter-footers input[type="email"] {
-    width: 71%;
-    display: inline-block;
-    font-size: 14px;
-    color: #fff;
-    padding: .6em;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #28a745;
-    border-radius: 0;
-    background: transparent;
-    border-bottom: 1px solid #fff;
-}
-
-/*Newsletter*/
-
-
-.footer-w3layouts-head p {
-    color: #fff;
-}
-
-a.move-top span {
-    display: inline-block;
-    font-size: 25px;
-    color: #fff;
-}
-
 .address-grids-by p, .address-grids-by p a {
     font-size: 14px;
     color: #8c8c8c;
     line-height: 25px;
-}
-
-.hair-list li {
-    display: block;
-}
-
-.single-title.text-left h4, .text-w3layouts-grids h4 {
-    font-size: 17px;
-    letter-spacing: 0;
-    font-weight: 600;
-    color: #ff0779;
-}
-
-.hair-list li a, .single-title ul li, .single-title ul li a {
-    font-size: 15px;
-    font-weight: 600;
-    color: #676464;
-    line-height: 36px;
-}
-
-.address-grids-by p a:hover, .subscribe-butn:hover, .blog-buttn a:hover, .sent-butnn:hover, .hair-list li a:hover {
-    opacity: .8;
 }
 
 .bottem-wthree-footer p {
@@ -711,8 +641,6 @@ a.move-top span {
 .bottem-wthree-footer {
     background: #000;
 }
-
-/*--footer--*/
 .footer-below-grids {
     margin-bottom: 1rem;
 }
@@ -721,6 +649,25 @@ a.move-top span {
     color: #fff;
     font-size: 22px;
 }
+.Nav__link__footer {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.Nav__link__footer:hover {
+    text-decoration: underline;
+    text-decoration: white;
+    color: white;
+}
+
+.Nav__link__footer__nav {
+    display: block;
+    text-align: center;
+
+}
+
+
+/*--footer--*/
 
 /* Header */
 .header__logo {
@@ -1260,19 +1207,3 @@ a.move-top span {
 /*        display: none;*/
 /*    }*/
 /*}*/
-.Nav__link__footer {
-    color: #8c8c8c;
-    text-decoration: none;
-}
-
-.Nav__link__footer:hover {
-    text-decoration: underline;
-    text-decoration: white;
-    color: white;
-}
-
-.Nav__link__footer__nav {
-    display: block;
-    text-align: center;
-
-}
