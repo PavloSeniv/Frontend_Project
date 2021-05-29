@@ -1,6 +1,11 @@
-$(function() {    
+/*
+$(function() {
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
+
+//     $("#modal_btn").click(function(event){
+// // TODO ...
+//     });
 
     modalCall.on("click", function(event) {
         event.preventDefault();
@@ -52,4 +57,11 @@ $(function() {
     $(".modal__dialog").on("click", function(event) {
         event.stopPropagation(); // Якщо ми клікаємо по елементу moda__dialog, то ми відміняємо клік по його батьківському класі
     });
-});
+});*/
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+})
