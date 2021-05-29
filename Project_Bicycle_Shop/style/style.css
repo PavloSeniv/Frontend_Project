@@ -479,6 +479,21 @@ Page 1
     vertical-align: bottom;
 }
 
+/*Для задання збільшення зображення*/
+.Scale__Img__Hover {
+    display: inline-block; /*Рядково-блочний елемент*/
+    overflow: hidden; /*Ховаємо все за контуром*/
+}
+
+.Scale__Img__Hover img {
+    transition: 1s; /*Час ефекту*/
+    display: block; /*Видаляємо невеликий відступ*/
+}
+
+.Scale__Img__Hover img:hover {
+    transform: scale(1.2); /*Збільшення масштабу*/
+}
+
 /* End news */
 
 /* HelloBlock */
@@ -564,6 +579,8 @@ Page 2
 }
 
 .catalogTop__main-title {
+    text-align: center;
+    text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -578,10 +595,11 @@ Page 2
     line-height: 23px;
     margin-bottom: 20px;
 }
+
 /* End CatalogTop */
 
 /* Product Item */
-.card {
+.Card__Page2__Items {
     position: relative;
     flex-direction: column;
     min-width: 0;
@@ -590,7 +608,6 @@ Page 2
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 0;
-    height: 700px;
 }
 
 .card-title {
@@ -616,18 +633,17 @@ Page 2
     color: var(--color-primary);
 }
 
-.Bg_Card_Info {
-    background-color: #F2F2F2;
-    width: 443px;
-    height: 698px;
-}
 
 .card-body {
     flex: 1 1 auto;
-    padding: 4rem 4rem;
+    padding: 8rem 4rem;
 }
 
-.Button_Info {
+.Bg__Info__Div {
+    background-color: #F2F2F2;
+}
+
+.Button__Info {
     width: 100%;
     display: inline-block;
     font-weight: 400;
@@ -645,11 +661,7 @@ Page 2
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-.card__img {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
+
 /* End Product Item */
 
 /*--------------------------------------------------------------------
@@ -1219,6 +1231,18 @@ HEAD
     border-radius: 0.25rem;
 
 }
+
+/*Для анімації при наведенні на блок з новиною*/
+.Card__news {
+    transition: all 0.25s ease;
+}
+
+.Card__news:hover {
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/*-------------------------------*/
 
 .Card__news-body {
     flex: 1 1 auto;

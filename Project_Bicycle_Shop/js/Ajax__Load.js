@@ -23,7 +23,6 @@
         var NewsItemsTitleHtml = "snippets/Page__News__Title.html";
         var NewsItemHtml = "snippets/Page__News.html";
 
-        var Slider__Page1 = "snippets/Slider__Page1__Snippets.html"
 
         /*______________________________________________
         * Function help
@@ -192,8 +191,8 @@
             catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.CatalogBike.special_instructions);
 
             var finalHtml = catalogItemsTitleHtml;
-
-            finalHtml += "<section class='row'>";
+            finalHtml += "<div class='container-fluid p-0'>";
+            finalHtml += "<div class='row'>";
 
             // Loop over catalog items
             var catalogItems = categoryCatalogItems.CatalogBikeItems;
@@ -221,7 +220,9 @@
                 finalHtml += html;
             }
 
-            finalHtml += "</section>";
+            finalHtml += "</div>";
+            finalHtml += "</div>";
+
             return finalHtml;
         }
 
