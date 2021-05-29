@@ -1,4 +1,6 @@
-
+/*--------------------------------------------------------------------
+All
+---------------------------------------------------------------------*/
 *,
 *:before,
 *:after {
@@ -17,7 +19,7 @@
 
 /*--------------------------------------------------------------------
 Page__1 Main__Home
-M.Dybrovskyi
+M.Dybrovskyi and Kucher.O
 ---------------------------------------------------------------------*/
 
 .button {
@@ -82,7 +84,13 @@ M.Dybrovskyi
 
 /* end Oleksiy root */
 
+
+/*--------------------------------------
+Seniv Pavlo
+---------------------------------------*/
+
 /* Header */
+
 .nav-link {
     font-size: 20px;
 }
@@ -113,23 +121,6 @@ M.Dybrovskyi
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
     color: rgba(255, 0, 0, 0.9);
-}
-
-
-.form-control {
-    color: #000000;
-    background-color: #fff;
-    border: 3px solid #000000;
-    border-radius: 0;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.form-control:focus {
-    color: #000000;
-    background-color: #fff;
-    border-color: #000000;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
 .btn {
@@ -169,6 +160,10 @@ M.Dybrovskyi
 
 }
 
+.Bg__Navbar__Black {
+    background-color: #000000;
+}
+
 .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.55);
     border-color: rgba(0, 0, 0, 0);
@@ -195,6 +190,23 @@ M.Dybrovskyi
     left: 50px;
 }
 
+
+.form-control {
+    color: #000000;
+    background-color: #fff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #000000;
+    background-color: #fff;
+    border-color: #000000;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
 /* End Header */
 
 /* Button and a */
@@ -213,7 +225,8 @@ M.Dybrovskyi
 
 /* end Button and a */
 
-/*************************************************** Page 1 
+/***************************************************
+Page 1
 ****************************************************/
 
 /* Top */
@@ -517,7 +530,8 @@ M.Dybrovskyi
 
 /* End helloBlock */
 
-/*************************************************** Page 2
+/***************************************************
+Page 2
 ****************************************************/
 
 /* CatalogTop */
@@ -639,17 +653,6 @@ M.Dybrovskyi
 /* End Product Item */
 
 /*--------------------------------------------------------------------
-Media
---------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------
-
---------------------------------------------------------------------*/
-
-/*************************************************** Page 3
-****************************************************/
-
-/*/*--------------------------------------------------------------------
 Page__3 Item__Product
 O.Kucher
 ---------------------------------------------------------------------*/
@@ -663,80 +666,10 @@ HEAD
     background: #000;
 }
 
-.subscribe-butn {
-    color: #ffffff;
-    border: none;
-    padding: 7px 12px;
-    display: inline-block;
-    font-size: 16px;
-    letter-spacing: 2px;
-    border-radius: 0px;
-    background: #ff0779;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
-    cursor: pointer;
-}
-
-.newsletter-footers {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.newsletter-footers input[type="email"] {
-    width: 71%;
-    display: inline-block;
-    font-size: 14px;
-    color: #fff;
-    padding: .6em;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #28a745;
-    border-radius: 0;
-    background: transparent;
-    border-bottom: 1px solid #fff;
-}
-
-/*Newsletter*/
-
-
-.footer-w3layouts-head p {
-    color: #fff;
-}
-
-a.move-top span {
-    display: inline-block;
-    font-size: 25px;
-    color: #fff;
-}
-
 .address-grids-by p, .address-grids-by p a {
     font-size: 14px;
     color: #8c8c8c;
     line-height: 25px;
-}
-
-.hair-list li {
-    display: block;
-}
-
-.single-title.text-left h4, .text-w3layouts-grids h4 {
-    font-size: 17px;
-    letter-spacing: 0;
-    font-weight: 600;
-    color: #ff0779;
-}
-
-.hair-list li a, .single-title ul li, .single-title ul li a {
-    font-size: 15px;
-    font-weight: 600;
-    color: #676464;
-    line-height: 36px;
-}
-
-.address-grids-by p a:hover, .subscribe-butn:hover, .blog-buttn a:hover, .sent-butnn:hover, .hair-list li a:hover {
-    opacity: .8;
 }
 
 .bottem-wthree-footer p {
@@ -758,7 +691,6 @@ a.move-top span {
     background: #000;
 }
 
-/*--footer--*/
 .footer-below-grids {
     margin-bottom: 1rem;
 }
@@ -767,6 +699,27 @@ a.move-top span {
     color: #fff;
     font-size: 22px;
 }
+
+.Nav__link__footer {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.Nav__link__footer:hover {
+    text-decoration: underline;
+    text-decoration: white;
+    color: white;
+}
+
+.Nav__link__footer__nav {
+    display: block;
+    text-align: center;
+
+}
+
+
+/*--footer--*/
+
 
 /* Header */
 .header__logo {
@@ -1202,129 +1155,101 @@ a.move-top span {
     margin-bottom: 0;
 }
 
-/*burger*/
 
-/*.wrapper {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: center;*/
-/*}*/
+/*----------------------------------------------
+Trash
+----------------------------------------------*/
 
-/*.Burger {*/
-/*    width: 50px;*/
-/*    height: 30px;*/
-/*    cursor: pointer;*/
-/*    position: relative;*/
-/*}*/
+/*Navbar*/
 
-/*.Burger__line {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: 4px;*/
-/*    background-color: white;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    transition: .3s all linear;*/
-/*}*/
-
-/*.Burger__line__first {*/
-/*    top: 0;*/
-/*}*/
-
-
-/*.Burger__line__second, .Burger__line__third {*/
-/*    top: 50%;*/
-/*    transform: translateY(-50%);*/
-/*}*/
-
-/*.Burger__line__fourth {*/
-/*    bottom: 0;*/
-/*}*/
-
-/*.Burger_active .Burger__line__first, .Burger_active .Burger__line__fourth {*/
-/*    opacity: 0;*/
-/*}*/
-
-/*.Burger_active .Burger__line__second {*/
-/*    transform: translateY(-50%) rotate(45deg);*/
-/*}*/
-
-/*.Burger_active .Burger__line__third {*/
-/*    transform: translateY(-50%) rotate(-45deg);*/
-/*}*/
-
-/*.Navbar__toggler {*/
-/*    padding: 0.25rem 0.75rem;*/
-/*    font-size: 1.25rem;*/
-/*    line-height: 1;*/
-/*    background-color: transparent;*/
-/*    border: 1px solid transparent;*/
-/*    border-radius: 0.25rem;*/
-/*    transition: box-shadow 0.15s ease-in-out;*/
-/*}*/
-/*.Navbar__toggler:hover {*/
-/*    text-decoration: none;*/
-/*}*/
-/*.Navbar__toggler:focus {*/
-/*    text-decoration: none;*/
-/*    outline: 0;*/
-/*    box-shadow: 0 0 0 0.25rem;*/
-/*}*/
-/*.navbar-light .Navbar__toggler {*/
-/*    color: rgba(0, 0, 0, 0);*/
-/*    border-color: rgba(0, 0, 0, 0);*/
-/*}*/
-
-/*.navbar-dark .Navbar__toggler {*/
-/*    color: rgba(255, 255, 255, 0.55);*/
-/*    border-color: rgba(0, 0, 0, 0);*/
-/*}*/
-
-/*@media (min-width: 1200px) {*/
-/*    .navbar-expand-xl {*/
-/*        flex-wrap: nowrap;*/
-/*        justify-content: flex-start;*/
-/*    }*/
-/*    .navbar-expand-xl .navbar-nav {*/
-/*        flex-direction: row;*/
-/*    }*/
-/*    .navbar-expand-xl .navbar-nav .dropdown-menu {*/
-/*        position: absolute;*/
-/*    }*/
-/*    .navbar-expand-xl .navbar-nav .nav-link {*/
-/*        padding-right: 0.5rem;*/
-/*        padding-left: 0.5rem;*/
-/*    }*/
-/*    .navbar-expand-xl .navbar-nav-scroll {*/
-/*        overflow: visible;*/
-/*    }*/
-/*    .navbar-expand-xl .navbar-collapse {*/
-/*        display: flex !important;*/
-/*        flex-basis: auto;*/
-/*    }*/
-/*    .navbar-expand-xl .Navbar__toggler {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-.Nav__link__footer {
-    color: #8c8c8c;
-    text-decoration: none;
+/*
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.Nav__link__footer:hover {
-    text-decoration: underline;
-    text-decoration: white;
-    color: white;
+.Burger {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
 }
 
-.Nav__link__footer__nav {
+.Burger__line {
     display: block;
-    text-align: center;
-
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: .3s all linear;
 }
+
+.Burger__line__first {
+    top: 0;
+}
+
+
+.Burger__line__second, .Burger__line__third {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Burger__line__fourth {
+    bottom: 0;
+}
+
+.Burger_active .Burger__line__first, .Burger_active .Burger__line__fourth {
+    opacity: 0;
+}
+
+.Burger_active .Burger__line__second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.Burger_active .Burger__line__third {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (min-width: 1200px) {
+    .navbar-expand-xl {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-xl .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .navbar-expand-xl .navbar-nav-scroll {
+        overflow: visible;
+    }
+
+    .navbar-expand-xl .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-xl .Navbar__toggler {
+        display: none;
+    }
+}
+
+*/
 
 @media (max-width: 768px) {
     .catalogTop__img {
         display: none;
     }
 }
+

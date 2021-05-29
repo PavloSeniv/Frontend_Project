@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-/*Для зміни кольору меню*/
+/*
+/!*Для зміни кольору меню*!/
 $(document).ready(function(){
     $(window).on("scroll",function() {
         var wn = $(window).scrollTop();
@@ -23,4 +24,4 @@ $(document).ready(function(){
             $(".navbar").css("background","none")
         }
     });
-});
+});*/
