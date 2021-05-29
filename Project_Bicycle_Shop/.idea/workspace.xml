@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml" />
+    <list default="true" id="fcf13e01-a0e9-43d5-8265-d4f7750df788" name="Default Changelist" comment="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +93,7 @@
       <workItem from="1622055136686" duration="21038000" />
       <workItem from="1622156457452" duration="83000" />
       <workItem from="1622187224793" duration="4067000" />
+      <workItem from="1622281312318" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/PavloSeniv/Frontend_Project&#10;&#10;# Conflicts:&#10;#&#9;Project_Bicycle_Shop/.idea/workspace.xml">
       <created>1622131190465</created>
