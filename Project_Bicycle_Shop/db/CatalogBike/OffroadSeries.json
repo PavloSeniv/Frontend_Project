@@ -3,8 +3,8 @@
     {
       "id": 11,
       "short_name": "OffroadSeries-1",
-      "name": "OffroadSeries A-1",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Trinx Majestic M136 Pro 29",
+      "description": "Гірський велосипед Trinx Majestic M136 29 - це вибір переможців! Складно знайти хороший надійний і в той же час простий велосипед серед безлічі велосипедних брендів, враховуючи ціну і характеристики. Що ж робити, якщо Ви не професійний спортсмен, який робить заїзди на десятки кілометрів і не борозните простори Європи як велотурист, Ви не готові витратити 2-3 тисячі доларів на велосипед і в цілому, Ви просто хочете хороший легкий і надійний, але при цьому не дорогий велосипед?",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -17,8 +17,8 @@
     {
       "id": 12,
       "short_name": "OffroadSeries-2",
-      "name": "OffroadSeries A-2",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Cannondale Trail 7 29 2021",
+      "description": "Cannondale Trail 7 - це велосипед з бездоганною репутацією і крутими характеристиками від іменитого американського виробника Cannondale. Репутація даного бренду зароблялася роками і продовжує твердо утримувати свої позиції, представляючи для велолюбителів все нові і нові моделі крутих, надійних велосипедів. Красень Канондейл Треілі 7 є представником сучасних гірських велосипедів, що має на увазі під собою певні зміни геометрії рами, які покращують посадку в сторону комфорту і керованості. Так само велосипед відрізняється великим широким кермом, масивної, але в той же час легкйо рамою з алюмінію і широкими покришками WTB Ranger Comp, 29 x 2.25",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -31,8 +31,8 @@
     {
       "id": 13,
       "short_name": "OffroadSeries-3",
-      "name": "OffroadSeries A-3",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Formula Motion DD 26",
+      "description": "Formula Motion 26 DD - один з кращих варіантів спортивного велосипеда. Чим він хороший? Перше - це ціна і якість даної моделі. Друге - це те, що він є в самих різних розмірах рам і коліс, таким чином, одна модель перекриває зростання від 135см до 200см! Формула Моушн 26 - виконана з надійного легкого алюмінію. Міцний жорсткий і в той же час легкий матеріал дозволяє велосипеду легко набирати швидкість, забезпечує достатній рівень комфорту на нерівностях, а головне, достатній рівень міцності, а відповідно довговічності рами і всього велосипеда. Обладнаний велосипед Formula Motion 26 DD не менше надійними запчастинами від відомого бренду Shimano.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -47,7 +47,7 @@
     "short_name": "OffroadSeries",
     "name": "Offroad Series",
     "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural3",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "special_instructions": "Гірські велосипеди, або MTB (англ. Mountain bike — маунтинбайк) — призначені для їзди по бездоріжжю. Вперше велосипеди цього класу з'явились на початку 70-х рр. у США, у 80-х почалось серійне їх виробництво, у 90-х вони заполонили весь світ.\n\nЇх характеризує дуже міцна рама, потужні колеса діаметром 26\", 27,5\" і 29\" дюймів (559 mm), шини шириною 1,85-2,5 дюйма.",
+    "special_instructions2": "Кермо пряме, іноді з «ріжками». Для МТВ характерна також велика кількість швидкостей (останні генерації мають формулу передн./задн. перемикачів 3х9=27).\n\nІснує ціла гамма різноманітних спортивних змагань з МТВ (Даунхіл, Фрі: райд, Кросс-кантрі, Ендуро та ін.), відповідно до умови яких відрізняються дизайн, конструкція МТВ."
   }
 }

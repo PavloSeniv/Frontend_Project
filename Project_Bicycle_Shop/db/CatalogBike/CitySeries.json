@@ -3,8 +3,8 @@
     {
       "id": 11,
       "short_name": "CitySeries-1",
-      "name": "CitySeries A-1",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Formula Smart 24",
+      "description": "Давно шукали звичайнісінький велосипед, бажано ще щоб його можна було зручно зберігати. Надійний український виробник пропонує Вам саме таку модель. Формула Смарт 24 з ліхтарем - максимально простий, максимально доступний, максимально компактний велосипед для міста. Універсальність велосипеда Формула Смарт 24 з ліхтарем складно переоцінити. Завдяки не великому і не маленькому розміру велосипед буде однаково зручним і для дорослих, і для підлітків.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -17,8 +17,8 @@
     {
       "id": 12,
       "short_name": "CitySeries-2",
-      "name": "CitySeries A-2",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Dorozhnik Lux 26",
+      "description": "Дорожник Люкс 26 - це один з найпопулярніших і затребуваних велосипедів для жінок в наш час. Модель ідеально поєднує в собі дизайн, якість, ціну і універсальний розмір.\n\nПростота і надійність велосипеда Dorozhnik Lux 26 - це його головна перевага. Класичний дизайн: повна відсутність надмірностей і складних сучасних технічних «приблуд» - велосипед в тому самому вигляді, в якому він існує вже сотні років практично без змін - ідеальний вибір для тих, хто хоче просто кататися і отримувати від цього задоволення.",
       "price_retail": 5999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -31,8 +31,8 @@
     {
       "id": 13,
       "short_name": "CitySeries-3",
-      "name": "CitySeries A-3",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Crosser Gamma 28",
+      "description": "Crosser Gamma легкий алюмінієвий міської велосипед від Кроссер!\n\nМодель вийшла одночасно з City-Life NEW і є ні чим іншим, як повним аналогом Сіті Лайф.\n\nЗовсім недавно з'явився на ринку Crosser Gamma 28 вже упел зарекомендувати себе, як якісний і надійний велосипед Кроссер Гамма припав до смаку багатьом велосипедистам.\n\nЯкісна алюмінієва рама, що робить цей велосипед легким і міцним, вигідно виділяє цю модель серед інших велосипедів фірми! Міцна рама з квадратним перетином буде дуже до речі на такому велосипед, адже тут є багажник, на який можна сміливо вантажити до 30 кілограмів ваги!",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -47,7 +47,7 @@
     "short_name": "CitySeries",
     "name": "City Series",
     "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural1",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "special_instructions": "Міські велосипеди (англ. City-Bike) призначені для зручної їзди містом, швидкість менш важлива, ніж зручність. Посадка спини велосипедиста пряма, сідло широке і добре амортизоване. Гальма ручні при відкритому (зубчастому) задньому перемикачеві швидкостей.",
+    "special_instructions2": " Кермо часто форми горизонтальної «вісімки». Колеса з зовнішнім діаметром обода чи внутрішнім діаметром шин 28\" (622 mm) (іноді 26\" — 559 mm) дюймів. Товщина шин 1,3/4-1,5/8 дюйма; у велосипедів з 26\"-колесами товщина шин може сягати 1,8 дюйма, що наближує їх до гірських велосипедів."
   }
 }

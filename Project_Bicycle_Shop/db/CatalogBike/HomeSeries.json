@@ -3,8 +3,8 @@
     {
       "id": 11,
       "short_name": "HomeSeries-1",
-      "name": "HomeSeries A-1",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Bottecchia 24 MTB 18 S Boy",
+      "description": "Велосипед BOTTECCHIA 24 MTB 18 S BOY - це підлітковий байк преміум сегменту від топового італійського виробника з майже віковою історією. Зібраний байк на сталево рамі і амортизаційної вилки, оснащений многоскоростной трансмісій і ободнимі гальмами V-Brake. Велосипед проводиться для підлітків, чий зріст знаходиться в межах від 135 до 155 см. Основою цього велосипеду служить рама, вироблена з легованої сталі. Великий слопінг верхньої труби дозволяє попередити травму дитини при неакуратному спригіваніі. Міцне лакофарбове покриття надовго збереже привабливий зовнішній вигляд. А підніжка, якої комплектується даний велосипед, допоможе зберегти байк красивим.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -17,8 +17,8 @@
     {
       "id": 12,
       "short_name": "HomeSeries-2",
-      "name": "HomeSeries A-2",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Liv Adore 20 2019",
+      "description": "Liv Adore 20 - класичний дитячий великий, який в силу своєї ніжної забарвлення і розміру коліс відмінно підійде дівчинці з ростом від 115 до 130 см. Зручний велосипед, який для прогулянок на кожен день від відомого світового бренду в якісному виконанні і за цілком прийнятну вартість. Рама велосипеда виконана з фірмового алюмінієвого сплаву Aluxx Grade. Її довговічність і надійність підкріплені багаторічним досвідом виробника в сфері виробництва алюмінієвих рам. На відміну від стали вона легше і набагато жорсткіше, що дозволяє здійснювати тривалі прогулянки майже без втоми. Її геометрія нагадує дорослі круїзні велосипеди, де вісь педалей зміщена трохи вперед по відношенню до осі сідла.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -31,8 +31,8 @@
     {
       "id": 13,
       "short_name": "HomeSeries-3",
-      "name": "HomeSeries A-3",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Formula Sport 18",
+      "description": "Дитячий велосипед Formula Sport 18 виділяється серед своїх однокласників мінімальною ціною, а так як діти ростуть швидко, це дуже вигідне економічне вкладення. Байк зібраний на сталевий рамі і укомплектований одношвидкісний трансмісією, комбінованою гальмівною системою, 18\" колесами, а також додатково встановлені крила ( захист від бруду) і бічні допоміжні колеса, якщо ваш малюк ще не має досвіду в поїздках на двоколісному другові. Велосипед випускається в трьох кольорах і рамою єдиного розміру, яка підійде під зростання юних велосипедистів від 105 до 120 см. Рама виготовлена ​​зі сплаву стали Hi Ten, яка може похвалитися великим запасом міцності.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -47,7 +47,7 @@
     "short_name": "HomeSeries",
     "name": "Home Series",
     "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural2",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "special_instructions": "«Гібридні» велосипеди — проміжні між гірськими і шосейними. На межі 1990—2000 рр. на ринку з'явився новий підклас велосипедів з назвою \"BigFoot\" або «29 дюймів» — вседорожній велосипед з рамою та колесами кросового (насправді розмір ободу колеса — 28\" дюймів) і з шинами шириною гірського МТВ (1,25\"-2,125\"), що надає колесу в цілому більшого розміру.",
+    "special_instructions2": "Але ця новація поки що широкого розповсюдження не набула (через високі ціни на складові деталі і законодавчі протидії спортивних вело-асоціацій)."
   }
 }

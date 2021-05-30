@@ -3,8 +3,8 @@
     {
       "id": 11,
       "short_name": "RoadSeries-1",
-      "name": "RoadSeries A-1",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Azimut Blackmount 26 D",
+      "description": "Azimut Blackmount 26 D - Двухподвес аматорського рівня, для тих, хто тільки хоче зрозуміти, чи потрібен йому задній амортизатор. Найчастіше такі велосипеди вибирають ті, хто віддає перевагу комфорт швидкості або підлітки через незвичайного дизайну. Така конструкція дійсно здатна забезпечити більш м'яку їзду, хоча і на шкоду швидкості, до того ж Вам доведеться витрачати значно більше енергії, пересуваючись на такому апараті. Підліткам же, які хочуть спробувати вичавити з велосипеда максимум, при цьому не шкодуючи сам велосипед, задній амортизатор допоможе уникнути різного роду пошкоджень важливих вузлів, таких як осі або колеса.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -17,8 +17,8 @@
     {
       "id": 12,
       "short_name": "RoadSeries-2",
-      "name": "RoadSeries A-2",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Discovery Canyon 26",
+      "description": "Discovery Canyon 26 - відмінний недорогий двухподвес від відомого і перевіреного харківського виробника велосипедів. Діскавері Каньйон 26 стане ідеальним вибором для тих, хто давно шукав якісний двухподвес за доступною ціною. Discovery Canyon 26 володіє сучасним дизайном, цікавими кольорами, декількома комплектаціями і універсальним розміром. Звичайно ж Діскавері Каньйон 26 не є спортивним велосипедом в повному розумінні цього слова. Швидше це універсальний велосипед для міста і легкого бездоріжжя підвищеного комфорту.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -31,8 +31,8 @@
     {
       "id": 13,
       "short_name": "RoadSeries-3",
-      "name": "RoadSeries A-3",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Crosser Stanley 29",
+      "description": "Crosser Stanley 29 - повний аналог найпоширенішою комплектації від Кроссер, що поєднує в собі ідеальне співвідношення ціни і якості. Кроссер знову поповнює ряди своїх велосипедів Двухподвес. Зустрічайте абсолютно новий Crosser Stanley 26 - продуманий алюмінієвий двухподвес. Надійні комплектуючі від світових виробників, трансмісія Shimano на 21 швидкість, амортизаційна вилка з блокуванням ходу, надійні дискові гальма Sparkle, якісна гума від Kenda, оригінальний і сучасний дизайн, ну і звичайно ж, задня підвіска, все це знайшло своє місце в новій моделі Crosser Stanley!",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -47,7 +47,7 @@
     "short_name": "RoadSeries",
     "name": "Road Series",
     "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural4",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "special_instructions": "Туристичні велосипеди (англ. Touring bicycle, нім. Trekking-Bike) призначені для велотуризму, але мають універсальне призначення для їзди як у місті, так по дорогах без твердого покриття. За обладнанням знаходяться посередині між міськими (City-Bikes) та шосейними (Road bicycle, Cross-Bikes).",
+    "special_instructions2": "За зовнішнім поглядом, компонуванням рами, розміром коліс та формою керма зовнішнє дуже схожі на Cross-Bikes. Відрізняються більш масивною рамою, наявністю освітлювальних електроприладів, крил та багажника. Мають більш високу посадку велосипедиста. Шини 1,3/4\" — 1,5/8\" дюйми."
   }
 }

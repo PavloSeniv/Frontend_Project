@@ -3,8 +3,8 @@
     {
       "id": 11,
       "short_name": "StreetSeries-1",
-      "name": "StreetSeries A-1",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Formula Paladin DD 26 FAT BIKE",
+      "description": "Formula Paladin 26 - потужна і надійна модель двоколісного позашляховика від перевіреного виробника. Одним з найпопулярніших типів велосипеда для активних людей на сьогоднішній день є фетбайкі. Такий велосипед відмінно підійде людям, які не сидять на одному місці і давно мріяли підкорити бездоріжжя на двох колесах. Фетбайк дозволяє проїхати там, де не проїдуть інші велосипеди, а то і автомобілі. Саме таким велосипедом є Формула Паладин.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -17,8 +17,8 @@
     {
       "id": 12,
       "short_name": "StreetSeries-2",
-      "name": "StreetSeries A-2",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Titan Apache 29+ 2021",
+      "description": "Titan Apache 29+ - великий і міцний велосипед для великих і міцних хлопців!  Представник так званих плюсових велосипедів, ще не фетбайк, але вже і не просто гірський велосипед. Підвищена прохідність, підвищений комфорт, ну і, так для галочки, солідний і потужний зовнішній вигляд. Завдяки такій особливості своїх коліс, велосипед можна вважати по істині комфортним всюдиходом. Всюдихід, тому що покришки 29+ мають велику прохідність по різних поверхнях, в тому числі і сипучим, а наявність додаткового амортизатора і амортизаційної вилки дає можливість м'яко і впевнено проходити різні нерівності.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -31,8 +31,8 @@
     {
       "id": 13,
       "short_name": "StreetSeries-3",
-      "name": "StreetSeries A-3",
-      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "name": "Crosser FAT BIKE 26",
+      "description": "Crosser FAT bike - зустрічайте найдоступніший фетбайк на ринку велосипедів! Справжні всюдиходи серед велосипедів Фетбайкі призначені для абсолютно будь-якій поверхні і абсолютно будь-яких умов. А також розраховані на серйозні навантаження! Завдяки своїм величезним колесам (4 дюйма шириною) фети з легкістю борознять будь-який бруд, сніг і навіть пісок. Там, де звичайний, навіть супергорний, великий загрузне і його доведеться нести на собі, Фетбайк проїде, так як ніби пухкий пляжний пісок це звичайна укочена грунтовка!.",
       "price_retail": 4999,
       "price_wholesale": 15999,
       "amount_retail": "1+ pos",
@@ -47,7 +47,7 @@
     "short_name": "StreetSeries",
     "name": "Street Series",
     "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural5",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "special_instructions": "Міські велосипеди (англ. City-Bike) призначені для зручної їзди містом, швидкість менш важлива, ніж зручність. Посадка спини велосипедиста пряма, сідло широке і добре амортизоване. Гальма ручні при відкритому (зубчастому) задньому перемикачеві швидкостей.",
+    "special_instructions2": " Кермо часто форми горизонтальної «вісімки». Колеса з зовнішнім діаметром обода чи внутрішнім діаметром шин 28\" (622 mm) (іноді 26\" — 559 mm) дюймів. Товщина шин 1,3/4-1,5/8 дюйма; у велосипедів з 26\"-колесами товщина шин може сягати 1,8 дюйма, що наближує їх до гірських велосипедів."
   }
 }
