@@ -22,9 +22,8 @@
                              alt="{{ColorYellow}}">
                     </div>
                     <h4 class="mt-5"><b>Код замовлення - {{CodeItem}}</b></h4>
-                    <a href="#" onclick="$ns.loadItems('')"
-                       class="Button__Info btn mt-5"
-                       aria-current="page"><b>Замовити</b></a>
+                    <a class="Button__Info btn mt-5"
+                       aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Замовити</b></a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 align-self-center rounded mx-auto d-block">
@@ -36,4 +35,84 @@
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Замовлення</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h1 class="modal__title">
+                Оформлення замовлення
+            </h1>
+            <div class="modal__order">
+                <div class="modal__order-content">
+
+                    <h2 class="modal__order-subtitle">Інформація про товар</h2>
+                    <img src="img/Page2/bike_for_slider.png" alt="bike" class="modal__content-img">
+                    <div class="modal__content-text">Доставка: безкоштовно</div>
+                    <div class="modal__content-price"><span>Всього:</span> 12000 ₴</div>
+
+                </div>
+                <div class="modal__order-form">
+                    <h2 class="modal__order-subtitle">Контактна інформація</h2>
+                    <form action="https://formspree.io/f/mbjqoron" method="post" class="order__form">
+                        <div class="form__group">
+                            <label class="form__label" for="input-nameFirst">Імя</label>
+                            <input class="form__input" id="input-nameFirst" name="input-nameFirst" type="text"
+                                   placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-nameLast">Прізвище</label>
+                            <input class="form__input" id="input-nameLast" name="input-nameLast" type="text"
+                                   placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-telephone">Номер телефону</label>
+                            <input class="form__input" id="input-telephone" name="input-telephone" type="text"
+                                   placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">E-mail</label>
+                            <input class="form__input" id="input-email" name="input-email" type="email"
+                                   placeholder="">
+                        </div>
+                        <h2 class="modal__order-subtitle">Оплата і доставка</h2>
+                        <div class="form__group">
+                            <label class="form__label" for="input-payment">Спосіб оплати</label>
+                            <select class="form__select" name="payment" id="input-payment">
+                                <option value=""></option>
+                                <option value="Готівка">Готівка</option>
+                                <option value="Карта">Карта</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-obtaining">Спосіб отримання</label>
+                            <select class="form__select" name="payment" id="input-obtaining">
+                                <option value=""></option>
+                                <option value="Кур'єр">Кур'єр</option>
+                                <option value="Самовивіз">Самовивіз</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-city">Місто</label>
+                            <input class="form__input" id="input-city" name="input-city" type="text" placeholder="">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-addres">Адреса</label>
+                            <input class="form__input" id="input-addres" name="input-adress" type="text"
+                                   placeholder="">
+                        </div>
+                        <button type="submit" class="modal__content-button btn">Оформити заказ</button>
+                        <button type="button" class="btn  modal__order-close" data-bs-dismiss="modal">Продовжити
+                        </button>
+                    </form>
+
+                </div> <!-- modal__order-form -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
 

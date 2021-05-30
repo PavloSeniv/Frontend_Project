@@ -1,9 +1,9 @@
 (function (global) {
 
-    //Set up a namespace for the utility
+//Set up a namespace for the utility
     var ajaxUtils = {};
 
-    //Returns an HTTP request object
+//Returns an HTTP request object
     function getRequestObject() {
         if (global.XMLHttpRequest) {
             return (new XMLHttpRequest());
@@ -13,7 +13,7 @@
         }
     }
 
-    //Makes an Ajax GET request to 'requestUrl'
+//Makes an Ajax GET request to 'requestUrl'
     ajaxUtils.sendGetRequest = function (requestUrl, responseHandler, isJsonResponse) {
         var request = getRequestObject();
         request.onreadystatechange = function () {
@@ -23,13 +23,13 @@
         request.send(null); //for POST only
     };
 
-    //Only calls user provided 'responseHandler'
-    //function if response is ready
-    //and not an error
+//Only calls user provided 'responseHandler'
+//function if response is ready
+//and not an error
     function handleResponse(request, responseHandler, isJsonResponse) {
         if ((request.readyState === 4) && (request.status === 200)) {
 
-            //Default to isJsonResponse = true
+//Default to isJsonResponse = true
             if (isJsonResponse === undefined) {
                 isJsonResponse = true;
             }
@@ -42,6 +42,6 @@
         }
     }
 
-    //Expose utility to the global object
+//Expose utility to the global object
     global.$ajaxUtils = ajaxUtils;
 })(window);

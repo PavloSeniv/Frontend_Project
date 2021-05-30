@@ -1,8 +1,8 @@
 (function (global) {
 
         /*______________________________________________
-        * Variables
-        * --------------------------------------------*/
+        Variables
+        *--------------------------------------------*/
         var ns = {}; //new site
 
         var homeCategoriesBikeHTML = "snippets/Page1.html"; //Посилання на сніпет
@@ -12,8 +12,6 @@
         var catalogItemsUrl = "db/CatalogBike/";
         var catalogItemsTitleHtml = "snippets/CatalogBike__ProductTitle.html";
         var catalogItemHtml = "snippets/Page2.html";
-
-        var ItemHtml = "snippets/Page3_Snippets.html";
 
         var NewsSection__Title = "snippets/News__Title.html";
         var NewsSection = "snippets/News__Snippets.html";
@@ -28,21 +26,21 @@
         * Function help
         * --------------------------------------------*/
 
-        // Convenience function for inserting innerHTML fot 'select'
+// Convenience function for inserting innerHTML fot 'select'
         var insertHtml = function (selector, html) {
             var targetElem = document.querySelector(selector);
             targetElem.innerHTML = html;
         };
 
-        // Show loading icon inside element identified by 'selector'
+// Show loading icon inside element identified by 'selector'
         var showLoading = function (selector) {
             var html = "<div class='text-center Margin__Position__Load'>";
             html += "<img src='img/Ajax__Loading.gif' alt='loading' ></div";
             insertHtml(selector, html);
         };
 
-        // Return substitude of '{{propName}}'
-        // with propValue in given 'string'
+// Return substitude of '{{propName}}'
+// with propValue in given 'string'
         var insertProperty = function (string, propName, propValue) {
             var propToReplace = "{{" + propName + "}}";
             string = string.replace(new RegExp(propToReplace, "g"), propValue);
@@ -50,12 +48,12 @@
         };
 
         /*______________________________________________
-       * Page1
-       * --------------------------------------------*/
+        Page1
+        --------------------------------------------*/
 
-        //On page load (before images or CSS)
+//On page load (before images or CSS)
         document.addEventListener("DOMContentLoaded", function (event) {
-            //On first load, show home view
+//On first load, show home view
             showLoading("#Main__Home");
 
             $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
@@ -64,94 +62,16 @@
 
         });
 
-        //Завантаження головної сторінки зі всім
+//Завантаження головної сторінки зі всім
         ns.loadHome = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
-                //Switch CSS class active to menu button
+//Switch CSS class active to menu button
                 switchHomeToActive();
                 document.querySelector("#Main__Home").innerHTML = responseText;
             }, false);
             $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
         }
-
-        /*  //Завантаження головної сторінки стандартний варіант
-       ns.loadHome = function () {
-           showLoading("#Main__Home"); //Підтягування гіфки завантажувача
-           $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
-               //Switch CSS class active to menu button
-               switchHomeToActive();
-               document.querySelector("#Main__Home").innerHTML = responseText;
-           }, false);
-       }*/
-
-        /*______________________________________________
-        * Slider Categories
-        * --------------------------------------------*/
-        /*
-                document.addEventListener("DOMContentLoaded", function (event) {
-                    //On first load, show home view
-                    showLoading("#Main__Home");
-
-                    $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowSliderHTML);
-                });
-
-
-                // Builds HTML for the categories page based on the data
-                // from  the server
-                function buildAndShowSliderHTML(categories) {
-                    // Retrieve single category snippet
-                    $ajaxUtils.sendGetRequest(Slider__Page1, function (categoryHTML) {
-
-                        var SliderViewHtml = buildSliderViewHtml(categories, categoryHTML);
-                        insertHtml("#Slider__Page1", SliderViewHtml); // Буде вставлено сніпет категорій замість головної сторінки
-                    }, false);
-                }
-
-                //Using categories data and snippets html
-                // build categories view HTML to be inserted into page
-                function buildSliderViewHtml(categories, categoryHtml) {
-                    var finalHtml = html;
-                    finalHtml += "<div id='carouselExampleControls' class='slider__category carousel slide'>";
-
-                    finalHtml += "<div class='carousel-inner'>";
-
-                    // Loop over categories
-                    for (var i = 0; i < categories.length; i++) {
-                        // Insert category values
-                        var html = categoryHtml;
-                        var name = "" + categories[i].name;
-                        var short_name = categories[i].short_name;
-                        var short_name_2 = categories[i].short_name_2;
-
-                        html = insertProperty(html, "name", name);
-                        html = insertProperty(html, "short_name", short_name);
-                        html = insertProperty(html, "short_name_2", short_name_2);
-
-                        finalHtml += html;
-                    }
-                    finalHtml += "</div>"
-                    finalHtml += "</div>"
-
-                    finalHtml += "<button class='carousel-control-prev'  type = 'button' data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"prev\"> ";
-                    finalHtml += "<span class='carousel-control-prev-icon'  aria-hidden=\"true\"> ";
-                    finalHtml += "<span>";
-                    finalHtml += "<span class='visually-hidden'  aria-hidden=\"true\"> ";
-                    finalHtml += "<span>";
-                    finalHtml += "<button>";
-
-                    finalHtml += "<button class='carousel-control-next'  type = 'button' data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"next\"> ";
-                    finalHtml += "<span class='carousel-control-next-icon'  aria-hidden=\"true\"> ";
-                    finalHtml += "<span>";
-                    finalHtml += "<span class='visually-hidden'> ";
-                    finalHtml += "<span>";
-                    finalHtml += "<span class='visually-hidden'> ";
-                    finalHtml += "<span>";
-                    finalHtml += "<button>";
-
-
-                    return finalHtml;
-                }*/
 
         /*----------------------------------------
         * CatalogBike
@@ -168,12 +88,12 @@
 // Builds HTML for the single category page based on the data
 // from the server
         function buildAndShowCatalogItemsHTML(categoryCatalogItems) {
-            // Load title snippet of catalog items page
+// Load title snippet of catalog items page
             $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
-                // Retrieve simple catalog item snippet
+// Retrieve simple catalog item snippet
                 $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
 
-                    //Switch CSS class active to menu button
+//Switch CSS class active to menu button
                     switchCatalogToActive();
 
                     var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
@@ -200,11 +120,11 @@
             finalHtml += "<div class='container-fluid p-0'>";
             finalHtml += "<div class='row'>";
 
-            // Loop over catalog items
+// Loop over catalog items
             var catalogItems = categoryCatalogItems.CatalogBikeItems;
             var catShort_name = categoryCatalogItems.CatalogBike.short_name;
             for (var i = 0; i < catalogItems.length; i++) {
-                //Insert catalog item values
+//Insert catalog item values
                 var html = catalogItemHtml;
 
                 html = insertProperty(html, "short_name", catalogItems[i].short_name);
@@ -244,87 +164,9 @@
         * Items CatalogBike
         * --------------------------------------------*/
 
-//Завантаження головної сторінки з продуктом
-        ns.loadItems = function () {
-            showLoading("#Main__Home"); //Підтягування гіфки завантажувача
-            $ajaxUtils.sendGetRequest(ItemHtml, function (responseText) {
-                //Switch CSS class active to menu button
-                switchHomeToActive();
-
-                document.querySelector("#Main__Home").innerHTML = responseText;
-            }, false); //Інформація береться із сервера якщо false
-        }
-
-        /*  //  Завантаження кожного айтема
-          // Load the catalog items view
-          // 'categoryShort' is a short_name for a category
-          ns.loadItems = function (categoryShort) {
-              showLoading("#Main__Home");
-              $ajaxUtils.sendGetRequest(catalogItemsUrl + categoryShort + ".json", buildAndShowItemsHTML);
-          };
-
-          // Builds HTML for the single category page based on the data
-          // from the server
-          function buildAndShowItemsHTML(categoryCatalogItems) {
-              // Load title snippet of catalog items page
-              $ajaxUtils.sendGetRequest(catalogItemsTitleHtml, function (catalogItemTitleHtml) {
-                  // Retrieve simple catalog item snippet
-                  $ajaxUtils.sendGetRequest(ItemHtml, function (catalogItemHtml) {
-
-                      //Switch CSS class active to menu button
-                      switchCatalogToActive();
-
-                      var catalogItemsViewHtml = buildItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
-                      insertHtml("#Main__Home", catalogItemsViewHtml);
-                  }, false);
-              }, false);
-          }
-
-          // Using category and catalog items data and snippets html
-          // build catalog items view HTML to be inserted into page
-          function buildItemsViewHtml(categoryCatalogItems, catalogItemsTitleHtml, catalogItemHtml) {
-
-              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.CatalogBike.name);
-
-              catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.CatalogBike.special_instructions);
-
-              var finalHtml = catalogItemsTitleHtml;
-
-              finalHtml += "<section class='row'>";
-
-              // Loop over catalog items
-              var catalogItems = categoryCatalogItems.CatalogBikeItems;
-              var catShort_name = categoryCatalogItems.CatalogBike.short_name;
-              for (var i = 0; i < catalogItems.length; i++) {
-                  //Insert catalog item values
-                  var html = catalogItemHtml;
-
-                  html = insertProperty(html, "short_name", catalogItems[i].short_name);
-
-                  html = insertProperty(html, "catalogShort_name", catShort_name);
-
-                  html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
-
-                  html = insertItemAmount(html, "amount_retail", catalogItems[i].amount_retail);
-
-                  html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
-
-                  html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
-
-                  html = insertProperty(html, "name", catalogItems[i].name);
-
-                  html = insertProperty(html, "description", catalogItems[i].description);
-
-                  finalHtml += html;
-              }
-
-              finalHtml += "</section>";
-              return finalHtml;
-          }*/
-
 // Appends price with '$' if price exists
         function insertItemPrice(html, pricePropName, priceValue) {
-            // If not specified, replace with empty string
+// If not specified, replace with empty string
             if (!priceValue) {
                 return insertProperty(html, pricePropName, "$");
             }
@@ -335,7 +177,7 @@
 
 // Appends portion name in parens if it exists
         function insertItemAmount(html, amountPropName, amountValue) {
-            // If not specified, replace original string
+// If not specified, replace original string
             if (!amountValue) {
                 return insertProperty(html, amountPropName, "");
             }
@@ -349,12 +191,12 @@
         * --------------------------------------------*/
 
         var switchCatalogToActive = function () {
-            // Remove 'active' from home button
+// Remove 'active' from home button
             var classes = document.querySelector("#nav-link-home").className;
             classes = classes.replace(new RegExp("active", "g"), "");
             document.querySelector("#nav-link-home").className = classes;
 
-            // Add 'active' to menu button if not already there
+// Add 'active' to menu button if not already there
             classes = document.querySelector("#nav-link-category1").className;
             if (classes.indexOf("active") === -1) {
                 classes += " active";
@@ -363,12 +205,12 @@
         };
 
         var switchHomeToActive = function () {
-            // Remove 'active' from catalog button
+// Remove 'active' from catalog button
             var classes = document.querySelector("#nav-link-category1").className;
             classes = classes.replace(new RegExp("active", "g"), "");
             document.querySelector("#nav-link-category1").className = classes;
 
-            // Add 'active' to menu button if not already there
+// Add 'active' to menu button if not already there
             classes = document.querySelector("#nav-link-home").className;
             if (classes.indexOf("active") === -1) {
                 classes += " active";
@@ -381,38 +223,28 @@
         * --------------------------------------------*/
 
         /*        //On page load (before images or CSS)
-                document.addEventListener("DOMContentLoaded", function (event) {
-                    //On first load, show home view
-                    showLoading("#Main__Home");
+        document.addEventListener("DOMContentLoaded", function (event) {
+        //On first load, show home view
+        showLoading("#Main__Home");
 
-                    var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
-                    $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
-                });
-
-                //Завантаження випадкової категорії з товарами Ідея зробити випадкове завантаження фото на головній сторінці
-                ns.loadSpecials = function (categoryShort) {
-                    showLoading("#Main__Home");
-
-                    var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
-                    $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
-                };*/
+        var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
+        $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
+        });
 
         /*-----------------------------------------------
         * News Section
         * ----------------------------------------------*/
 
-
         document.addEventListener("DOMContentLoaded", function (event) {
             $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
         });
 
-
 // Builds HTML for the categories page based on the data
 // from  the server
         function buildAndShowNewsHTML(NewsItemsSection) {
-            // Load title snippet of categories pag
+// Load title snippet of categories pag
             $ajaxUtils.sendGetRequest(NewsSection__Title, function (NewsTitleHtml) {
-                // Retrieve single category snippet
+// Retrieve single category snippet
                 $ajaxUtils.sendGetRequest(NewsSection, function (NewsSectionHtml) {
 
 
@@ -429,9 +261,9 @@
             var finalHTML = NewsTitleHtml;
             finalHTML += "<div class='row'>";
 
-            // Loop over categories
+// Loop over categories
             for (var i = 0; i < NewsItemsSection.length; i++) {
-                // Insert category values
+// Insert category values
                 var html = NewsSectionHtml;
                 var name = "" + NewsItemsSection[i].name;
                 var short_name = NewsItemsSection[i].short_name;
@@ -453,24 +285,25 @@
         /*-----------------------------------------------
         * Catalog News Section
         * ----------------------------------------------*/
-        //Завантаження сторінки з новинами
-        //  Завантаження для кожної з категорій свою базу даних
-        // Load the catalog items view
-        // 'categoryShort' is a short_name for a category
+
+//Завантаження сторінки з новинами
+//  Завантаження для кожної з категорій свою базу даних
+// Load the catalog items view
+// 'categoryShort' is a short_name for a category
         ns.loadPage__News = function (categoryShort) {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(NewsItemsUrl__db + categoryShort + ".json", buildAndShowNewsItemHTML);
         }
 
-        // Builds HTML for the single category page based on the data
-        // from the server
+// Builds HTML for the single category page based on the data
+// from the server
         function buildAndShowNewsItemHTML(NewsItemsSection) {
-            // Load title snippet of catalog items page
+// Load title snippet of catalog items page
             $ajaxUtils.sendGetRequest(NewsItemsTitleHtml, function (NewsItemsTitleHtml) {
-                // Retrieve simple catalog item snippet
+// Retrieve simple catalog item snippet
                 $ajaxUtils.sendGetRequest(NewsItemHtml, function (NewsItemHtml) {
 
-                    //Switch CSS class active to menu button
+//Switch CSS class active to menu button
                     switchCatalogToActive();
 
                     var Page__News__Item__ViewHtml = buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, NewsItemHtml);
@@ -479,8 +312,8 @@
             }, false);
         }
 
-        // Using category and catalog items data and snippets html
-        // build catalog items view HTML to be inserted into page
+// Using category and catalog items data and snippets html
+// build catalog items view HTML to be inserted into page
         function buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, NewsItemHtml) {
 
             NewsItemsTitleHtml = insertProperty(NewsItemsTitleHtml, "NameNews", NewsItemsSection.News.name);
@@ -492,12 +325,12 @@
             finalHtml += "<div class='row'>";
 
 
-            // Loop over catalog items
+// Loop over catalog items
             var catalogNews__Items = NewsItemsSection.NewsItems;
             var catShort_name = NewsItemsSection.News.short_name;
 
             for (var i = 0; i < catalogNews__Items.length; i++) {
-                //Insert catalog item values
+//Insert catalog item values
                 var html = NewsItemHtml;
 
                 html = insertProperty(html, "short_name", catalogNews__Items[i].short_name); //Також потрібне для підвантаження потрібного файлу json

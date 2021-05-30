@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function (event) {
             var screenWidth = window.innerWidth;
             if (screenWidth < 2000) {
-                // document.getElementById("navbarToggler").classList.remove("show"); // Грубий варіант згортання меню
+// document.getElementById("navbarToggler").classList.remove("show"); // Грубий варіант згортання меню
                 let tempCollapse = new bootstrap.Collapse(document.getElementById("navbarToggler"), {toggle: true});
             }
         });
@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 /*
 /!*Для зміни кольору меню*!/
 $(document).ready(function(){
-    $(window).on("scroll",function() {
-        var wn = $(window).scrollTop();
-        if(wn > 50){
-            $(".navbar").css("background","rgb(0,0,0)");
-        }
-        else{
-            $(".navbar").css("background","none")
-        }
-    });
+$(window).on("scroll",function() {
+var wn = $(window).scrollTop();
+if(wn > 50){
+$(".navbar").css("background","rgb(0,0,0)");
+}
+else{
+$(".navbar").css("background","none")
+}
+});
 });*/

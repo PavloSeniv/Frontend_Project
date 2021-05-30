@@ -373,8 +373,8 @@ Page 1
 
 /* Offers */
 .offers {
-    padding-top: 83px;
-    padding-bottom: 170px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .offers__title {
@@ -753,7 +753,6 @@ HEAD
 .photo__slider {
     max-width: 770px;
     height: 430px;
-    margin-top: 242px;
     position: relative;
 }
 
@@ -773,7 +772,7 @@ HEAD
 
 .photo__dot::before {
     content: "";
-    background-image: url('../img/Page3/line.png');
+    background-image: url('../img/Page2/line.png');
     color: #000000;
     background-position: center;
     background-repeat: no-repeat;
@@ -1195,7 +1194,7 @@ HEAD
 .form__select {
     appearance: none; /* Забрати стрілку select */
     overflow: hidden;
-    background: url('../img/Page3/arrow_for_select.png') no-repeat right;
+    background: url('../img/Page2/arrow_for_select.png') no-repeat right;
     background-position: 250px;
     background-size: 13px;
 }
@@ -1213,11 +1212,6 @@ HEAD
 /* End Modal */
 
 /*Page_news.html Mykhailo Dubrovskyi*/
-.Page__news_bg {
-    background: url("../img/img_page_news/Vector_news.png") no-repeat;
-    width: 100%;
-    height: 770px;
-}
 
 .Page__news_H1 {
     padding-top: 166px;
