@@ -285,6 +285,7 @@ Page 1
     margin-left: 70px;
     position: absolute;
     bottom: 15%;
+    text-align: justify;
 }
 
 .top-title {
@@ -300,6 +301,7 @@ Page 1
     font-size: 4vw;
     line-height: 1.3;
     white-space: nowrap;
+
 }
 
 /* end top */
@@ -515,6 +517,8 @@ Page 1
     font-size: 18px;
     line-height: 23px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Створення ефекту Glowind Button*/
@@ -675,7 +679,6 @@ Page 1
 
 
 .helloBlock__input {
-    width: 21.6vw;
     margin-bottom: 30px;
 }
 
@@ -979,22 +982,22 @@ HEAD
 }
 
 .photo__dot--1 {
-    top: 160px;
+    top: 210px;
     left: 223px;
 }
 
 .photo__dot--2 {
-    top: 288px;
+    top: 338px;
     left: 655px;
 }
 
 .photo__dot--3 {
-    top: 238px;
+    top: 278px;
     right: 299px;
 }
 
 .photo__dot--4 {
-    bottom: -47px;
+    bottom: -97px;
     right: 453px;
 }
 
@@ -1525,8 +1528,13 @@ display: none;
         display: none;
     }
     .photo__dot--2 {
-        top: 278px;
+        top: 318px;
         left: 565px;
+    }
+
+    .photo__dot--4 {
+        bottom: -91px;
+        right: 453px;
     }
 
 }
@@ -1538,6 +1546,24 @@ display: none;
 
     .backgroundForSlider {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-brand-text {
+        display: none;
+    }
+
+    .catalogTop__main {
+        margin-top: 100px;
+    }
+
+    .catalogTop__main-title {
+        font-size: 46px;
+    }
+
+    .catalogTop__main-text {    
+        font-size: 14px;
     }
 }
 
