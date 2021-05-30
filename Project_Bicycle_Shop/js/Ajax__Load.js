@@ -188,7 +188,13 @@
 
             catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "name", categoryCatalogItems.CatalogBike.name);
 
+            catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "UrlBgPage2__Bike", categoryCatalogItems.CatalogBike.UrlBgPage2__Bike);
+
             catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions", categoryCatalogItems.CatalogBike.special_instructions);
+
+            catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "special_instructions2", categoryCatalogItems.CatalogBike.special_instructions2);
+
+            catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "short_name", categoryCatalogItems.CatalogBike.short_name);
 
             var finalHtml = catalogItemsTitleHtml;
             finalHtml += "<div class='container-fluid p-0'>";
@@ -212,6 +218,14 @@
                 html = insertItemPrice(html, "price_wholesale", catalogItems[i].price_wholesale);
 
                 html = insertItemAmount(html, "amount_wholesale", catalogItems[i].amount_wholesale);
+
+                html = insertProperty(html, "CodeItem", catalogItems[i].CodeItem);
+
+                html = insertProperty(html, "ColorBlack", catalogItems[i].ColorBlack);
+
+                html = insertProperty(html, "ColorBlue", catalogItems[i].ColorBlue);
+
+                html = insertProperty(html, "ColorYellow", catalogItems[i].ColorYellow);
 
                 html = insertProperty(html, "name", catalogItems[i].name);
 
@@ -366,18 +380,22 @@
         * Home Bg
         * --------------------------------------------*/
 
-        /*//Завантаження випадкової категорії з товарами Ідея зробити випадкове завантаження фото на головній сторінці
-        ns.loadSpecials = function (categoryShort) {
-            showLoading("#Main__Home");
-            /!*
-            var categoriesJSON = ["A", "B", "C", "D", "E", "F"];
-                        var randCategory = Math.floor(Math.random() * categoriesJSON.length);
-                        // Повертається число тобто 0,1,2...5
-            *!/
-            var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
-            $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
-        };
-        */
+        /*        //On page load (before images or CSS)
+                document.addEventListener("DOMContentLoaded", function (event) {
+                    //On first load, show home view
+                    showLoading("#Main__Home");
+
+                    var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
+                    $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
+                });
+
+                //Завантаження випадкової категорії з товарами Ідея зробити випадкове завантаження фото на головній сторінці
+                ns.loadSpecials = function (categoryShort) {
+                    showLoading("#Main__Home");
+
+                    var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
+                    $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
+                };*/
 
         /*-----------------------------------------------
         * News Section

@@ -4,36 +4,50 @@
       "id": 11,
       "short_name": "RoadSeries-1",
       "name": "RoadSeries A-1",
-      "description": "Product One",
-      "price_retail": null,
-      "price_wholesale": 9.0,
-      "amount_retail": null,
-      "amount_wholesale": "5+ pos"
+      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "price_retail": 4999,
+      "price_wholesale": 15999,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5+ pos",
+      "CodeItem": "#11100",
+      "ColorBlack": "ColorBlack",
+      "ColorBlue": "ColorBlue",
+      "ColorYellow": "ColorYellow"
     },
     {
       "id": 12,
       "short_name": "RoadSeries-2",
       "name": "RoadSeries A-2",
-      "description": "Product Two",
-      "price_retail": null,
-      "price_wholesale": 9.0,
-      "amount_retail": null,
-      "amount_wholesale": "5+ pos"
+      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "price_retail": 4999,
+      "price_wholesale": 15999,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5+ pos",
+      "CodeItem": "#11100",
+      "ColorBlack": "ColorBlack",
+      "ColorBlue": "ColorBlue",
+      "ColorYellow": "ColorYellow"
     },
     {
       "id": 13,
       "short_name": "RoadSeries-3",
       "name": "RoadSeries A-3",
-      "description": "Product Three",
-      "price_retail": null,
-      "price_wholesale": 9.0,
-      "amount_retail": null,
-      "amount_wholesale": "5+ pos"
+      "description": "Product One  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi assumenda facilis iusto laboriosam laborum libero, maxime porro sequi, tempora unde voluptate! Impedit non, velit.",
+      "price_retail": 4999,
+      "price_wholesale": 15999,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5+ pos",
+      "CodeItem": "#11100",
+      "ColorBlack": "ColorBlack",
+      "ColorBlue": "ColorBlue",
+      "ColorYellow": "ColorYellow"
     }
   ],
   "CatalogBike": {
     "short_name": "RoadSeries",
-    "name": "RoadSeries",
-    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "name": "Road Series",
+    "UrlBgPage2__Bike": "Bg__Group__BikeAndNatural4",
+    "special_instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "special_instructions2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
 }

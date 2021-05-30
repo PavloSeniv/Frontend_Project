@@ -5,19 +5,26 @@
                 <div class="card-body">
                     <h2 class="card-title"><b>{{name}}</b></h2>
                     <h4 class="card-price"><b>{{price_retail}}</b></h4>
+                    <h4 class="card-price"><b>{{amount_retail}}</b></h4>
+                    <h4 class="card-price mt-4"><b>{{price_wholesale}}</b></h4>
+                    <h4 class="card-price"><b>{{amount_wholesale}}</b></h4>
+
                     <p class="card-text mt-4">
                         {{description}}
                     </p>
                     <h6 class="mt-5"><b>Доступно в кольорах:</b></h6>
                     <div>
-                        <input class="form-check-input" type="radio" name="radioNoLabel"
-                               id="radioNoLabel1"
-                               value="" aria-label="...">
+                        <img class="mt-3" src="img/CatalogBike/{{catalogShort_name}}/{{ColorBlack}}.png"
+                             alt="{{ColorBlack}}">
+                        <img class="mt-3" src="img/CatalogBike/{{catalogShort_name}}/{{ColorBlue}}.png"
+                             alt="{{ColorBlue}}">
+                        <img class="mt-3" src="img/CatalogBike/{{catalogShort_name}}/{{ColorYellow}}.png"
+                             alt="{{ColorYellow}}">
                     </div>
-
+                    <h4 class="mt-5"><b>Код замовлення - {{CodeItem}}</b></h4>
                     <a href="#" onclick="$ns.loadItems('')"
                        class="Button__Info btn mt-5"
-                       aria-current="page"><b>Докладніше</b></a>
+                       aria-current="page"><b>Замовити</b></a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 align-self-center rounded mx-auto d-block">
