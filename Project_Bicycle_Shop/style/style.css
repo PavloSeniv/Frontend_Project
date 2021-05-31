@@ -1490,6 +1490,10 @@ HEAD
     margin-bottom: 0;
 }
 
+.Card__news-photo {
+    height: 350px;  
+}
+
 /*Анімація фотографії з новиною ефект Rotate__Animation*/
 
 span {
