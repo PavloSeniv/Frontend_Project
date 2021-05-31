@@ -1320,8 +1320,8 @@ HEAD
     line-height: 31px;
     color: var(--color-primary);
     margin-bottom: 20px;
-    padding-right: 115px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .modal__content-img {
@@ -1349,7 +1349,7 @@ HEAD
     font-size: 18px;
     line-height: 23px;
     color: var(--color-primary);
-    text-align: center;
+    text-align: left;
 }
 
 .modal__content-price {
@@ -1366,22 +1366,15 @@ HEAD
 }
 
 .modal__content-button {
-    padding: 10px 50px;
     margin-top: 20px;
+    margin-right: 35px;
     width: 280px;
-    margin-right: 10px;
 }
 
 .modal__order-close {
-    padding: 10px 50px;
     width: 280px;
     height: 50px;
     margin-top: 20px;
-}
-
-.modal__order-form {
-    margin-right: 39px;
-    margin: 0 auto;
 }
 
 .order__form {
@@ -1392,7 +1385,6 @@ HEAD
 }
 
 .form__group {
-    margin-right: 30px;
     margin-bottom: 20px;
 }
 
@@ -1529,14 +1521,6 @@ span {
 @media (min-width: 769px) and (max-width: 992px) {
     .catalogTop__img {
         display: none;
-    }
-
-    .modal__order-form {
-        margin-left: 325px;
-    }
-
-    .modal__content-button {
-        margin-right: 70px;
     }
 
 

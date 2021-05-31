@@ -49,46 +49,45 @@
             <div class="modal__order">
                 <div class="modal__order-content text-center">
 
-                    <h2 class="modal__order-subtitle">Інформація про товар</h2>
-                    <img src="img/Page2/bike_for_slider.png" alt="bike" class="modal__content-img">
-                    <div class="modal__content-text">Доставка: безкоштовно</div>
-                    <div class="modal__content-price"><span>Всього:</span> 12000 ₴</div>
-
+                    <h2 class="modal__order-subtitle">Категорія {{nameCat}}</h2>
+                    <img src="img/CatalogBike/{{catalogShort_name}}/{{UrlBgPage2__Bike}}.png"
+                         alt="bike" class="modal__content-img">
+                    <div class="modal__content-text">Доставлення: безкоштовно</div>
                 </div>
                 <div class="row">
                     <div class="modal__order-form justify-content-center">
                         <h2 class="modal__order-subtitle">Контактна інформація</h2>
                         <form action="https://formspree.io/f/mbjqoron" method="post" class="order__form">
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-nameFirst">Ім'я</label>
                                 <input class="form__input" id="input-nameFirst" name="input-nameFirst" type="text"
-                                       placeholder="Ім'я">
+                                       placeholder="Павло">
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-nameLast">Прізвище</label>
                                 <input class="form__input" id="input-nameLast" name="input-nameLast" type="text"
-                                       placeholder="Прізвище">
+                                       placeholder="Сенів">
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-telephone">Номер телефону</label>
                                 <input class="form__input" id="input-telephone" name="input-telephone" type="text"
-                                       placeholder="Номер телефону">
+                                       placeholder="+380672736751">
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-email">E-mail</label>
                                 <input class="form__input" id="input-email" name="input-email" type="email"
-                                       placeholder="E-mail">
+                                       placeholder="seniv.pavlo@mail.com">
                             </div>
-                            <h2 class="modal__order-subtitle">Оплата і доставка</h2>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <h2 class="modal__order-subtitle col-12">Оплата і доставка</h2>
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-payment">Спосіб оплати</label>
                                 <select class="form__select" name="payment" id="input-payment">
                                     <option value=""></option>
-                                    <option value="Готівка">Готівка</option>
-                                    <option value="Карта">Карта</option>
+                                    <option value="Готівка">Готівкою</option>
+                                    <option value="Карта">Картою</option>
                                 </select>
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-obtaining">Спосіб отримання</label>
                                 <select class="form__select" name="payment" id="input-obtaining">
                                     <option value=""></option>
@@ -96,23 +95,37 @@
                                     <option value="Самовивіз">Самовивіз</option>
                                 </select>
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-city">Місто</label>
                                 <input class="form__input" id="input-city" name="input-city" type="text"
-                                       placeholder="Місто">
+                                       placeholder="м.Івано-Франківськ">
                             </div>
-                            <div class="form__group col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-addres">Адреса</label>
                                 <input class="form__input" id="input-addres" name="input-adress" type="text"
-                                       placeholder="Адреса">
+                                       placeholder="вул. Сухомлинського,2">
                             </div>
-                            <div class="form__group-special col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <label class="form__label" for="input-special">Код замовлення</label>
                                 <input class="form__input" id="input-special" name="input-special" type="text"
-                                       placeholder="Код замовлення">
+                                       placeholder="#51100">
                             </div>
-                            <button type="submit" class="modal__content-button btn col-md-12">Оформити заказ</button>
-                            <button type="button" class="btn  modal__order-close col-md-12" data-bs-dismiss="modal">
+                            <div class="form__group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <label class="form__label" for="input-color">Колір</label>
+                                <select class="form__select" name="payment" id="input-color">
+                                    <option value=""></option>
+                                    <option value="Чорний">Чорний</option>
+                                    <option value="Синій">Синій</option>
+                                    <option value="Жовтий">Жовтий</option>
+                                </select>
+                            </div>
+                            <button type="submit"
+                                    class="modal__content-button btn col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                Оформити замовлення
+                            </button>
+                            <button type="button"
+                                    class="btn  modal__order-close col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+                                    data-bs-dismiss="modal">
                                 Продовжити
                             </button>
                         </form>

@@ -119,6 +119,10 @@
 // Loop over catalog items
             var catalogItems = categoryCatalogItems.CatalogBikeItems;
             var catShort_name = categoryCatalogItems.CatalogBike.short_name;
+            var UrlBgPage2__Bike = categoryCatalogItems.CatalogBike.UrlBgPage2__Bike;
+            var nameCat = categoryCatalogItems.CatalogBike.name;
+
+
             for (var i = 0; i < catalogItems.length; i++) {
 //Insert catalog item values
                 var html = catalogItemHtml;
@@ -126,6 +130,10 @@
                 html = insertProperty(html, "short_name", catalogItems[i].short_name);
 
                 html = insertProperty(html, "catalogShort_name", catShort_name);
+
+                html = insertProperty(html, "UrlBgPage2__Bike", UrlBgPage2__Bike);
+
+                html = insertProperty(html, "nameCat", nameCat);
 
                 html = insertItemPrice(html, "price_retail", catalogItems[i].price_retail);
 
