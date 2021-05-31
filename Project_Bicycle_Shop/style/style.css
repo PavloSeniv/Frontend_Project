@@ -1650,6 +1650,10 @@ display: none;
     .top-text {
         font-size: 5vw;
     }
+
+    .modal__title {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 400px) {
