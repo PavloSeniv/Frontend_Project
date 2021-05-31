@@ -655,11 +655,12 @@ Page 1
 
 .helloBlock__input {
     margin-bottom: 30px;
+    border: 3px solid var(--color-primary);
 }
 
 .helloBlock__btn {
     display: block;
-    width: 252px;
+    width: 228px;
     margin: 0 auto;
     font-style: normal;
     font-weight: bold;
@@ -1338,7 +1339,6 @@ HEAD
 .modal__order-content {
     margin-left: 70px;
     margin-right: 141px;
-    /* padding-bottom: 200px; */
     max-width: 524px;
     margin: 0 auto;
 }
@@ -1367,7 +1367,7 @@ HEAD
 
 .modal__content-button {
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 33px;
     width: 280px;
 }
 
