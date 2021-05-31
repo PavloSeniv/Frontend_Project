@@ -38,6 +38,11 @@ M.Dybrovskyi and Kucher.O
 /* Oleksiy root */
 :root {
     --color-primary: #000000;
+    --small: 320px;
+    --medium: 640px;
+    --large: 768px;
+    --extra-large: 1024px;
+
 }
 
 .title {
@@ -285,6 +290,10 @@ Page 1
     margin-left: 70px;
     position: absolute;
     bottom: 15%;
+    white-space: nowrap;
+}
+
+.top__text {
     text-align: justify;
 }
 
@@ -659,13 +668,9 @@ Page 1
 
 /* HelloBlock */
 .helloBlock {
-    padding-top: 284px;
+    padding-top: 100px;
     padding-bottom: 227px;
     background: url('../img/Page1/bg-hello.png') left bottom no-repeat;
-}
-
-.helloBlock__inner {
-
 }
 
 .helloBlock__form {
@@ -683,6 +688,7 @@ Page 1
 }
 
 .helloBlock__btn {
+    display: block;
     width: 252px;
     margin: 0 auto;
     font-style: normal;
@@ -699,10 +705,90 @@ Page 1
 }
 
 .helloBlock__btn:hover {
-    background-color: #fff;
+    background-color: inherit;
     color: var(--color-primary);
 }
 
+.toast {
+    cursor: pointer;
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+    max-width: var(--medium);
+    font-size: 0.825em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      0 100px 80px rgba(0, 0, 0, 0.07);
+    transition: 0.2s ease-in;
+}
+.toast--active {
+    display: flex;
+    animation: slidein--bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+      forwards;
+}
+.toast--success {
+    background: #43a047;
+    color: white;
+}
+
+.toast__container {
+    box-sizing: border-box;
+    padding: 0em 1em;
+    position: fixed;
+    width: 100%;
+    max-width: var(--medium);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast__icon {
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    padding: 1em;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.toast__icon svg {
+    height: 100%;
+}
+
+.toast__content {
+    box-sizing: border-box;
+    padding: 1em;
+}
+.toast__content h2 {
+    margin: 0 0 0.25em 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+.toast__content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+@keyframes slidein--bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* End helloBlock */
 
 /***************************************************
@@ -1547,6 +1633,19 @@ display: none;
     .backgroundForSlider {
         display: none;
     }
+
+    .top__content {
+        margin-left: 0;
+        padding-left: 20px;
+    }   
+
+    .top-title {
+        font-size: 5vw;
+    }
+
+    .top-text {
+        font-size: 5vw;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1571,5 +1670,9 @@ display: none;
     .slider__category-img {
         width: 80%;
     }
+
+    .top__content {
+        padding-left: 10px;
+    }  
 }
 

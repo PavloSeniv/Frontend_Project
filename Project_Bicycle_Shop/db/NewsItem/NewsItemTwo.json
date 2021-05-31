@@ -3,30 +3,30 @@
     {
       "id": 11,
       "short_name": "ArticleItem1",
-      "ArticleName": "Article-1",
-      "ArticleDescription": "ArticleDescription-1"
+      "ArticleName": "Чи є де покататись на Хрещатику? Чи не виженуть тебе звідти",
+      "ArticleDescription": "Київський хрещатик. Це величезна площа, на якій кожен день проходить десятки тисяч людей. Чи можна там ганяти на велосипеді..."
     },
     {
       "id": 12,
       "short_name": "ArticleItem2",
-      "ArticleName": "Article-2",
-      "ArticleDescription": "ArticleDescription-2"
+      "ArticleName": "Чи можна заїхати на велосипеді в музей Батьківщина Мати?",
+      "ArticleDescription": "Незнаєш, чи можна кататись на велосиеді в музеї? Чи пустять тебе взагалі? Що буде, якщо ти заїдеш туда без дозволу..."
     },
     {
       "id": 13,
       "short_name": "ArticleItem3",
-      "ArticleName": "Article-3",
-      "ArticleDescription": "ArticleDescription-3"
+      "ArticleName": "Найкрутіші місця для катання в Києві. Як не вмерти зі скуки",
+      "ArticleDescription": "В Києві є дуже багато місць для подорожах на велосипеді. Якщо ти не хочеш покататись на велосипеді, та незнаєш, де саме..."
     },
     {
       "id": 14,
       "short_name": "ArticleItem4",
-      "ArticleName": "Article-4",
-      "ArticleDescription": "ArticleDescription-4"
+      "ArticleName": "У Києві відбувся традиційний ретрокруїз.",
+      "ArticleDescription": "Десятки людей на велосипедах та у вінтажному вбранні проїхали вулицями столиці. Продовжили ж святкування джазовим концертом і танцями..."
     }
   ],
   "News": {
     "short_name": "ArticleItem1",
-    "name": "ArticleItem2"
+    "name": "Куди поїхати в Києві? Та чи потрібно"
   }
 }

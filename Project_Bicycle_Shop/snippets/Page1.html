@@ -5,12 +5,16 @@
             <div class="row">
                 <div class="top__content col-lg-9 col-md-3 col-sm-3">
                     <h1 class="top-title">CITY SERIES</h1>
-                    <p class="top-text">
-                        Зручний і швидкий
-                    </p>
-                    <p class="top-text">
-                        Твій ідеал для підкорення міста
-                    </p>
+                    <div class="top__text">
+                        <p class="top-text">
+                            Зручний і швидкий
+                        </p>
+                    </div>
+                    <div class="top__text">
+                        <p class="top-text">
+                            Твій ідеал для підкорення міста
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,10 +208,28 @@
                 <input class="helloBlock__input" type="text" value="" id="myinput"
                        placeholder="Ваше ім'я"/>
             </form>
-            <div id="add" onClick="myFunction()" class="helloBlock__btn">Відправити</div>
+            <!-- <div id="add" onClick="myFunction()" class="helloBlock__btn">Відправити</div> -->
+
         </div>
     </div>
+
+    <div class="toast__actions"  onClick="myFunction()">
+        <button class="toast__trigger helloBlock__btn">Привітатись</button>
+    </div>
+
+    <section class="toast__container">
+
+        <div class="toast toast--success" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast__icon">
+      
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
+            </svg>
+          </div>
+          <div class="toast__content">
+            <h2>Вітаємо <span id="hello"></span></h2>
+            <p>На нашому сайті ви зможете найти велосипед на любий смак. Знайти багато інтересного, а саме: новини про те, куда ви можете поїхати, як правильно ремонтувати велосипед, або які аксесуари підійдуть найкраще для твого жилізного коня. Stretster це - надійни сервіс, якісні деталі, та круті люди. Вдалого дня!</p>
+        </div>
+        </div>
+      </section>
 </section>
-
-
-

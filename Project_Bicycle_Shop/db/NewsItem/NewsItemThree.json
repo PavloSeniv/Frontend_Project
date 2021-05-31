@@ -3,30 +3,30 @@
     {
       "id": 11,
       "short_name": "ArticleItem1",
-      "ArticleName": "Article-1",
-      "ArticleDescription": "ArticleDescription-1"
+      "ArticleName": "Як правильно мити велосипед, щоб він не ржавів",
+      "ArticleDescription": "Помив один раз велосипед, і на ньому появилась іржа. Незнаєш, чому це сталось. Треба просто правильно мити велосипед..."
     },
     {
       "id": 12,
       "short_name": "ArticleItem2",
-      "ArticleName": "Article-2",
-      "ArticleDescription": "ArticleDescription-2"
+      "ArticleName": "Правильний догляд, це міф чи реальність?",
+      "ArticleDescription": "Думаєш, що правильно доглядати за велосипедом, це міф? В світі не існує людей, які можуть доглядати за велосипедом? Ні! Це все реально..."
     },
     {
       "id": 13,
       "short_name": "ArticleItem3",
-      "ArticleName": "Article-3",
-      "ArticleDescription": "ArticleDescription-3"
+      "ArticleName": "Як доглядати за ланцюгом, щоб він не злітав",
+      "ArticleDescription": "Правильний догляд за ланцюгом - це 80% комфортною їзди. Найбільша проблема людей в подорожах на велосипеді, це спадання ланцюга..."
     },
     {
       "id": 14,
       "short_name": "ArticleItem4",
-      "ArticleName": "Article-4",
-      "ArticleDescription": "ArticleDescription-4"
+      "ArticleName": "В Гімалаях людина доглядала за великом краще, ніж за дитиною",
+      "ArticleDescription": "Шок. Не бажано читати вагітним, дітям, та людям з слабкою психікою. В Гімалаях чоловік купив велосипед, за яким доглядав більше, ніж за дитиною..."
     }
   ],
   "News": {
     "short_name": "ArticleItem1",
-    "name": "ArticleItem3"
+    "name": "Правильний догляд за велосипедом"
   }
 }
