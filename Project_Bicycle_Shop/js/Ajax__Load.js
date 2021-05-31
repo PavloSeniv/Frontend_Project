@@ -66,8 +66,6 @@
         ns.loadHome = function () {
             showLoading("#Main__Home"); //Підтягування гіфки завантажувача
             $ajaxUtils.sendGetRequest(homeCategoriesBikeHTML, function (responseText) {
-//Switch CSS class active to menu button
-                switchHomeToActive();
                 document.querySelector("#Main__Home").innerHTML = responseText;
             }, false);
             $ajaxUtils.sendGetRequest(NewsSection__db, buildAndShowNewsHTML); //Підключаємо Базу даних
@@ -93,8 +91,6 @@
 // Retrieve simple catalog item snippet
                 $ajaxUtils.sendGetRequest(catalogItemHtml, function (catalogItemHtml) {
 
-//Switch CSS class active to menu button
-                    switchCatalogToActive();
 
                     var catalogItemsViewHtml = buildCatalogItemsViewHtml(categoryCatalogItems, catalogItemTitleHtml, catalogItemHtml);
                     insertHtml("#Main__Home", catalogItemsViewHtml);
@@ -186,51 +182,6 @@
             return html;
         }
 
-        /*______________________________________________
-        * Navbar
-        * --------------------------------------------*/
-
-        var switchCatalogToActive = function () {
-// Remove 'active' from home button
-            var classes = document.querySelector("#nav-link-home").className;
-            classes = classes.replace(new RegExp("active", "g"), "");
-            document.querySelector("#nav-link-home").className = classes;
-
-// Add 'active' to menu button if not already there
-            classes = document.querySelector("#nav-link-category1").className;
-            if (classes.indexOf("active") === -1) {
-                classes += " active";
-                document.querySelector("#nav-link-category1").className = classes;
-            }
-        };
-
-        var switchHomeToActive = function () {
-// Remove 'active' from catalog button
-            var classes = document.querySelector("#nav-link-category1").className;
-            classes = classes.replace(new RegExp("active", "g"), "");
-            document.querySelector("#nav-link-category1").className = classes;
-
-// Add 'active' to menu button if not already there
-            classes = document.querySelector("#nav-link-home").className;
-            if (classes.indexOf("active") === -1) {
-                classes += " active";
-                document.querySelector("#nav-link-home").className = classes;
-            }
-        };
-
-        /*______________________________________________
-        * Home Bg
-        * --------------------------------------------*/
-
-        /*        //On page load (before images or CSS)
-        document.addEventListener("DOMContentLoaded", function (event) {
-        //On first load, show home view
-        showLoading("#Main__Home");
-
-        var randomCategoriesJSON = ["A", "B", "C", "D", "E", "F"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
-        $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
-        });
-
         /*-----------------------------------------------
         * News Section
         * ----------------------------------------------*/
@@ -302,10 +253,6 @@
             $ajaxUtils.sendGetRequest(NewsItemsTitleHtml, function (NewsItemsTitleHtml) {
 // Retrieve simple catalog item snippet
                 $ajaxUtils.sendGetRequest(NewsItemHtml, function (NewsItemHtml) {
-
-//Switch CSS class active to menu button
-                    switchCatalogToActive();
-
                     var Page__News__Item__ViewHtml = buildPageNewsItemsViewHtml(NewsItemsSection, NewsItemsTitleHtml, NewsItemHtml);
                     insertHtml("#Main__Home", Page__News__Item__ViewHtml);
                 }, false);

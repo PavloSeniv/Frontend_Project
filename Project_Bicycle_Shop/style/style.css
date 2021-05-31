@@ -22,6 +22,10 @@ All
     background-image: url("../img/TexturesTransparent.png");
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 /*--------------------------------------------------------------------
 Page__1 Main__Home
 M.Dybrovskyi and Kucher.O
@@ -282,35 +286,21 @@ Page 1
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
 }
 
-.top__content {
-    color: white;
-    margin-left: 70px;
-    position: absolute;
-    bottom: 15%;
-    white-space: nowrap;
+.Top__Content {
+    padding: 600px 20px;
 }
 
-.top__text {
-    text-align: justify;
+.Top__Title {
+    color: #ffffff;
+    font-size: 5vh;
 }
 
-.top-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2vw;
-    line-height: 31px;
-}
-
-.top-text {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 4vw;
-    line-height: 1.3;
-    white-space: nowrap;
-
+.Top__Text {
+    line-height: 80px;
+    color: #ffffff;
+    font-size: 5vh;
 }
 
 /* end top */
@@ -331,21 +321,6 @@ Page 1
     background-position: center;
     z-index: 1;
 }
-
-/*.carousel-inner .carousel-item-right.active,*/
-/*.carousel-inner .carousel-item-next {*/
-/*    transform: translateX(57%);*/
-/*}*/
-
-/*.carousel-inner .carousel-item-left.active,*/
-/*.carousel-inner .carousel-item-prev {*/
-/*    transform: translateX(-57%);*/
-/*}*/
-
-/*.carousel-inner .carousel-item-right,*/
-/*.carousel-inner .carousel-item-left {*/
-/*    transform: translateX(0);*/
-/*}*/
 
 .slider__category-img {
     margin: auto;
@@ -448,15 +423,14 @@ Page 1
 
 .offers__item-img {
     position: absolute;
-    bottom: 166px;
+    bottom: 190px;
     left: 50%;
     margin-left: -50px;
 }
 
 .offers__item-content {
-    width: 331px;
-    height: 210px;
-    margin: 0 auto;
+    height: 250px;
+    padding: 20px;
     background: #F2F2F2;
     color: var(--color-primary);
 }
@@ -477,8 +451,6 @@ Page 1
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
-    text-align: center;
-    margin: 0 16px;
 }
 
 /* End offers */
@@ -507,10 +479,11 @@ Page 1
 
 .news__item-content {
     background: #F2F2F2;
+    padding: 10px;
 }
 
 .news__item-title {
-    padding-top: 20px;
+    margin-top: 20px;
     margin-bottom: 14px;
     font-style: normal;
     font-weight: bold;
@@ -525,16 +498,13 @@ Page 1
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 /* Створення ефекту Glowind Button*/
 .news__item-btn {
     position: relative;
     display: inline-block;
-    width: 338px;
+    width: 100%;
     padding: 20px 20px;
     color: #000000;
     font-style: normal;
@@ -668,7 +638,7 @@ Page 1
 
 /* HelloBlock */
 .helloBlock {
-    padding-top: 100px;
+    padding-top: 260px;
     padding-bottom: 227px;
     background: url('../img/Page1/bg-hello.png') left bottom no-repeat;
 }
@@ -720,19 +690,21 @@ Page 1
     border-top-left-radius: 5px;
     background: #ffffff;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-      0 100px 80px rgba(0, 0, 0, 0.07);
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
     transition: 0.2s ease-in;
 }
+
 .toast--active {
     display: flex;
-    animation: slidein--bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-      forwards;
+    animation: slidein--bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
+
 .toast--success {
-    background: #43a047;
-    color: white;
+    border-color: #ffffff;
+    background: #000000;
+    color: #ffffff;
 }
 
 .toast__container {
@@ -760,6 +732,7 @@ Page 1
     align-items: center;
     justify-content: center;
 }
+
 .toast__icon svg {
     height: 100%;
 }
@@ -768,11 +741,13 @@ Page 1
     box-sizing: border-box;
     padding: 1em;
 }
+
 .toast__content h2 {
     margin: 0 0 0.25em 0;
     padding: 0;
     font-size: 1.2em;
 }
+
 .toast__content p {
     margin: 0;
     padding: 0;
@@ -789,6 +764,7 @@ Page 1
         transform: translateY(0);
     }
 }
+
 /* End helloBlock */
 
 /***************************************************
@@ -959,14 +935,25 @@ HEAD
 }
 
 .Nav__link__footer {
+    display: block;
     color: #8c8c8c;
     text-decoration: none;
 }
 
+.Nav__link__footer-2 {
+    display: inline-block;
+    color: #8c8c8c;
+}
+
+
 .Nav__link__footer:hover {
     text-decoration: underline;
     text-decoration: white;
-    color: white;
+    color: #ffffff;
+}
+
+.Nav__link__footer-2:hover {
+    color: #ffffff;
 }
 
 .Nav__link__footer__nav {
@@ -1490,9 +1477,12 @@ HEAD
     margin-bottom: 0;
 }
 
+/*
 .Card__news-photo {
-    height: 350px;  
+    max-width: 1200px;
+    max-height: 770px;
 }
+*/
 
 /*Анімація фотографії з новиною ефект Rotate__Animation*/
 
@@ -1511,98 +1501,35 @@ span {
 
 /*---------------------------------------------------*/
 
-/*----------------------------------------------
-Trash
-----------------------------------------------*/
+@media (min-width: 993px) and (max-width: 1200px) {
 
-/*Navbar*/
+    .Top__Content {
+        padding: 600px 20px;
+    }
 
-/*
-.wrapper {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    .Top__Title {
+        color: #ffffff;
+        font-size: 5vh;
+    }
+
+    .Top__Text {
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 4vh;
+    }
+
+    .offers__item-img {
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        margin-left: -50px;
+    }
 }
 
-.Burger {
-width: 50px;
-height: 30px;
-cursor: pointer;
-position: relative;
-}
-
-.Burger__line {
-display: block;
-width: 100%;
-height: 4px;
-background-color: white;
-position: absolute;
-left: 0;
-transition: .3s all linear;
-}
-
-.Burger__line__first {
-top: 0;
-}
-
-
-.Burger__line__second, .Burger__line__third {
-top: 50%;
-transform: translateY(-50%);
-}
-
-.Burger__line__fourth {
-bottom: 0;
-}
-
-.Burger_active .Burger__line__first, .Burger_active .Burger__line__fourth {
-opacity: 0;
-}
-
-.Burger_active .Burger__line__second {
-transform: translateY(-50%) rotate(45deg);
-}
-
-.Burger_active .Burger__line__third {
-transform: translateY(-50%) rotate(-45deg);
-}
-
-@media (min-width: 1200px) {
-.navbar-expand-xl {
-flex-wrap: nowrap;
-justify-content: flex-start;
-}
-
-.navbar-expand-xl .navbar-nav {
-flex-direction: row;
-}
-
-.navbar-expand-xl .navbar-nav .dropdown-menu {
-position: absolute;
-}
-
-.navbar-expand-xl .navbar-nav .nav-link {
-padding-right: 0.5rem;
-padding-left: 0.5rem;
-}
-
-.navbar-expand-xl .navbar-nav-scroll {
-overflow: visible;
-}
-
-.navbar-expand-xl .navbar-collapse {
-display: flex !important;
-flex-basis: auto;
-}
-
-.navbar-expand-xl .Navbar__toggler {
-display: none;
-}
-}
-
-*/
-
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
+    .catalogTop__img {
+        display: none;
+    }
 
     .modal__order-form {
         margin-left: 325px;
@@ -1611,25 +1538,82 @@ display: none;
     .modal__content-button {
         margin-right: 70px;
     }
+
+
+    .Top__Content {
+        padding: 500px 20px;
+    }
+
+    .Top__Title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 5vh;
+    }
+
+    .Top__Text {
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 4vh;
+    }
+
+    .offers__item-img {
+        position: absolute;
+        bottom: 190px;
+        left: 50%;
+        margin-left: -50px;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
     .catalogTop__img {
         display: none;
     }
+
     .photo__dot--2 {
         top: 318px;
         left: 565px;
     }
+
+    .backgroundForSlider {
+        display: none;
+    }
+
 
     .photo__dot--4 {
         bottom: -91px;
         right: 453px;
     }
 
+
+    .Top__Content {
+        padding: 500px 20px;
+    }
+
+    .Top__Title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 5vh;
+    }
+
+    .Top__Text {
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 3vh;
+    }
+
+    .offers__item-img {
+        position: absolute;
+        bottom: 180px;
+        left: 50%;
+        margin-left: -50px;
+    }
+
 }
 
-@media (max-width: 576px) {
+@media (min-width: 361px) and (max-width: 575px) {
     .slider__category-img {
         width: 60%;
     }
@@ -1638,25 +1622,59 @@ display: none;
         display: none;
     }
 
-    .top__content {
-        margin-left: 0;
-        padding-left: 20px;
-    }   
-
-    .top-title {
-        font-size: 5vw;
-    }
-
-    .top-text {
-        font-size: 5vw;
-    }
-
     .modal__title {
         font-size: 42px;
     }
+
+    .Top__Content {
+        padding: 500px 20px;
+    }
+
+    .Top__Title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 5vh;
+    }
+
+    .Top__Text {
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 3vh;
+    }
+
+    .offers__item-img {
+        position: absolute;
+        bottom: 180px;
+        left: 50%;
+        margin-left: -50px;
+    }
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 360px) {
+
+    .backgroundForSlider {
+        display: none;
+    }
+
+    .Top__Content {
+        padding: 500px 20px;
+    }
+
+    .Top__Title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 5vh;
+    }
+
+    .Top__Text {
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 3vh;
+    }
+
     .navbar-brand-text {
         display: none;
     }
@@ -1669,18 +1687,19 @@ display: none;
         font-size: 46px;
     }
 
-    .catalogTop__main-text {    
+    .catalogTop__main-text {
         font-size: 14px;
     }
-}
 
-@media (max-width: 358px) {
     .slider__category-img {
         width: 80%;
     }
 
-    .top__content {
-        padding-left: 10px;
-    }  
+    .offers__item-img {
+        position: absolute;
+        bottom: 180px;
+        left: 50%;
+        margin-left: -50px;
+    }
 }
 
