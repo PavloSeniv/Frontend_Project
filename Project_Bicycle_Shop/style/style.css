@@ -780,6 +780,16 @@ Page 2
     position: relative;
 }
 
+/* .catalogTop__inner::before {
+    content: '';
+    position: fixed; 
+    left: 0; right: 0; 
+    top: 0;  bottom: 0; 
+    z-index: 0;
+    background: url('../img/Page2/Categories__Bike.png') center / cover no-repeat;
+    filter: blur(5px); 
+} */
+
 .catalogTop__content {
     position: absolute;
     top: 50%;
@@ -1522,6 +1532,12 @@ span {
     .catalogTop__img {
         display: none;
     }
+    .catalogTop__content {
+        top: 59%;
+    }
+    .catalogTop__main-title {
+        margin-bottom: 10px;
+    }
 
 
     .Top__Content {
@@ -1625,6 +1641,13 @@ span {
 }
 
 @media (min-width: 361px) and (max-width: 575px) {
+    .catalogTop__img {
+        display: none;
+    }
+    .catalogTop__content {
+        top: 60%;
+    }
+
     .slider__category-img {
         width: 60%;
     }
@@ -1678,6 +1701,10 @@ span {
 
 
 @media (max-width: 360px) {
+
+    .catalogTop__img {
+        display: none;
+    }
 
     .backgroundForSlider {
         display: none;
