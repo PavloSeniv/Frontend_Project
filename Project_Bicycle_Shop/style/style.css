@@ -14,7 +14,7 @@ All
 }
 
 .Margin__Position__Load {
-    margin: 25%;
+    margin: 35%;
 }
 
 .Bg__HTML {
@@ -1532,9 +1532,11 @@ span {
     .catalogTop__img {
         display: none;
     }
+
     .catalogTop__content {
         top: 59%;
     }
+
     .catalogTop__main-title {
         margin-bottom: 10px;
     }
@@ -1580,6 +1582,7 @@ span {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+
     .catalogTop__img {
         display: none;
     }
@@ -1644,6 +1647,7 @@ span {
     .catalogTop__img {
         display: none;
     }
+
     .catalogTop__content {
         top: 60%;
     }
@@ -1711,7 +1715,7 @@ span {
     }
 
     .Top__Content {
-        padding: 500px 20px;
+        padding: 285px 20px;
     }
 
     .Top__Title {
